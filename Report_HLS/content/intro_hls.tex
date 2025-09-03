@@ -386,5 +386,74 @@ After powering up the FPGA, it must be configured. We have 3 modes for configura
 
 Once the programming done, the \verb|LD19| will be on to indicate firmware flashing has been done.
  
+\newpage
+\section{Hardware Software Analogy}
+
+Since we will desing hardware modules using software, it is a good idea to establish some analaogy between software and hardware. This help us to have hardware description in the eyes of software.
+
+The analogy between hardware modules and high level langugae contians some similiarities and also some differences.\\
+
+
+\autoref{similarities_soft_hard} present the similarities between standard \verb|C| function and some hardware module to impelement.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/intro_hls/similarities_soft_hard}
+\caption{Similarities between software and hardware}
+\label{fig:intro_hls:similarities_soft_hard}
+\end{figure}
+
+\autoref{fig:intro_hls:differences_soft_hard} present the differnces
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/intro_hls/differences_soft_hard}
+\caption{Differences between software and hardware}
+\label{fig:intro_hls:differences_soft_hard}
+\end{figure}
+
+Now the take away is that HLS hide these details (these differences) through compiler directives using pragma, which guide synthesis tool to add these differences.\\
+
+\newpage
+\underline{\textit{Soft Hard differences}:} \todo{Soft Hard differences}
+
+\begin{itemize}
+
+\item \textit{Source: course 2, section 2,  video 12}
+
+\item \textit{This is a very important topic}
+
+\item \textit{To review the memory model inside a traditional cpu, the fetch exectue model, once I finishi this course, and the course of microcontroller drivers}
+
+	\begin{itemize}
+	\item \textit{Also once finished with this, to see how the 		memory model interact in FPGA, the protocol idea and 				implemeting an interface, I didn't quiet understood them yet}
+
+	\item \textit{I quote: However, ports in a hardware module should implement a specific interface with the associated protocols to access a memory cell or communicate with other modules}.
+	
+	\end{itemize}
+	
+\end{itemize}
+
+\newpage
+\section{Environment Setup}
+
+\uti{Vivado Steps} \todo{Vivado Steps}
+
+\begin{itemize}
+
+\item \textit{Source: section 3, video 13 and 14}
+
+\item \textit{Talk about different stages of design, from C programming, simulation for debuggign, types of simulation,$\cdots$}
+
+\item \textit{To much details for now, I will get back to it once I understand more and do some concrete examples}
+
+
+\end{itemize}
+
+
+
+
+
+
 
 
