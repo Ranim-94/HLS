@@ -160,9 +160,9 @@ __attribute__((sdx_kernel("basic_output", 0))) void basic_output(unsigned char *
 #pragma HLSDIRECTIVE TOP name=basic_output
 # 3 "basic_output.cpp"
 
+#pragma HLS INTERFACE mode=ap_none port=o
+#pragma HLS INTERFACE mode=ap_ctrl_none port=return
 
-#pragma HLS INTERFACE ap_none port=o
-#pragma HLS INTERFACE ap_ctrl_none port=return
 
  *o = 0b11110000;
 

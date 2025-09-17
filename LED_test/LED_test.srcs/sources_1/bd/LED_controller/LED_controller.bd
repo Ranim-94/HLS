@@ -1,0 +1,49 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x335D36C0335D36C0",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../LED_test.gen/sources_1/bd/LED_controller",
+      "name": "LED_controller",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "basic_output_0": ""
+    },
+    "ports": {
+      "LED": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "basic_output_0": {
+        "vlnv": "xilinx.com:hls:basic_output:1.0",
+        "ip_revision": "2114264056",
+        "xci_name": "LED_controller_basic_output_0_0",
+        "xci_path": "ip/LED_controller_basic_output_0_0/LED_controller_basic_output_0_0.xci",
+        "inst_hier_path": "basic_output_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "basic_output_0_o": {
+        "ports": [
+          "basic_output_0/o",
+          "LED"
+        ]
+      }
+    }
+  }
+}

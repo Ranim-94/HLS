@@ -25,11 +25,11 @@
       <key>filename</key>
       <string>basic_output.cpp</string>
       <key>line</key>
-      <integer>5</integer>
+      <integer>4</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=basic_output_XLX_SEP_ PragmaOptions=ap_none port=o_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=basic_output_XLX_SEP_ PragmaOptions=mode=ap_none port=o_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -41,11 +41,11 @@
       <key>filename</key>
       <string>basic_output.cpp</string>
       <key>line</key>
-      <integer>6</integer>
+      <integer>5</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=basic_output_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=basic_output_XLX_SEP_ PragmaOptions=mode=ap_ctrl_none port=return_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

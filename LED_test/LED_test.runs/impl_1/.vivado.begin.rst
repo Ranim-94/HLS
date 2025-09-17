@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lenovo" Host="lenovo-Legion-5-17ACH6H" Pid="13638" HostCore="12" HostMemory="14157224">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lenovo" Host="lenovo-Legion-5-17ACH6H" Pid="15818" HostCore="12" HostMemory="14157224">
+    </Process>
+</ProcessHandle>

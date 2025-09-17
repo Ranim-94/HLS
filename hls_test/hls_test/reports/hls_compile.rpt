@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'basic_output'
 ================================================================
 + General Information: 
-    * Date:           Mon Sep 15 10:06:05 2025
+    * Date:           Wed Sep 17 09:13:30 2025
     * Version:        2025.1 (Build 6135595 on May 21 2025)
     * Project:        hls_test
     * Solution:       hls (Vivado IP Flow Target)
@@ -74,11 +74,11 @@
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+-----------+--------------------------+--------------------------------------------+
-| Type      | Options                  | Location                                   |
-+-----------+--------------------------+--------------------------------------------+
-| INTERFACE | ap_none port=o           | basic_output.cpp:5 in basic_output, o      |
-| INTERFACE | ap_ctrl_none port=return | basic_output.cpp:6 in basic_output, return |
-+-----------+--------------------------+--------------------------------------------+
++-----------+-------------------------------+--------------------------------------------+
+| Type      | Options                       | Location                                   |
++-----------+-------------------------------+--------------------------------------------+
+| INTERFACE | mode=ap_none port=o           | basic_output.cpp:4 in basic_output, o      |
+| INTERFACE | mode=ap_ctrl_none port=return | basic_output.cpp:5 in basic_output, return |
++-----------+-------------------------------+--------------------------------------------+
 
 

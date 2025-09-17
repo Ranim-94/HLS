@@ -129,7 +129,9 @@
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
-    <UserConfigCommands/>
+    <UserConfigCommands>
+        <config_export output="/home/lenovo/Simulation_Linux/HLS/basic_output.cpp"/>
+    </UserConfigCommands>
     <Args>
         <Arg ArgName="o" index="0" direction="out" srcType="unsigned char*" srcSize="8">
             <hwRefs>
@@ -196,8 +198,8 @@
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
     <PragmaReport>
-        <Pragma type="interface" location="basic_output.cpp:5" status="valid" parentFunction="basic_output" variable="o" isDirective="0" options="ap_none port=o"/>
-        <Pragma type="interface" location="basic_output.cpp:6" status="valid" parentFunction="basic_output" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+        <Pragma type="interface" location="basic_output.cpp:4" status="valid" parentFunction="basic_output" variable="o" isDirective="0" options="mode=ap_none port=o"/>
+        <Pragma type="interface" location="basic_output.cpp:5" status="valid" parentFunction="basic_output" variable="return" isDirective="0" options="mode=ap_ctrl_none port=return"/>
     </PragmaReport>
 </profile>
 
