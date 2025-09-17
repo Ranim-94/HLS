@@ -319,11 +319,43 @@ The FGPA ship along with these extra elements form an development board. The Bas
 \label{fig:intro_hls:basys3_board}
 \end{figure} 
 
+
+
+The Basys3 support Xilinx Artix-7 FPGA mainly \verb|XC7A35T-1CPG236C|.
+
+\newpage
+\subsection{Pins and LED Structure}
+
+
+The Basys 3 support up to 238 pins, and the naming of the pins s the concatenation of a letter and a number which defines its position in a 2D coordinate system. An example is shown in \autoref{fig:intro_hls:basys3_pins}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/intro_hls/basys3_pins}
+\caption{Basys 3 Pin naming example: Pin U16}
+\label{fig:intro_hls:basys3_pins}
+\end{figure} 
+
+
+LED strcuture are shown in \autoref{fig:intro_hls:basys3_LED}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/intro_hls/basys3_LED}
+\caption{Basys 3 board}
+\label{fig:intro_hls:basys3_LED}
+\end{figure} 
+
+
 \begin{itemize}
 
-\item The LED are arranged in a common cathode structure
+\item The LED are arranged in a common cathode structure $\rightarrow$ voltage 1 is used when turning ON the LEDs
 
 \item The LED of the board are connected to a 330 ohm resistors to prevent damage in case of short circuits
+
+	\begin{itemize}
+	\item The resistors are connected from the anode side
+	\end{itemize}
 
 \end{itemize}
 
@@ -436,6 +468,29 @@ Now the take away is that HLS hide these details (these differences) through com
 
 \newpage
 \section{Environment Setup}
+
+The software tool set we are going to use is the \verb|Vivado| which comes form \verb|AMD|.
+
+In fact, we are going to use 2 software as shown in \autoref{fig:intro_hls:softwares}: 
+
+\begin{enumerate}
+
+\item \verb|Vitis|: which takes our \verb|C/C++| code and transfrom it into HDL code (Verilog of VHDL)
+
+\item \verb|Viviado|: it takes the HDL code and generates the bitstream which can be used to program the FPGA
+
+
+\end{enumerate}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/intro_hls/softwares}
+\caption{Vitis and Vivado Softwares}
+\label{fig:intro_hls:softwares}
+\end{figure}
+
+Refer to the \verb|README.md| for the steps of the installation process.
+
 
 \uti{Vivado Steps} \todo{Vivado Steps}
 
