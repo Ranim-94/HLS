@@ -4,12 +4,152 @@
 \chapter{Input Output}
 
 
-
 \section{LED program}
 
-Our $\mathrm{1}^\mathrm{st}$ program to HLS will be driving some LED on.
+Our $\mathrm{1}^\mathrm{st}$ \verb|HLS| program will be driving some LED on.
 
-Now we will proceede in each section for a specific step from programming until bitstream file used in the fpga.\\
+Now we will proceede in each section for a specific step.\\
+
+The steps are:
+
+\begin{enumerate}
+
+\item Writing the \verb|HLS| code
+	
+	\begin{itemize}
+	\item This is done via \verb|Vitis| IDE
+	
+	\item Output of this step: generating an \verb|IP| package used for the next steps
+	\end{itemize}
+
+
+\item Having the \verb|IP| package, we generate the bitstream file
+
+	\begin{itemize}
+	\item This done using \verb|Vivado|
+	
+
+	\end{itemize}
+
+\item Flashing the FPGA using the generated bitstream file
+
+	\begin{itemize}
+	\item Also done via \verb|Vivado|
+	\end{itemize}
+
+\end{enumerate}
+
+\newpage
+\subsection{LED On Basys 3}
+
+As a reminder, the Bass3 FPGA board has 16 user LED coonected to the pins of the FPGA, as shown in \autoref{fig:input_output:fpga_userLED}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/input_output/fpga_userLED}
+\caption{User LED on Basys3 board}
+\label{fig:input_output:fpga_userLED}
+\end{figure}
+
+\underline{Note:} review \autoref{sec:Basys3_board} and \ref{sub:LED_Structure} for FPGA and board anatomy.
+
+\newpage
+\section{LED Controller Project}
+\label{sec:LED_Controller}
+
+The \verb|LED_Controller| consist of 2 main block as shown in \autoref{fig:input_output:LED_Controller}:
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5,frame]{Figures/input_output/LED_Controller}
+\caption{LED Controller Description}
+\label{fig:input_output:LED_Controller}
+\end{figure}
+
+\begin{itemize}
+
+\item The \verb|HLS| code $\leftrightarrow$ the \verb|C| or \verb|C++| code we will write
+
+\item the connection between the \verb|HLS| code and the FPGA pins
+
+\end{itemize}
+
+\underline{Note:} Read the \verb|LED_Controller.md| after finishing \autoref{sec:LED_Controller}, to see more details about the tools (\verb|Vitis| and \verb|Vivado|).
+
+\subsection{Ports on FPGA}
+
+A hardware design exchanges data and control commands with the rest of the system using ports with properly associated interface.
+
+Hardware designs use ports to communicate with other modules on a system.\\ 
+
+Ports have their own hardware structure and can be a simple wire or a complex circuits implementing an interface, realising its sophisticated protocol. Different types of ports are shown  \autoref{fig:input_output:port_example}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/input_output/port_example}
+\caption{Types of Port}
+\label{fig:input_output:port_example}
+\end{figure}
+
+\begin{itemize}
+
+\item Simple wire
+
+\item 8 bit parallel data bus
+
+\item complex buses such as USB,I2C,$\cdots$
+
+
+\end{itemize}
+
+For our LED controller project, the \verb|HLS| code is a simple assignment that return a fix value to drive the 8 LEDs.\\
+
+The function argument (that is \verb|*o|) are synthesised into input/output signals in the corresponding hardware design, and we should have some port associated with each of them implmenting some specific interface.\\
+
+In this example, the 8-bit width port implements eight simple wires without any specific protocol (see \autoref{fig:input_output:port_LED_Controller})  
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/input_output/port_LED_Controller}
+\caption{Port for LED controller}
+\label{fig:input_output:port_LED_Controller}
+\end{figure}
+
+Now the question is: how can we define this mapping between function arguments and its port interface?
+
+Compiler directive $\leftrightarrow$ \verb|#pragma HLS| will help us in this task.\\
+
+\newpage
+Now the compiler directive we use in the LED controller project are used for 2 part:
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/input_output/pragma_port_interfaces}
+\caption{Compiler directive for port interfaces with function and function arguments}
+\label{fig:input_output:pragma_port_interfaces}
+\end{figure}
+
+\begin{enumerate}
+
+\item The function argument $\leftrightarrow$ \verb|char *o|
+
+	\begin{itemize}
+	\item \verb|#pragma HLS INTERFACE AP_NONE PORT=o| 
+	
+	\item Since we don’t have any specific interface in this example, the \verb|AP_NONE| is used for this purpose. 
+	
+	\item In this example, \verb|AP_NONE| interface models a simple wire port in the final hardware design
+	\end{itemize}
+
+\item A compiler directive for the \tbi{function itself}
+
+	\begin{itemize}
+	\item \verb|#pragma HLS INTERFACE AP_CTRL_NONE PORT=return|
+	\end{itemize}
+
+\end{enumerate}
+
+
 
 \todo{LED Controller} \uti{LED Controller:}
 
@@ -29,76 +169,19 @@ Now we will proceede in each section for a specific step from programming until 
 
 \end{itemize}
 
+\newpage
+\section{FPGA Structure}
 
-\subsection{Resource for the Vitis IDE}
+Once the bitstream file is generated, we need to download it to the FPGA baord.
 
-Refer to \url{https://docs.amd.com/r/en-US/ug1399-vitis-hls/Building-and-Running-an-HLS-Component} to see:
+An FPGA is composed form 2 layers: application and configuration layer.\\
 
-\begin{itemize}
+An \tbi{application layer}  contains all the \tbi{hardware modules} that can be configured and connected together to implement an \tbi{algorithm or a function}. After configuring this layer, we can apply the input data and get the generated outputs.\\
 
-\item Vitis IDE structure
+The \tbi{configuration layer} consists of a set of \tbi{memory cells } used to configure the application layer modules. 
+The configuration data saved in this layer is called bitstream and is generated by synthesis tools.
 
-\item Different Steps when building and desiging an HLS component
-
-\end{itemize}
-
-\todo{Vitis IDE} \uti{Vitis IDE:}
-
-\begin{itemize}
-
-\item \textit{To illustrate and make some introduction about the content of the url}
-
-\item \textit{Mainly about:}
-
-	\begin{itemize}
-	
-	\item \textit{The steps and the process}	
-	
-	\item \textit{The options in Vitis IDE with some images}
-		
-	\end{itemize}
-
-
-\end{itemize}
-
-
-\subsection{Generating IP Package}
-
-After running successfully the \verb|C| simulation step, we need to generate an IP pacakge. This package can be used in \verb|Vivado| software so we can generate the bitstream file which will be used to program the FPGA.\\
-
-\underline{Generating the IP Pacakge:} under the flow navigator, run the \verb|Package| command, and we should specify the 
-
-
-\subsection{Vivado}
-
-Now we are ready to generate the bitstream file. For that, open \verb|Vivado|, and create a project.\\
-
-Then \verb|Create IP block diagram|.
-
-Under \verb|Settings|, search for the \verb|IP| workspace, and \verb|Vivado| will search for any \verb|IP| in the selected workspace.
-
-
-
-We can search for our \verb|IP| name (\verb|basic_output|), then using the search bar select the \verb|IP| name we want, and the block will be imported to \verb|Vivado| as shown in \autoref{fig:input_output:ip_block}.
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5,frame]{Figures/input_output/ip_block}
-\caption{IP Block for LED controller}
-\label{fig:input_output:ip_block}
-\end{figure}
-
-
-\underline{Port to FPGA Pins: Constrains}\\
-
-Now to make connections form the port of the \verb|IP| to the FPGA pins, we need to some constraints. To add these constraints, go \verb|Sources|, right click on \verb|Constraints| folder and select \verb|Add Sources|.\\
-
-After that we select \verb|Create Constraint| option, and then choose a file name.\\
-
-We copy paste the constraint file forom \verb|digilent| gihtub for basys3 board (\url{https://github.com/Digilent/Basys3/tree/master}). under \verb|Resources| folder.\\
-
-Finally we uncomment the $\mathrm{1}^\mathrm{st}$ 8 LED in the LED sections.
-
+Theoretically, the configuration memories are accessible sequentially, and FPGA bitstream data is written to the FPGA using a streaming scheme.   
 
 
 

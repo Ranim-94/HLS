@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"LED_Controller": {
+			"proto_instances": {
+			}
+		}
+	}
+}

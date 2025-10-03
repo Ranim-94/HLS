@@ -1,0 +1,49 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x335D36C0335D36C0",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../LED_Controller_Vivado.gen/sources_1/bd/LED_Controller",
+      "name": "LED_Controller",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "led_ON_0": ""
+    },
+    "ports": {
+      "LED": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "led_ON_0": {
+        "vlnv": "xilinx.com:hls:led_ON:1.0",
+        "ip_revision": "2114284155",
+        "xci_name": "LED_Controller_led_ON_0_0",
+        "xci_path": "ip/LED_Controller_led_ON_0_0/LED_Controller_led_ON_0_0.xci",
+        "inst_hier_path": "led_ON_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "led_ON_0_o": {
+        "ports": [
+          "led_ON_0/o",
+          "LED"
+        ]
+      }
+    }
+  }
+}

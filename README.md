@@ -62,7 +62,7 @@ After finishing installation, we should add these 2 lines to our `.bashrc` file:
 
 <pre>export PATH=/opt/Xilinx/2025.1/Vitis/bin:$PATH</pre>
 
-Now we can run `Vivado` and `Vitis` from the terminla to lauch either of the programs.
+Now we can run `Vivado` and `Vitis` from the terminal to lauch either of the programs.
 
 ### Bug: the Vitis GUI
 

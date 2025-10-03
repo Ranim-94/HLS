@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_led_ON_ir
+Args:            
+  - Callee:          'led_ON(unsigned char*)'
+    DebugLoc:        { File: main_LED_Controller.cpp, Line: 3, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_led_ON_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
