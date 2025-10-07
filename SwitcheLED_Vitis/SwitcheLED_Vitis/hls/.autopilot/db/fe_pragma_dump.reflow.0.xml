@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="main_switche_led.c" line="9" pragmaType="interface" parentfunction="led_via_switche" mode="ap_none" port="switche_state" name="" register="0"/>
+<pragma file="main_switche_led.c" line="11" pragmaType="interface" parentfunction="led_via_switche" mode="ap_none" port="led" name="" register="0"/>
+<pragma file="main_switche_led.c" line="13" pragmaType="interface" parentfunction="led_via_switche" mode="ap_ctrl_none" port="return" name=""/>
+</pragmas>

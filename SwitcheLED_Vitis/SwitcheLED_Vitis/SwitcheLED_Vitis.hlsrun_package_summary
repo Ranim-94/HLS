@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/SwitcheLED_Vitis/SwitcheLED_Vitis.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Oct  7 12:29:41 2025",
+ "timestampMillis": "1759832981621",
+ "buildStep": {
+  "cmdId": "7a848bc4-f5f2-4c4d-afcc-a627502e8881",
+  "name": "vitis-run",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/SwitcheLED_Vitis/logs/SwitcheLED_Vitis.steps.log",
+  "commandLine": "/opt/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/hls_config.cfg --work_dir SwitcheLED_Vitis ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/hls_config.cfg",
+   "--work_dir",
+   "SwitcheLED_Vitis"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct  7 12:29:41 2025",
+ "timestampMillis": "1759832981621",
+ "status": {
+  "cmdId": "7a848bc4-f5f2-4c4d-afcc-a627502e8881",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Oct  7 12:29:44 2025",
+ "timestampMillis": "1759832984949",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "led_via_switche",
+     "file": "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/SwitcheLED_Vitis/led_via_switche.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/main_switche_led.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Oct  7 12:29:44 2025",
+ "timestampMillis": "1759832984950",
+ "buildStep": {
+  "cmdId": "a39eb7e7-486e-4745-ba13-74b5283b76ff",
+  "name": "",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/SwitcheLED_Vitis/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct  7 12:29:44 2025",
+ "timestampMillis": "1759832984950",
+ "status": {
+  "cmdId": "a39eb7e7-486e-4745-ba13-74b5283b76ff",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct  7 12:29:57 2025",
+ "timestampMillis": "1759832997173",
+ "status": {
+  "cmdId": "a39eb7e7-486e-4745-ba13-74b5283b76ff",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct  7 12:29:57 2025",
+ "timestampMillis": "1759832997252",
+ "status": {
+  "cmdId": "7a848bc4-f5f2-4c4d-afcc-a627502e8881",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Oct  7 12:29:57 2025",
+ "timestampMillis": "1759832997253",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Oct  7 12:29:57 2025",
+ "timestampMillis": "1759832997253",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -22,9 +22,9 @@
 
 ## Goal
 
-This document illustrate the LED controller, as it plays the role of hello world project in HLS.
+This document illustrate the `LED_Controller`, as it plays the role of hello world project in HLS.
 
-The code for truning LED is straightforward, so we will more focus on the development environment which are: `Vitis` (for writing HLS code), and `Vivado` (for generating bitstream fiel and programming the FGPA board)
+The code for truning LED is straightforward, so we focus more on the development environment which are: `Vitis` (for writing HLS code), and `Vivado` (for generating bitstream file and programming the FGPA board)
 
 ## Resources
 
@@ -51,10 +51,10 @@ The code for truning LED is straightforward, so we will more focus on the develo
     </div>
 
     2. **Each hardware module or each project can have 1 top function**, and the other function will be called in some hiearchy from this top function
-    
+
     3. If we don't know what is the name of the top function, we can skip it and leave it empty, then specify it later
        1. I will do this to show how we can do this from inside `Vitis`
- 
+
 3. Now specfiy our target
 
     <div id="fig3">
@@ -64,7 +64,7 @@ The code for truning LED is straightforward, so we will more focus on the develo
 
     1. Since we workiing with `Basys 3` board, we enter directly the name of the FPGA part <-> that is `xc7a35tcpg236-1`
        1. `xc7a35t` → Artix-7 FPGA,`cpg236` → Package (236-pin) and `-1` → Speed grade 
- 
+
  4. Finally, we specify some general settings, such as the clock rate,...
 
     <div id="fig4">
@@ -97,14 +97,14 @@ Now we have `LED_Controller` created, we see now how to implement the code, and 
 
 After implementing our code, it is necessary to select our function `void led_ON(unsigned char *o)` as a **top funciton** before running the simulation.
 
-We can do it from `component explorer`, by clicking `Setting`-> `hls_config.cfg`, then under `General`, we scroll down till we find `top` option, and we hit `browse` to select our top function. These steps are shown in [Figure](#fig6).
+We can do it from `component explorer`, by clicking `Setting`-> `hls_config.cfg`, then under `General`, we scroll down till we find `top` option, and we hit `browse` to select our top function. These steps are shown in [Figure 6](#fig6).
 
 <div id="fig6">
 <img src="Figures_VsCode/Fig_LED_Controller/top_function_vitis.png" alt="Widget Types" width="550">
 <p><strong>Figure 6:</strong> Selecting top function in project LED_Controller</p>
 </div>
 
-### Running Simulation 
+### Running Simulation
 
 Now we can simulate our code, by pressing `Synthesis` option from `Flow Navigator`. This will generate the RTL code, and from it we can generate our `IP`.
 

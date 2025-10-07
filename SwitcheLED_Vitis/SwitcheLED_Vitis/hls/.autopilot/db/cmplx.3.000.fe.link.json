@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "main_switche_led.c",
+    "fileloc": 4,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "led_via_switche",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 5
+  }
+}

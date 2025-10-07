@@ -1,0 +1,67 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD5300111D5300111",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../SwitcheLed_Vivado.gen/sources_1/bd/switche_LED",
+      "name": "switche_LED",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "led_via_switche_0": ""
+    },
+    "ports": {
+      "sw": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "LED": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "led_via_switche_0": {
+        "vlnv": "xilinx.com:hls:led_via_switche:1.0",
+        "ip_revision": "2114293049",
+        "xci_name": "switche_LED_led_via_switche_0_0",
+        "xci_path": "ip/switche_LED_led_via_switche_0_0/switche_LED_led_via_switche_0_0.xci",
+        "inst_hier_path": "led_via_switche_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "led_via_switche_0_led": {
+        "ports": [
+          "led_via_switche_0/led",
+          "LED"
+        ]
+      },
+      "switche_state_0_1": {
+        "ports": [
+          "sw",
+          "led_via_switche_0/switche_state"
+        ]
+      }
+    }
+  }
+}

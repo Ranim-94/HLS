@@ -1,0 +1,4 @@
+led_via_switche.v,verilog,xil_defaultlib,../../../../SwitcheLed_Vivado.gen/sources_1/bd/switche_LED/ipshared/7e40/hdl/verilog/led_via_switche.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+switche_LED_led_via_switche_0_0.v,verilog,xil_defaultlib,../../../bd/switche_LED/ip/switche_LED_led_via_switche_0_0/sim/switche_LED_led_via_switche_0_0.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+switche_LED.v,verilog,xil_defaultlib,../../../bd/switche_LED/sim/switche_LED.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

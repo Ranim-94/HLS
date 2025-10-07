@@ -1,0 +1,13 @@
+directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=led_via_switche_XLX_SEP_ PragmaOptions=name=led_via_switche_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=led_via_switche
+        ^
+main_switche_led.c:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=led_via_switche_XLX_SEP_ PragmaOptions=mode=ap_none port=switche_state_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=ap_none port=switche_state
+        ^
+main_switche_led.c:11:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=led_via_switche_XLX_SEP_ PragmaOptions=mode=ap_none port=led_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=ap_none port=led
+        ^
+main_switche_led.c:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=led_via_switche_XLX_SEP_ PragmaOptions=mode=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=ap_ctrl_none port=return
+        ^
+4 warnings generated.

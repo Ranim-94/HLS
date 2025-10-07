@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis",
+    "arguments": [
+      "/opt/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.1/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=led_via_switche",
+      "-c",
+      "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/main_switche_led.c"
+    ],
+    "file": "/home/lenovo/Simulation_Linux/HLS/SwitcheLED_Vitis/main_switche_led.c"
+  }
+]

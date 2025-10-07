@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Oct  7 13:26:47 2025
+# Process ID         : 15907
+# Current directory  : /home/lenovo/Simulation_Linux/HLS/SwitcheLed_Vivado/SwitcheLed_Vivado.runs/switche_LED_led_via_switche_0_0_synth_1
+# Command line       : vivado -log switche_LED_led_via_switche_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source switche_LED_led_via_switche_0_0.tcl
+# Log file           : /home/lenovo/Simulation_Linux/HLS/SwitcheLed_Vivado/SwitcheLed_Vivado.runs/switche_LED_led_via_switche_0_0_synth_1/switche_LED_led_via_switche_0_0.vds
+# Journal file       : /home/lenovo/Simulation_Linux/HLS/SwitcheLed_Vivado/SwitcheLed_Vivado.runs/switche_LED_led_via_switche_0_0_synth_1/vivado.jou
+# Running On         : lenovo-Legion-5-17ACH6H
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics
+# CPU Frequency      : 4197.211 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14496 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 16644 MB
+# Available Virtual  : 10470 MB
+#-----------------------------------------------------------
+source switche_LED_led_via_switche_0_0.tcl -notrace

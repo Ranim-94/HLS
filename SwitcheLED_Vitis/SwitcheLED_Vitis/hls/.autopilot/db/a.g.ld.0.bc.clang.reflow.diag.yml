@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_led_via_switche_ir
+Args:            
+  - Callee:          led_via_switche
+    DebugLoc:        { File: main_switche_led.c, Line: 5, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_led_via_switche_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"switche_LED": {
+			"proto_instances": {
+			}
+		}
+	}
+}

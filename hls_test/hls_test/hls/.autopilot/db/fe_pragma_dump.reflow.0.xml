@@ -1,4 +1,0 @@
-<pragmas>
-<pragma file="basic_output.cpp" line="4" pragmaType="interface" parentfunction="basic_output" mode="ap_none" port="o" name="" register="0"/>
-<pragma file="basic_output.cpp" line="5" pragmaType="interface" parentfunction="basic_output" mode="ap_ctrl_none" port="return" name=""/>
-</pragmas>

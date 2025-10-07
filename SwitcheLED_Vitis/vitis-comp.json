@@ -1,0 +1,13 @@
+{
+  "name": "SwitcheLED_Vitis",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "SwitcheLED_Vitis"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}
