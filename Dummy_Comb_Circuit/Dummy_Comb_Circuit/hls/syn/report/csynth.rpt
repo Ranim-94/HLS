@@ -1,0 +1,104 @@
+
+
+================================================================
+== Synthesis Summary Report of 'dummy_comb_circuit'
+================================================================
++ General Information: 
+    * Date:           Thu Oct  9 13:57:51 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        Dummy_Comb_Circuit
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+---------+-----+
+    |        Modules       | Issue|      |     Latency     | Iteration|         | Trip |          |      |    |   |         |     |
+    |        & Loops       | Type | Slack| (cycles)|  (ns) |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|   LUT   | URAM|
+    +----------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+---------+-----+
+    |+ dummy_comb_circuit  |     -|  6.32|        0|  0.000|         -|        1|     -|        no|     -|   -|  -|  6 (~0%)|    -|
+    +----------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+---------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------+---------+-----------+----------+
+| Port | Mode    | Direction | Bitwidth |
++------+---------+-----------+----------+
+| a    | ap_none | in        | 1        |
+| b    | ap_none | in        | 1        |
+| c    | ap_none | in        | 1        |
+| d    | ap_none | out       | 1        |
++------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| a        | in        | _Bool    |
+| b        | in        | _Bool    |
+| c        | in        | _Bool    |
+| d        | out       | _Bool*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| a        | a            | port    |
+| b        | b            | port    |
+| c        | c            | port    |
+| d        | d            | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------+-----+--------+----------+-----+------+---------+
+| Name                 | DSP | Pragma | Variable | Op  | Impl | Latency |
++----------------------+-----+--------+----------+-----+------+---------+
+| + dummy_comb_circuit | 0   |        |          |     |      |         |
+|   and_ln14_fu_57_p2  |     |        | and_ln14 | and | auto | 0       |
+|   xor_ln14_fu_63_p2  |     |        | xor_ln14 | xor | auto | 0       |
+|   d                  |     |        | or_ln14  | or  | auto | 0       |
++----------------------+-----+--------+----------+-----+------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+------------------------------------------------------+
+| Type      | Options                  | Location                                             |
++-----------+--------------------------+------------------------------------------------------+
+| INTERFACE | ap_none port=a           | main_comb_circuit.c:7 in dummy_comb_circuit, a       |
+| INTERFACE | ap_none port=b           | main_comb_circuit.c:8 in dummy_comb_circuit, b       |
+| INTERFACE | ap_none port=c           | main_comb_circuit.c:9 in dummy_comb_circuit, c       |
+| INTERFACE | ap_none port=d           | main_comb_circuit.c:10 in dummy_comb_circuit, d      |
+| INTERFACE | ap_ctrl_none port=return | main_comb_circuit.c:12 in dummy_comb_circuit, return |
++-----------+--------------------------+------------------------------------------------------+
+
+

@@ -1,0 +1,14 @@
+{
+    "0": {
+        "name": "dummy_comb_circuit",
+        "file": "main_comb_circuit.c",
+        "fileloc": "5",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "3"
+    }
+}

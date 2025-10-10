@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="main_comb_circuit.c" line="7" pragmaType="interface" parentfunction="dummy_comb_circuit" mode="ap_none" port="a" name="" register="0"/>
+<pragma file="main_comb_circuit.c" line="8" pragmaType="interface" parentfunction="dummy_comb_circuit" mode="ap_none" port="b" name="" register="0"/>
+<pragma file="main_comb_circuit.c" line="9" pragmaType="interface" parentfunction="dummy_comb_circuit" mode="ap_none" port="c" name="" register="0"/>
+<pragma file="main_comb_circuit.c" line="10" pragmaType="interface" parentfunction="dummy_comb_circuit" mode="ap_none" port="d" name="" register="0"/>
+<pragma file="main_comb_circuit.c" line="12" pragmaType="interface" parentfunction="dummy_comb_circuit" mode="ap_ctrl_none" port="return" name=""/>
+</pragmas>

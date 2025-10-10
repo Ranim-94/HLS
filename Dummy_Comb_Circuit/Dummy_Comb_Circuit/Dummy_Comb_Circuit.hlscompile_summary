@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/Dummy_Comb_Circuit.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Oct  9 13:57:40 2025",
+ "timestampMillis": "1760011060657",
+ "buildStep": {
+  "cmdId": "de40de9b-fac6-41e1-8a25-4f0681de6263",
+  "name": "v++",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/logs/Dummy_Comb_Circuit.steps.log",
+  "commandLine": "/opt/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg --work_dir Dummy_Comb_Circuit ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg",
+   "--work_dir",
+   "Dummy_Comb_Circuit"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg",
+    "content": "part=xc7a35tcpg236-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=main_comb_circuit.c\nsyn.top=dummy_comb_circuit"
+   }
+  ],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct  9 13:57:40 2025",
+ "timestampMillis": "1760011060657",
+ "status": {
+  "cmdId": "de40de9b-fac6-41e1-8a25-4f0681de6263",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Oct  9 13:57:43 2025",
+ "timestampMillis": "1760011063820",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dummy_comb_circuit",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Oct  9 13:57:43 2025",
+ "timestampMillis": "1760011063821",
+ "buildStep": {
+  "cmdId": "f48407b0-8646-46ab-beb7-96b2c6e0fc17",
+  "name": "",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct  9 13:57:43 2025",
+ "timestampMillis": "1760011063821",
+ "status": {
+  "cmdId": "f48407b0-8646-46ab-beb7-96b2c6e0fc17",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct  9 13:57:43 2025",
+ "timestampMillis": "1760011063821",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct  9 13:57:43 2025",
+ "timestampMillis": "1760011063821",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct  9 13:57:43 2025",
+ "timestampMillis": "1760011063821",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct  9 13:57:52 2025",
+ "timestampMillis": "1760011072245",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct  9 13:57:52 2025",
+ "timestampMillis": "1760011072246",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct  9 13:57:52 2025",
+ "timestampMillis": "1760011072246",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct  9 13:57:52 2025",
+ "timestampMillis": "1760011072246",
+ "status": {
+  "cmdId": "f48407b0-8646-46ab-beb7-96b2c6e0fc17",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct  9 13:57:52 2025",
+ "timestampMillis": "1760011072349",
+ "status": {
+  "cmdId": "de40de9b-fac6-41e1-8a25-4f0681de6263",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct  9 13:57:52 2025",
+ "timestampMillis": "1760011072368",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/reports/v++_compile_Dummy_Comb_Circuit_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct  9 13:57:52 2025",
+ "timestampMillis": "1760011072368",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/reports/.db/v++_compile_Dummy_Comb_Circuit_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

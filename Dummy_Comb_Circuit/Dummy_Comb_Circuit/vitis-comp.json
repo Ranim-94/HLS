@@ -1,0 +1,9 @@
+{
+  "name": "Dummy_Comb_Circuit",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

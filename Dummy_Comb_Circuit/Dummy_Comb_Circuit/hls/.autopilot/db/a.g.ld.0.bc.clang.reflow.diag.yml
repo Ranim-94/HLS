@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_dummy_comb_circuit_ir
+Args:            
+  - Callee:          dummy_comb_circuit
+    DebugLoc:        { File: main_comb_circuit.c, Line: 5, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_dummy_comb_circuit_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

@@ -1,0 +1,78 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.37 seconds. CPU system time: 0.32 seconds. Elapsed time: 1.69 seconds; current allocated memory: 234.941 MB.
+INFO: [HLS 200-10] Analyzing design file 'main_comb_circuit.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.17 seconds. CPU system time: 0.31 seconds. Elapsed time: 0.52 seconds; current allocated memory: 236.473 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 12 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.86 seconds. CPU system time: 0.51 seconds. Elapsed time: 7.18 seconds; current allocated memory: 238.336 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 238.336 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 238.488 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 238.488 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.02 seconds; current allocated memory: 258.555 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 250.551 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'dummy_comb_circuit' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dummy_comb_circuit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.03 seconds; current allocated memory: 250.551 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 250.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dummy_comb_circuit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'dummy_comb_circuit/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dummy_comb_circuit/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dummy_comb_circuit/c' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dummy_comb_circuit/d' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'd' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dummy_comb_circuit' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dummy_comb_circuit'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 250.551 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 251.348 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.25 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.32 seconds; current allocated memory: 252.285 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dummy_comb_circuit.
+INFO: [VLOG 209-307] Generating Verilog RTL for dummy_comb_circuit.
+INFO: [HLS 200-789] **** Estimated Fmax: 1022.49 MHz
+INFO: [HLS 200-112] Total CPU user time: 3.84 seconds. Total CPU system time: 1.26 seconds. Total elapsed time: 9.98 seconds; peak allocated memory: 258.555 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 14s
