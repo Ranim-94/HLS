@@ -57,7 +57,7 @@ Logic gates doesn't react to input instantly, it takes some time in order correc
 \item When state of $a$ changes from 0 $\rightarrow$ 1, the output didn't appear instantly, it appears after some delay $t_p$
 
 	\begin{itemize}
-	\item During this period $t_p$, the output of the NAND gate in invalid and it shouldn't take into accounts
+	\item During this period $t_p$, the output of the NAND gate is invalid and it shouldn't take into accounts
 	\end{itemize}
 
 \item Same thing when state of $b$ changes from 1 $\rightarrow$ 0
@@ -199,6 +199,36 @@ The equivalent \verb|HLS| code is shown in \autoref{fig:combinational_circuit:HL
 \end{itemize}
 
 \newpage
+The truth table for this function is the following:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{a} & \textbf{b} & \textbf{c} & $\mathbf{d = ab + \bar{c}}$ \\
+\hline
+0 & 0 & 0 & \textbf{1} \\
+\hline
+0 & 0 & 1 & \textbf{0} \\
+\hline
+0 & 1 & 0 & \textbf{1} \\
+\hline
+0 & 1 & 1 & \textbf{0} \\
+\hline
+1 & 0 & 0 & \textbf{1} \\
+\hline
+1 & 0 & 1 & \textbf{0} \\
+\hline
+1 & 1 & 0 & \textbf{1} \\
+\hline
+1 & 1 & 1 & \textbf{1} \\
+\hline
+\end{tabular}
+\caption{Truth Table for $d = ab + \bar{c}$}
+\label{tab:truth_table_simple}
+\end{table}
+
+\newpage
 \subsection{Synthesis Report}
 
 After the function is synthesised using \verb|Vitis|, the report gives us 3 important part, shown in \autoref{fig:combinational_circuit:comb_circuit_report}.
@@ -230,6 +260,296 @@ After the function is synthesised using \verb|Vitis|, the report gives us 3 impo
 \item Interface: if for the function arguments part
 
 \end{itemize}
+
+
+\newpage
+\section{Functions in HLS}
+
+Functions (as programming functions we mean) plays an important rule in \verb|HLS|. There are some rules and some coding style we need to adopt in \verb|HLS|, that is different from standard \verb|C|
+
+\begin{itemize}
+
+\item Functions with system calls, that is which call the operating system are not allowed. They are not synthesiable
+
+	\begin{itemize}
+	\item Example: \verb|sleep()|, \verb|time()|, \verb|getc()|
+	\end{itemize}
+
+\item However, these functions are allowed in \textit{testbench program}
+
+\item \verb|Vitis| ignore functions that have system calls which only display data such as \verb|printf()|
+
+\end{itemize}
+
+\subsection{Top function and sub-functions}
+
+As we have seen in proejcts before, the top level function plays an important role in RTL design, since it becames the top level module after synthesis.\\
+
+A top level function can have several sub functions, and these sub functions are sysnthesised into blocks in the RTL desing, as shown in \autoref{fig:combinational_circuit:sub_functions}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/combinational_circuit/sub_functions}
+\caption{Top level function and sub-functions}
+\label{fig:combinational_circuit:sub_functions}
+\end{figure}
+
+When the top function is synthesised, the arguments of the function are synthesised into ports, and these port require interfaces.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/combinational_circuit/function_args_ports}
+\caption{Functions arguments to ports}
+\label{fig:combinational_circuit:function_args_ports}
+\end{figure}
+
+\begin{itemize}
+\item Review \ref{sub:port_interfaces} for more details
+\end{itemize}
+
+\newpage
+\subsection{Inline Functions}
+
+\verb|Vitis| IDE can do automatic inlining for small functions. The inline function can 
+
+\autoref{fig:combinational_circuit:inline_func_ex} presents an example of a \verb|HLS| code which uses inline function in the top function.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.65,frame]{Figures/combinational_circuit/inline_func_ex}
+\caption{Inline Function Example}
+\label{fig:combinational_circuit:inline_func_ex}
+\end{figure}
+
+\begin{itemize}
+
+\item $t_p = 0.978$ ns, and there is only 1 hardware module when the code is synthesised, since inlining merge these function in the top function, giving 1 hardware module
+
+\end{itemize}
+
+Now if we turn off the inlining feature using \verb|#pragma HLS INLINE off| in each of the definition of the function, we get:
+
+\begin{itemize}
+
+\item 3 hardware module when the code is synthesised
+
+\item In report directory under syn directory, we have 3 report files (\verb|.rp|) for each hardware module
+
+\end{itemize}
+
+ 
+\newpage
+\section{Dataflow}
+
+In this part we dive more in describing combinational circuit in \verb|HLS|, and introduce a graphical technique called \tbi{directed acyclic graph} (DAG) to describe such circuits. Let's first introduce some prerequiste concepts.\\
+
+Dataflow graph (DFG) is one of the common modelling techniques for computational systems, which describes movement of data from input to output. \autoref{fig:combinational_circuit:DFG_example} presents an example of DFG for both arithmetic and logical expression.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/combinational_circuit/DFG_example}
+\caption{DFG Example}
+\label{fig:combinational_circuit:DFG_example}
+\end{figure}
+
+\begin{itemize}
+
+\item Operator are represented by the nodes of the graph, and movement of data are represented by arcs of the graph
+
+\end{itemize}
+
+
+\underline{Graph Types:}\\
+
+
+A DFG without a loop or cycle is called acyclic DFG (ADFG) or directed acyclic graph (DAG).
+
+Now an ADFG can model a combinational circuit.\\
+
+\newpage
+\underline{Cyclic DFG to ADFG:}\\
+
+\verb|HLS| tool can convert a cyclic DFG to ADFG, by unrolling the loop or the cycle. \autoref{fig:combinational_circuit:graph_unrolling} presents an example of unrolling, where the loop is need to be executed 3 times.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/combinational_circuit/graph_unrolling}
+\caption{Graph unrolling example}
+\label{fig:combinational_circuit:graph_unrolling}
+\end{figure}
+
+\underline{DFG for if-else statement:}\\
+
+\autoref{fig:combinational_circuit:if_else_DFG} presents an example of DFG for an if-else statement
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/combinational_circuit/if_else_DFG}
+\caption{if-else DFG example}
+\label{fig:combinational_circuit:if_else_DFG}
+\end{figure}
+
+\begin{itemize}
+
+\item the code in \autoref{fig:combinational_circuit:if_else_DFG} can be modeled using DAG having 2 branches
+
+\item It is composed from 4 nodes: 2 for the $+$ operator, 1 for the $>$, and 1 for the select operator acting as a switch
+
+\item  if $s = 1$, then $t_1$ is passed to $x$, else $t_2$ is passed to $x$
+
+\end{itemize}
+
+\newpage
+The code in \autoref{fig:combinational_circuit:if_else_DFG} can turned to a \textit{cyclic} DFG as shown in \autoref{fig:combinational_circuit:if_else_DFG_cycle}. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/combinational_circuit/if_else_DFG_cycle}
+\caption{if-else DFG example with cycle}
+\label{fig:combinational_circuit:if_else_DFG_cycle}
+\end{figure}
+
+\begin{itemize}
+
+\item The cycle occurs because we have a variable $x$ used on both side of the expression
+
+\end{itemize}
+
+The \textit{cycle} or \textit{feedback} in \autoref{fig:combinational_circuit:if_else_DFG_cycle} is \tbi{explicit}, but we can have also \tbi{implicit feedback} as shown in \autoref{fig:combinational_circuit:if_else_DFG_cycle_2}, where $x$ keeps its last value if $a \, < \, 3$ (meaning the switch $s \, = \, 0$)  
+
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/combinational_circuit/if_else_DFG_cycle_2}
+\caption{if-else DFG example with implicit cycle}
+\label{fig:combinational_circuit:if_else_DFG_cycle_2}
+\end{figure}
+
+\newpage
+\section{Traffic Light Controller}
+
+In this section we see how to use \verb|HLS| to model some real world application which uses combinational circuit.
+
+
+\subsection{Presenting the Problem}
+
+\autoref{fig:combinational_circuit:traffic_light_system} presents the studied scenario
+ 
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/combinational_circuit/traffic_light_system}
+\caption{Traffic Light and their rules}
+\label{fig:combinational_circuit:traffic_light_system}
+\end{figure} 
+
+\begin{itemize}
+
+\item We have sensors along the road lines L,U,R and D
+
+	\begin{itemize}
+	\item Output of sensor is 0 when no vehicles
+	\end{itemize}
+
+\item Traffic light are presented in 2 corners of the street: north south (NS) and east west (EW)
+
+	\begin{itemize}
+	\item logic value 1 set the light to green
+	
+	\item 0 to red
+	\end{itemize}
+
+\end{itemize} 
+
+In the right hand side of \autoref{fig:combinational_circuit:traffic_light_system}, we have the rules in which light of EW or NS should be green or red, and based on these rules, \autoref{fig:combinational_circuit:traffic_light_table} present the logic circuit and the truth table also.
+
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/combinational_circuit/traffic_light_table}
+\caption{Traffic Light truth table}
+\label{fig:combinational_circuit:traffic_light_table}
+\end{figure}
+
+
+\subsection{Controller Desing}
+
+Given that we have the rules and the truth table, we desing the controller which implement such a system.
+
+The approach is to propose some logic circuit which model each rule in \autoref{fig:combinational_circuit:traffic_light_system}, then combine these circuits to model the traffic controller.\\
+
+\todo{Traffic Light Controller} \uti{Traffic Light Controller:}
+
+\begin{itemize}
+
+\item \textit{Source: course 1, section 6, video 7}
+
+\item \textit{To review this part later, when finish reviewing combinational logic (analysis and desing part)}
+
+\item \textit{The approach made by the instructor was using the rules of \autoref{fig:combinational_circuit:traffic_light_system}}
+
+	\begin{itemize}
+	\item \textit{Also these rules don't applied directly or mapped directly in all cases. I think there are some don't care conditions, but the instructor skipped this combinational design part}
+	\end{itemize}
+
+ 
+\item \textit{Need to see if I can desing same function using Karnugh map and logic minimization techinques, and obtain some different design, then compare the 2 approach}
+
+
+\end{itemize}
+
+\underline{Desing for rules:}
+
+\begin{itemize}
+
+\item \underline{Rule 1:} 
+
+
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+Row & L & R & U & D & Rule & EW & NS \\
+\hline
+0  & 0 & 0 & 0 & 0 & 5  & 1 & 0 \\
+\hline
+1  & 0 & 0 & 0 & 1 & 4  & 0 & 1 \\
+\hline
+2  & 0 & 0 & 1 & 0 & 4  & 0 & 1 \\
+\hline
+3  & 0 & 0 & 1 & 1 & 3  & 0 & 1 \\
+\hline
+4  & 0 & 1 & 0 & 0 & 2  & 1 & 0 \\
+\hline
+5  & 0 & 1 & 0 & 1 & 2  & 1 & 0 \\
+\hline
+6  & 0 & 1 & 1 & 0 & 2  & 1 & 0 \\
+\hline
+7  & 0 & 1 & 1 & 1 & 3  & 0 & 1 \\
+\hline
+8  & 1 & 0 & 0 & 0 & 2  & 1 & 0 \\
+\hline
+9  & 1 & 0 & 0 & 1 & 2  & 1 & 0 \\
+\hline
+10 & 1 & 0 & 1 & 0 & 2 & 1 & 0 \\
+\hline
+11 & 1 & 0 & 1 & 1 & 3 & 0 & 1 \\
+\hline
+12 & 1 & 1 & 0 & 0 & 1 & 1 & 0 \\
+\hline
+13 & 1 & 1 & 0 & 1 & 1 & 1 & 0 \\
+\hline
+14 & 1 & 1 & 1 & 0 & 1 & 1 & 0 \\
+\hline
+15 & 1 & 1 & 1 & 1 & 1 & 1 & 0 \\
+\hline
+\end{tabular}
+\caption{Traffic Controller Truth Table}
+\label{tab:traffic_controller_truth_table}
+\end{table}
 
 
 \newpage

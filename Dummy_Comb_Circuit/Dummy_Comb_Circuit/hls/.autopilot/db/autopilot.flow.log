@@ -357,3 +357,643 @@ Execute   close_project
 Execute     close_solution 
 Execute       cleanup_all 
 Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /opt/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /opt/Xilinx/2025.1/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls opened at Thu Oct 16 09:55:04 CEST 2025
+Execute       source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+Execute       set_part xc7a35t-cpg236-1 
+Execute         create_platform xc7a35t-cpg236-1 -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/2025.1/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+Command         create_platform done; 0.42 sec.
+Execute         source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute         config_compile -quiet -complex-mul-dsp=0 
+Command       set_part done; 0.51 sec.
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7)
+Execute         add_files /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c 
+INFO: [HLS 200-10] Adding design file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8)
+Execute         set_top dummy_comb_circuit 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1)
+Execute         set_part xc7a35tcpg236-1 
+Execute           create_platform xc7a35tcpg236-1 -board  
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.18 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.19 sec.
+Execute       write_component -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json
+Command     open_solution done; 0.73 sec.
+Command   open_component done; 0.74 sec.
+Execute   apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file package-ip 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::get_vpp_package_output_file
+Execute   export_design -flow none 
+Execute     config_export -flow=none 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name artix7 -data parts 
+Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=dummy_comb_circuit xml_exists=0
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.rtl_wrap.cfg.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.rtl_wrap.cfg.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.rtl_wrap.cfg.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.tbgen.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.tbgen.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.tbgen.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.tbgen.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/cosimDB.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to dummy_comb_circuit
+INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=1 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='dummy_comb_circuit
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.tbgen.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.rtl_wrap.cfg.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.compgen.dataonly.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.tbgen.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.constraint.tcl 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/dummy_comb_circuit.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs pwd=/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name artix7 -data parts 
+Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute     source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/impl/ip/pack.sh
+Execute     send_msg_by_id INFO @200-802@%s Dummy_Comb_Circuit/dummy_comb_circuit.zip 
+INFO: [HLS 200-802] Generated output file Dummy_Comb_Circuit/dummy_comb_circuit.zip
+Command   export_design done; 12.14 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /opt/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /opt/Xilinx/2025.1/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls opened at Mon Oct 27 09:20:14 CET 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7)
+Execute         add_files /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c 
+INFO: [HLS 200-10] Adding design file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8)
+Execute         set_top dummy_comb_circuit 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1)
+Execute         set_part xc7a35tcpg236-1 
+Execute           create_platform xc7a35tcpg236-1 -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/2025.1/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+Command           create_platform done; 0.43 sec.
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.51 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.54 sec.
+Execute       write_component -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json
+Command     open_solution done; 0.57 sec.
+Command   open_component done; 0.57 sec.
+Execute   apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.6 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /opt/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /opt/Xilinx/2025.1/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls opened at Mon Oct 27 09:24:59 CET 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7)
+Execute         add_files /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c 
+INFO: [HLS 200-10] Adding design file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8)
+Execute         set_top dummy_comb_circuit 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1)
+Execute         set_part xc7a35tcpg236-1 
+Execute           create_platform xc7a35tcpg236-1 -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/2025.1/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+Command           create_platform done; 0.4 sec.
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.48 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.51 sec.
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.O=0' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(3) 
+INFO: [HLS 200-1465] Applying config ini 'csim.O=0' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(3)
+Execute         config_csim -O=0 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.clean=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(4)
+Execute         config_csim -clean=1 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.setup=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(2) 
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(2)
+Execute         config_csim -setup=1 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute       write_component -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json
+Command     open_solution done; 0.55 sec.
+Command   open_component done; 0.56 sec.
+Execute   apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.47 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /opt/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /opt/Xilinx/2025.1/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls opened at Mon Oct 27 09:36:19 CET 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7)
+Execute         add_files /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c 
+INFO: [HLS 200-10] Adding design file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8)
+Execute         set_top dummy_comb_circuit 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1)
+Execute         set_part xc7a35tcpg236-1 
+Execute           create_platform xc7a35tcpg236-1 -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/2025.1/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+Command           create_platform done; 0.43 sec.
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.52 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.54 sec.
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.O=0' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(3) 
+INFO: [HLS 200-1465] Applying config ini 'csim.O=0' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(3)
+Execute         config_csim -O=0 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.clean=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(4)
+Execute         config_csim -clean=1 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.setup=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(2) 
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(2)
+Execute         config_csim -setup=1 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute       write_component -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json
+Command     open_solution done; 0.58 sec.
+Command   open_component done; 0.59 sec.
+Execute   apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.45 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /opt/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /opt/Xilinx/2025.1/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls opened at Mon Oct 27 09:38:31 CET 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7)
+Execute         add_files /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c 
+INFO: [HLS 200-10] Adding design file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8)
+Execute         set_top dummy_comb_circuit 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1)
+Execute         set_part xc7a35tcpg236-1 
+Execute           create_platform xc7a35tcpg236-1 -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/2025.1/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+Command           create_platform done; 0.4 sec.
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.49 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.51 sec.
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.O=0' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(3) 
+INFO: [HLS 200-1465] Applying config ini 'csim.O=0' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(3)
+Execute         config_csim -O=0 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.clean=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(4)
+Execute         config_csim -clean=1 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.setup=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(2) 
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(2)
+Execute         config_csim -setup=1 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute       write_component -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json
+Command     open_solution done; 0.55 sec.
+Command   open_component done; 0.55 sec.
+Execute   apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.42 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /opt/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /opt/Xilinx/2025.1/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls opened at Mon Oct 27 09:40:29 CET 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=main_comb_circuit.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(7)
+Execute         add_files /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c 
+INFO: [HLS 200-10] Adding design file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.c' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(9)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=comb_circuit_tb.h' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(10)
+Execute         add_files -tb /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h 
+INFO: [HLS 200-10] Adding test bench file '/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.h' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dummy_comb_circuit' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(8)
+Execute         set_top dummy_comb_circuit 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(1)
+Execute         set_part xc7a35tcpg236-1 
+Execute           create_platform xc7a35tcpg236-1 -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/2025.1/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+Command           create_platform done; 0.4 sec.
+Execute           source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.51 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.52 sec.
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg
+Execute       apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.O=0' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(3) 
+INFO: [HLS 200-1465] Applying config ini 'csim.O=0' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(3)
+Execute         config_csim -O=0 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.clean=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(4)
+Execute         config_csim -clean=1 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.setup=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(2) 
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg(2)
+Execute         config_csim -setup=1 
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+Execute       write_component -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg -config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/vitis-comp.json
+Command     open_solution done; 0.56 sec.
+Command   open_component done; 0.57 sec.
+Execute   apply_ini /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.44 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

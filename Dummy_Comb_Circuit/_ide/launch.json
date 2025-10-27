@@ -1,0 +1,37 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Dummy_Comb_Circuit",
+			"type": "gdb",
+			"request": "launch",
+			"target": "${workspaceFolder}/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/csim/build/csim.exe",
+			"cwd": "${workspaceFolder}/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/csim/build",
+			"gdbpath": "/usr/bin/gdb",
+			"debugger_args": [
+				"--init-command=${workspaceFolder}/.gdbinit"
+			],
+			"valuesFormatting": "prettyPrinters",
+			"env": {
+				"XILINX_VITIS": "/opt/Xilinx/2025.1/Vitis",
+				"LD_LIBRARY_PATH": "/opt/Xilinx/2025.1/Vitis/lnx64/tools/fpo_v7_1:/opt/Xilinx/2025.1/Vitis/lnx64/tools/fft_v9_1:/opt/Xilinx/2025.1/Vitis/lnx64/tools/fir_v7_0:/opt/Xilinx/2025.1/Vitis/lnx64/tools/dds_v6_0:/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/lib:/opt/Xilinx/2025.1/Vitis/lib/lnx64.o/Ubuntu:/usr/lib/x86_64-linux-gnu:${env:LD_LIBRARY_PATH}"
+			}
+		},
+		{
+			"name": "Dummy_Comb_Circuit_Copy1",
+			"type": "gdb",
+			"request": "launch",
+			"target": "${workspaceFolder}/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/csim/build/csim.exe",
+			"cwd": "${workspaceFolder}/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/csim/build",
+			"gdbpath": "/usr/bin/gdb",
+			"debugger_args": [
+				"--init-command=${workspaceFolder}/.gdbinit"
+			],
+			"valuesFormatting": "prettyPrinters",
+			"env": {
+				"XILINX_VITIS": "/opt/Xilinx/2025.1/Vitis",
+				"LD_LIBRARY_PATH": "/opt/Xilinx/2025.1/Vitis/lnx64/tools/fpo_v7_1:/opt/Xilinx/2025.1/Vitis/lnx64/tools/fft_v9_1:/opt/Xilinx/2025.1/Vitis/lnx64/tools/fir_v7_0:/opt/Xilinx/2025.1/Vitis/lnx64/tools/dds_v6_0:/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/lib:/opt/Xilinx/2025.1/Vitis/lib/lnx64.o/Ubuntu:/usr/lib/x86_64-linux-gnu:${env:LD_LIBRARY_PATH}"
+			}
+		}
+	]
+}

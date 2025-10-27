@@ -274,7 +274,7 @@ The functions states that the input (switche) is directly connected to the LED. 
 
 Now of course what is missing from the \verb|C| function in \autoref{fig:input_output:C_function_switcheLED} is the \verb|pragma| directive so we can add ports and interfaces. Before adding them, we discusse in more details thes concepts: \textit{port and interfaces} .\\
 
-Each hardware module can be described by 1 \verb|C| function, or multiple \verb|C| function calling each other. \tbi{Only one function can be the top function which represents our hardware modukle}, and the other functions need to be called via this top function.\\
+Each hardware module can be described by 1 \verb|C| function, or multiple \verb|C| function calling each other. \tbi{Only one function can be the top function which represents our hardware module}, and the other functions need to be called via this top function.\\
 
 \autoref{fig:input_output:function_call_graph} shows a typical call graph, where the \tbi{functions arguments represent the hardware ports}, through which the module communication with the reste of the systme through a spefic protocol (serial communication, synchronise communication,$\cdots$).
 

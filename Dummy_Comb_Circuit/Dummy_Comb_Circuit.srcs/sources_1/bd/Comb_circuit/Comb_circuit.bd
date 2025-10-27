@@ -1,0 +1,103 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE092EB12E092EB12",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Dummy_Comb_Circuit.gen/sources_1/bd/Comb_circuit",
+      "name": "Comb_circuit",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "dummy_comb_circuit_0": ""
+    },
+    "ports": {
+      "a": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "b": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "d": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "c": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "dummy_comb_circuit_0": {
+        "vlnv": "xilinx.com:hls:dummy_comb_circuit:1.0",
+        "ip_revision": "2114305855",
+        "xci_name": "Comb_circuit_dummy_comb_circuit_0_0",
+        "xci_path": "ip/Comb_circuit_dummy_comb_circuit_0_0/Comb_circuit_dummy_comb_circuit_0_0.xci",
+        "inst_hier_path": "dummy_comb_circuit_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "a_0_1": {
+        "ports": [
+          "a",
+          "dummy_comb_circuit_0/a"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b",
+          "dummy_comb_circuit_0/b"
+        ]
+      },
+      "c_0_1": {
+        "ports": [
+          "c",
+          "dummy_comb_circuit_0/c"
+        ]
+      },
+      "dummy_comb_circuit_0_d": {
+        "ports": [
+          "dummy_comb_circuit_0/d",
+          "d"
+        ]
+      }
+    }
+  }
+}

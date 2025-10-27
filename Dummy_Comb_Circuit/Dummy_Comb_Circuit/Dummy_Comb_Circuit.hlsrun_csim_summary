@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/Dummy_Comb_Circuit.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Oct 27 09:40:26 2025",
+ "timestampMillis": "1761554426735",
+ "buildStep": {
+  "cmdId": "ef53970c-0b3e-4c0d-9711-b495a67f0071",
+  "name": "vitis-run",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/logs/Dummy_Comb_Circuit.steps.log",
+  "commandLine": "/opt/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg --config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg --work_dir Dummy_Comb_Circuit ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg",
+   "--work_dir",
+   "Dummy_Comb_Circuit"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Oct 27 09:40:26 2025",
+ "timestampMillis": "1761554426735",
+ "status": {
+  "cmdId": "ef53970c-0b3e-4c0d-9711-b495a67f0071",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Oct 27 09:40:29 2025",
+ "timestampMillis": "1761554429916",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dummy_comb_circuit",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Oct 27 09:40:29 2025",
+ "timestampMillis": "1761554429917",
+ "buildStep": {
+  "cmdId": "1a3cd880-5238-4bed-8ee2-b6ab81534fa9",
+  "name": "",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Oct 27 09:40:29 2025",
+ "timestampMillis": "1761554429917",
+ "status": {
+  "cmdId": "1a3cd880-5238-4bed-8ee2-b6ab81534fa9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Oct 27 09:40:30 2025",
+ "timestampMillis": "1761554430358",
+ "status": {
+  "cmdId": "1a3cd880-5238-4bed-8ee2-b6ab81534fa9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Oct 27 09:40:30 2025",
+ "timestampMillis": "1761554430432",
+ "status": {
+  "cmdId": "ef53970c-0b3e-4c0d-9711-b495a67f0071",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Oct 27 09:40:30 2025",
+ "timestampMillis": "1761554430432",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Oct 27 09:40:30 2025",
+ "timestampMillis": "1761554430432",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

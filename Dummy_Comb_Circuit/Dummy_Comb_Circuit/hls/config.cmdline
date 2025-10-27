@@ -1,3 +1,3 @@
 relativeroot=/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit
-original_argv=-c --mode hls --config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg --work_dir Dummy_Comb_Circuit 
+original_argv=--mode hls --csim --config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls-debug.cfg --config /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/hls_config.cfg --work_dir Dummy_Comb_Circuit 
 

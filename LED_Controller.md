@@ -203,9 +203,11 @@ Now we need to connect the output port `LED[7:0]` to the FPGA pins. This will be
 
 ### Generating Internal Files and HDL Wrapper
 
-1. Under `Sources`, right click `LED_Controller.bd`
-   1. `Generate Output Products`: this create some internal files required for the Vivado workflow
-   2. Then right click again and select for `Create HDL Wrapper`. This create a top file that encompasses all our desing
+Under `Sources`, right click `LED_Controller.bd`
+1. `Generate Output Products` 
+   1. this creates some internal files required for the Vivado workflow
+2. Then right click again and select for `Create HDL Wrapper`.
+   1. This create a top file that encompasses all our desing
  
 ### Generating Bitstream File
 

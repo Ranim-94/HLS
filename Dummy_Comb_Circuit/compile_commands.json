@@ -11,5 +11,17 @@
       "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c"
     ],
     "file": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/main_comb_circuit.c"
+  },
+  {
+    "directory": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit",
+    "arguments": [
+      "/opt/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.1/Vitis/include",
+      "-c",
+      "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c"
+    ],
+    "file": "/home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/comb_circuit_tb.c"
   }
 ]
