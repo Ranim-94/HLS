@@ -1,0 +1,115 @@
+
+
+================================================================
+== Synthesis Summary Report of 'leading_one'
+================================================================
++ General Information: 
+    * Date:           Sun Nov 16 15:58:29 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        Leading_One_Vitis
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+----------+-----+
+    |    Modules    | Issue|      |     Latency     | Iteration|         | Trip |          |      |    |   |          |     |
+    |    & Loops    | Type | Slack| (cycles)|  (ns) |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT   | URAM|
+    +---------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+----------+-----+
+    |+ leading_one  |     -|  7.90|        0|  0.000|         -|        1|     -|        no|     -|   -|  -|  77 (~0%)|    -|
+    +---------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+-----------+----------+
+| Port      | Mode    | Direction | Bitwidth |
++-----------+---------+-----------+----------+
+| a         | ap_none | in        | 9        |
+| ap_return |         | out       | 5        |
++-----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+------------+
+| Argument | Direction | Datatype   |
++----------+-----------+------------+
+| a        | in        | ap_uint<9> |
+| return   | out       | ap_int<5>  |
++----------+-----------+------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| a        | a            | port    |
+| return   | ap_return    | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------+-----+--------+-------------+-----------+------------------------+---------+
+| Name                      | DSP | Pragma | Variable    | Op        | Impl                   | Latency |
++---------------------------+-----+--------+-------------+-----------+------------------------+---------+
+| + leading_one             | 0   |        |             |           |                        |         |
+|   index_fu_160_p2         |     |        | index       | xor       | auto                   | 0       |
+|   retval_8_fu_314_p18     |     |        | select_ln15 | select    | auto_sel               | 0       |
+|   xor_ln17_fu_174_p2      |     |        | xor_ln17    | xor       | auto                   | 0       |
+|   and_ln20_fu_180_p2      |     |        | and_ln20    | and       | auto                   | 0       |
+|   or_ln20_fu_186_p2       |     |        | or_ln20     | or        | auto                   | 0       |
+|   xor_ln20_fu_192_p2      |     |        | xor_ln20    | xor       | auto                   | 0       |
+|   and_ln23_fu_198_p2      |     |        | and_ln23    | and       | auto                   | 0       |
+|   or_ln23_fu_204_p2       |     |        | or_ln23     | or        | auto                   | 0       |
+|   xor_ln23_fu_210_p2      |     |        | xor_ln23    | xor       | auto                   | 0       |
+|   and_ln26_fu_216_p2      |     |        | and_ln26    | and       | auto                   | 0       |
+|   or_ln26_fu_222_p2       |     |        | or_ln26     | or        | auto                   | 0       |
+|   xor_ln26_fu_228_p2      |     |        | xor_ln26    | xor       | auto                   | 0       |
+|   and_ln29_fu_234_p2      |     |        | and_ln29    | and       | auto                   | 0       |
+|   or_ln29_fu_240_p2       |     |        | or_ln29     | or        | auto                   | 0       |
+|   xor_ln29_fu_246_p2      |     |        | xor_ln29    | xor       | auto                   | 0       |
+|   and_ln32_fu_252_p2      |     |        | and_ln32    | and       | auto                   | 0       |
+|   or_ln32_fu_258_p2       |     |        | or_ln32     | or        | auto                   | 0       |
+|   xor_ln32_fu_264_p2      |     |        | xor_ln32    | xor       | auto                   | 0       |
+|   and_ln35_fu_270_p2      |     |        | and_ln35    | and       | auto                   | 0       |
+|   or_ln35_fu_276_p2       |     |        | or_ln35     | or        | auto                   | 0       |
+|   xor_ln35_fu_282_p2      |     |        | xor_ln35    | xor       | auto                   | 0       |
+|   and_ln38_fu_288_p2      |     |        | and_ln38    | and       | auto                   | 0       |
+|   sparsemux_19_8_5_1_1_U1 |     |        | retval_8    | sparsemux | onehotencoding_realdef | 0       |
++---------------------------+-----+--------+-------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+------------------------------------------------+
+| Type      | Options                  | Location                                       |
++-----------+--------------------------+------------------------------------------------+
+| INTERFACE | ap_none port=a           | main_leading_one.cpp:10 in leading_one, a      |
+| INTERFACE | ap_ctrl_none port=return | main_leading_one.cpp:11 in leading_one, return |
++-----------+--------------------------+------------------------------------------------+
+
+

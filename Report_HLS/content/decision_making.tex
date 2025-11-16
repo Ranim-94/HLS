@@ -249,6 +249,105 @@ The \verb|HLS| tool can the sythesise the code. A MUX can be used to implement t
 \label{fig:conditions:quiz_decoder}
 \end{figure}
 
+\newpage
+\section{Exercice: Leading One}
+
+Now after completing the understanding of coders,MUX and decision making process, we take an exercice to apply these concepts.\\
+
+\underline{Given:} 
+
+Desing a combinational logic circuit that returns the position of leading 1 in an input of 9 bit number. The circuit returns -1 if no 1 exist in its binary representation. Examples are given in \autoref{fig:conditions:example_leading_1}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.40,frame]{Figures/conditions/example_leading_1}
+\caption{Some examples for the needed circuit}
+\label{fig:conditions:example_leading_1}
+\end{figure}
+
+\begin{itemize}
+
+\item Note that by leading 1 we mean the 1 in the MSB position
+
+\item So if we have multiple 1 in the binary representation as in the $\mathrm{1}^\mathrm{st}$ example in \autoref{fig:conditions:example_leading_1}, we return the 1 in the MSB position
+
+
+\end{itemize}
+
+\newpage
+\underline{Solution:}
+
+$\mathrm{1}^\mathrm{st}$ we present the \verb|HLS| code in \autoref{fig:conditions:leading_1_hls}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.40,frame]{Figures/conditions/leading_1_hls}
+\caption{HLS code for leading 1 circuit}
+\label{fig:conditions:leading_1_hls}
+\end{figure}
+
+\begin{itemize}
+
+\item It checks for each bit position in \verb|a| if 1 exist, starting from the MSB position, that is from 8
+
+\item If not, it moves to the next bit poistion using \verb|elseif| statement
+
+\end{itemize}
+
+$\mathrm{2}^\mathrm{nd}$ in \autoref{fig:conditions:leading_1_circuit}, we have the logic circuit representation
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.40,frame]{Figures/conditions/leading_1_circuit}
+\caption{Logic circuit for leading 1 circuit}
+\label{fig:conditions:leading_1_circuit}
+\end{figure}
+
+\newpage
+
+Some notes regarding \autoref{fig:conditions:leading_1_circuit}:
+
+\begin{itemize}
+
+\item There are 2 logic circuit representation possible in \autoref{fig:conditions:leading_1_circuit}
+
+\item The $\mathrm{1}^\mathrm{st}$ one at the right, uses a MUX and a combinational circuit which gives the select lines for the MUX
+
+	\begin{itemize}
+	\item The input for the MUX are the index value of 9 bit binary number from $0 \rightarrow 8$, and -1
+	
+	\item The combinational circuit takes as input the 9 bit binary number, and provide the select line for the MUX so it can passes the index to the output	
+	
+	\end{itemize}
+
+\item A $\mathrm{2}^\mathrm{nd}$ representation is shown at the right hand side, uses 4 $\left(\, 2 \, \times \, 1 \,\right)$ MUX. 
+
+	\begin{itemize}
+	\item Each MUX determine 1 bit in the 4 binary output
+	\end{itemize}
+
+\end{itemize}
+
+\uti{MUX role and interpretation:} \todo{MUX role and interpretation}
+
+\begin{itemize}
+
+\item \textit{In this exercice, and in the system of \autoref{fig:conditions:leading_1_circuit}, there are some new concpet in the usage of a MUX that I didn't seen or recall when I took the MUX in logic circuit course}
+
+	\begin{itemize}
+	\item \textit{I will revisit this later after reviewing the theory part, and start with VHDL course}
+	\end{itemize}
+
+
+\item \textit{Regarding the hardware representation in \autoref{fig:conditions:leading_1_circuit}: the $\mathrm{2}^\mathrm{nd}$ circuit I didn't understand it how he comes up with it}
+
+	\begin{itemize}
+	\item \textit{To get it back later once I review the theory}
+	\end{itemize}
+
+\end{itemize}
 
 
 

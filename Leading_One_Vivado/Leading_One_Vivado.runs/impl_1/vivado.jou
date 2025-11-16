@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Nov 16 16:37:10 2025
+# Process ID         : 116522
+# Current directory  : /home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.runs/impl_1
+# Command line       : vivado -log leading_one_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source leading_one_wrapper.tcl -notrace
+# Log file           : /home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.runs/impl_1/leading_one_wrapper.vdi
+# Journal file       : /home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.runs/impl_1/vivado.jou
+# Running On         : lenovo-Legion-5-17ACH6H
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics
+# CPU Frequency      : 4235.270 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14496 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 16644 MB
+# Available Virtual  : 10949 MB
+#-----------------------------------------------------------
+source leading_one_wrapper.tcl -notrace

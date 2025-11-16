@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/./sim/autowrap/testbench/main_leading_one.cpp_pre.cpp.tb.cpp

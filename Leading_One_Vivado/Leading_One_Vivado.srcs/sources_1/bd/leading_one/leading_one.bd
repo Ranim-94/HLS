@@ -1,0 +1,86 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3577D4E629B028C2",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Leading_One_Vivado.gen/sources_1/bd/leading_one",
+      "name": "leading_one",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "leading_one_0": ""
+    },
+    "ports": {
+      "input_nb": {
+        "type": "data",
+        "direction": "I",
+        "left": "8",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "index_lead_one": {
+        "type": "data",
+        "direction": "O",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "leading_one_0": {
+        "vlnv": "xilinx.com:hls:leading_one:1.0",
+        "ip_revision": "2114350924",
+        "xci_name": "leading_one_leading_one_0_0",
+        "xci_path": "ip/leading_one_leading_one_0_0/leading_one_leading_one_0_0.xci",
+        "inst_hier_path": "leading_one_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "a_0_1": {
+        "ports": [
+          "input_nb",
+          "leading_one_0/a"
+        ]
+      },
+      "ap_rst_0_1": {
+        "ports": [
+          "ap_rst_0",
+          "leading_one_0/ap_rst"
+        ]
+      },
+      "leading_one_0_ap_return": {
+        "ports": [
+          "leading_one_0/ap_return",
+          "index_lead_one"
+        ]
+      }
+    }
+  }
+}

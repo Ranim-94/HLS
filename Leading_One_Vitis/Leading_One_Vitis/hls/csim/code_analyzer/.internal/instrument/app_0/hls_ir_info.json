@@ -1,0 +1,122 @@
+{
+    "top_level_hw_fn_id": 385,
+    "functions": {
+        "200": {
+            "fn_id": 200,
+            "mangled_name": "_GLOBAL__sub_I_leading_one_tb.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_leading_one_tb",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/leading_one_tb.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "201": {
+            "fn_id": 201,
+            "mangled_name": "__cxx_global_var_init",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/leading_one_tb.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "379": {
+            "fn_id": 379,
+            "mangled_name": "_GLOBAL__sub_I_main_leading_one.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_main_leading_one",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/main_leading_one.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "380": {
+            "fn_id": 380,
+            "mangled_name": "__cxx_global_var_init.2",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/main_leading_one.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "381": {
+            "fn_id": 381,
+            "mangled_name": "_GLOBAL__sub_I_main_leading_one.cpp.5",
+            "fully_qualified_name": "_GLOBAL__sub_I_main_leading_one",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/main_leading_one.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "382": {
+            "fn_id": 382,
+            "mangled_name": "__cxx_global_var_init.6",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/main_leading_one.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "383": {
+            "fn_id": 383,
+            "mangled_name": "__dtor__ZStL8__ioinit",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/opt/Xilinx/2025.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "385": {
+            "fn_id": 385,
+            "mangled_name": "_Z11leading_one7ap_uintILi9EE",
+            "fully_qualified_name": "leading_one",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/main_leading_one.cpp",
+                "line": 6,
+                "column": 1
+            }
+        }
+    },
+    "loops": {},
+    "used_types": [
+        {
+            "type_name": "Init",
+            "dwarf_tag": "class",
+            "count": 3
+        },
+        {
+            "type_name": "ap_int",
+            "dwarf_tag": "struct",
+            "count": 1
+        }
+    ]
+}

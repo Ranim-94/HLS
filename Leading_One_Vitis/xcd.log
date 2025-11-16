@@ -1,0 +1,28 @@
+Sun Nov 16 16:03:22 2025: Running xcd server. This server was built by gradle.
+Sun Nov 16 16:03:22 2025: Server was asked to start on port: '38445'
+Sun Nov 16 16:03:22 2025: Server is using token UUID: '64136bec-c2fd-11f0-af61-c83a35bd6ae5'
+Sun Nov 16 16:03:22 2025: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Nov 16 16:03:22 2025: Attempting to start server on port '38445'
+Sun Nov 16 16:03:22 2025: XCD main fifo: created main fifo '/tmp/xcdmain64136bec-c2fd-11f0-af61-c83a35bd6ae5', fd read = 11
+Sun Nov 16 16:03:22 2025: Running Dispatch Server
+Sun Nov 16 16:03:22 2025: Version 2.2.0
+Sun Nov 16 16:03:22 2025: Dispatch Server: Accepted socket connection from client
+Sun Nov 16 16:03:22 2025: Starting Socket connection
+Sun Nov 16 16:03:22 2025: EXCHANGE_TOKEN received, server token: 64136bec-c2fd-11f0-af61-c83a35bd6ae5, passed token: 64136bec-c2fd-11f0-af61-c83a35bd6ae5
+Sun Nov 16 16:03:22 2025: SESSION_MGR: creating session with session uuid: '0075c9fc-0a78-49fe-a4da-3c6ac887da40' and name 'Code Analyzer'
+Sun Nov 16 16:03:22 2025: KERNEL_SVC: creating session with uuid: '0075c9fc-0a78-49fe-a4da-3c6ac887da40' and name 'Code Analyzer'
+Sun Nov 16 16:03:22 2025: GUIDANCE_SMGR: creating guidance session with uuid: '0075c9fc-0a78-49fe-a4da-3c6ac887da40' and name 'Code Analyzer'
+Sun Nov 16 16:03:25 2025: SESSION_MGR: closing session for UUID '0075c9fc-0a78-49fe-a4da-3c6ac887da40' with name ''
+Sun Nov 16 16:03:25 2025: KERNEL_SVC: closing session for UUID '0075c9fc-0a78-49fe-a4da-3c6ac887da40' with name ''
+Sun Nov 16 16:03:25 2025: GUIDANCE_SMGR: closing session for UUID '0075c9fc-0a78-49fe-a4da-3c6ac887da40' with name ''
+Sun Nov 16 16:03:25 2025: STOP_SERVER received, server token: 64136bec-c2fd-11f0-af61-c83a35bd6ae5, passed token: 64136bec-c2fd-11f0-af61-c83a35bd6ae5
+Sun Nov 16 16:03:25 2025: Socket received request to stop server.
+Sun Nov 16 16:03:25 2025: Dispatch Server: do_await_stop
+Sun Nov 16 16:03:25 2025: Dispatch Server: stopping mainFifo_
+Sun Nov 16 16:03:25 2025: XCD main fifo: Stopping
+Sun Nov 16 16:03:25 2025: XCD main fifo: do_read error code: Operation canceled
+Sun Nov 16 16:03:25 2025: XCD main fifo: bytes_transferred: 0
+Sun Nov 16 16:03:25 2025: SERVER: destructor for server bound to port 38445
+Sun Nov 16 16:03:25 2025: XCD main fifo: Good unlink of /tmp/xcdmain64136bec-c2fd-11f0-af61-c83a35bd6ae5
+Sun Nov 16 16:03:25 2025: Server exiting with status 0.
+Sun Nov 16 16:03:25 2025: Closing log file.

@@ -10,7 +10,7 @@
   - [Building LED Controller Project](#building-led-controller-project)
     - [Selecting Top Functions](#selecting-top-functions)
     - [Running Simulation](#running-simulation)
-    - [Exporting Design](#exporting-design)
+    - [Generating IP Package](#generating-ip-package)
   - [Vivado and Generating Bitstream file](#vivado-and-generating-bitstream-file)
     - [Creating a projects in Vivado](#creating-a-projects-in-vivado)
     - [Exporting IP to Vivado](#exporting-ip-to-vivado)
@@ -117,13 +117,13 @@ Under `C SYNTHESIS` in the flow navigator, we can see a REPORT for our synthesis
 <p><strong>Figure 7:</strong> LED_Controller Component directory hierarchy </p>
 </div>
 
-In general, HLS component is structured as follows: workspace/component/component/hls/, that's why we see `LED_Controller_Vitis` twice. Inside `hls` directory, there is a `syn` folder containing:
-- verilog and vhdl folder contains the output of the RTL files
-- Report Folder
+In general, `HLS` component is structured as follows: workspace/component/component/hls/, that's why we see `LED_Controller_Vitis` twice. Inside `hls` directory, there is a `syn` folder containing:
+- `verilog` and `vhdl` folder contains the output of the RTL files
+- `Report` Folder
 
 Read [Output of C Synthesis](https://docs.amd.com/r/en-US/ug1399-vitis-hls/Output-of-C-Synthesis) for more information.
 
-### Exporting Design
+### Generating IP Package
 
 The final step in the HLS component flow is to package the RTL design into a form that can be used by other tools in the design flow, such as in the Vivado Design Suite as part of a larger system design.
 
@@ -131,7 +131,7 @@ Click the `Package` command in the Flow Navigator to export the RTL as a `Vivado
 
 Inside `LED_Controller_Vitis` (the 2nd one), we will have a package named `led_ON.zip`, which takes by default the name of the specified top level function.
 
-<u>Note:</u>See [Reference Pacakagin Desing](https://docs.amd.com/r/en-US/ug1399-vitis-hls/Packaging-the-RTL-Design) in case for more details.
+<u>Note:</u> See [Reference Packaging Desing](https://docs.amd.com/r/en-US/ug1399-vitis-hls/Packaging-the-RTL-Design) for more details.
 
 ## Vivado and Generating Bitstream file
 

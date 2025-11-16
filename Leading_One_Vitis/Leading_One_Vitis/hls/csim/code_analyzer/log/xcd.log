@@ -1,0 +1,2 @@
+XILINX_VITIS=/opt/Xilinx/2025.1/Vitis
+cmdline: /opt/Xilinx/2025.1/Vitis/bin/xcd -p 38445 -t 64136bec-c2fd-11f0-af61-c83a35bd6ae5

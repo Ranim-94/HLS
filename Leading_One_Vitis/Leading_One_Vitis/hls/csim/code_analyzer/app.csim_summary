@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Nov 16 16:03:22 2025",
+ "timestampMillis": "1763305402505",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Nov 16 16:03:22 2025",
+ "timestampMillis": "1763305402505",
+ "buildStep": {
+  "cmdId": "64f935be-c2fd-11f0-af61-c83a35bd6ae5",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Nov 16 16:03:22 2025",
+ "timestampMillis": "1763305402506",
+ "status": {
+  "cmdId": "64f935be-c2fd-11f0-af61-c83a35bd6ae5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Nov 16 16:03:25 2025",
+ "timestampMillis": "1763305405748",
+ "status": {
+  "cmdId": "64f935be-c2fd-11f0-af61-c83a35bd6ae5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Nov 16 16:03:25 2025",
+ "timestampMillis": "1763305405749",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "64f935be-c2fd-11f0-af61-c83a35bd6ae5"
+ }
+}
+</ENTRY>

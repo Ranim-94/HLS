@@ -1,0 +1,12 @@
+<pragmas>
+<pragma file="main_leading_one.cpp" line="10" pragmaType="interface" parentfunction="leading_one" mode="ap_none" port="a" name="" register="0"/>
+<pragma file="main_leading_one.cpp" line="11" pragmaType="interface" parentfunction="leading_one" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<9, false>::ap_bit_ref(ap_int_base<9, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="534" pragmaType="inline" parentfunction="_ZN8ssdm_intILi5ELb1EEC2EDq5_i" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<9, false>::operator bool() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<9, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<9, false>(ap_bit_ref<9, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<5>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+</pragmas>

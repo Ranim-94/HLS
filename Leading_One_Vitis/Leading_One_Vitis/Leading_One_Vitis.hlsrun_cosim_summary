@@ -1,0 +1,227 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/Leading_One_Vitis.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Nov 16 16:01:52 2025",
+ "timestampMillis": "1763305312768",
+ "buildStep": {
+  "cmdId": "49966175-94fc-471b-848c-cab8f69e4ae6",
+  "name": "vitis-run",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/logs/Leading_One_Vitis.steps.log",
+  "commandLine": "/opt/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --cosim --config /home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/hls_config.cfg --work_dir Leading_One_Vitis ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/hls_config.cfg",
+   "--work_dir",
+   "Leading_One_Vitis"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Nov 16 16:01:52 2025",
+ "timestampMillis": "1763305312768",
+ "status": {
+  "cmdId": "49966175-94fc-471b-848c-cab8f69e4ae6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Nov 16 16:01:56 2025",
+ "timestampMillis": "1763305316149",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "leading_one",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/main_leading_one.cpp",
+     "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/leading_one.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Nov 16 16:01:56 2025",
+ "timestampMillis": "1763305316150",
+ "buildStep": {
+  "cmdId": "8285970a-5f0b-4b62-ac39-b1bd35a75c89",
+  "name": "",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Nov 16 16:01:56 2025",
+ "timestampMillis": "1763305316151",
+ "status": {
+  "cmdId": "8285970a-5f0b-4b62-ac39-b1bd35a75c89",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Nov 16 16:01:56 2025",
+ "timestampMillis": "1763305316151",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/sim/report/leading_one_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Nov 16 16:01:56 2025",
+ "timestampMillis": "1763305316151",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Nov 16 16:01:56 2025",
+ "timestampMillis": "1763305316151",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Nov 16 16:01:56 2025",
+ "timestampMillis": "1763305316151",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Nov 16 16:01:56 2025",
+ "timestampMillis": "1763305316151",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Nov 16 16:02:31 2025",
+ "timestampMillis": "1763305351761",
+ "status": {
+  "cmdId": "8285970a-5f0b-4b62-ac39-b1bd35a75c89",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Nov 16 16:02:31 2025",
+ "timestampMillis": "1763305351847",
+ "status": {
+  "cmdId": "49966175-94fc-471b-848c-cab8f69e4ae6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Nov 16 16:02:31 2025",
+ "timestampMillis": "1763305351847",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Nov 16 16:02:31 2025",
+ "timestampMillis": "1763305351848",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,221 @@
+
+*** Running vivado
+    with args -log leading_one_leading_one_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source leading_one_leading_one_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sun Nov 16 16:35:16 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source leading_one_leading_one_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lenovo/Simulation_Linux/HLS'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/lenovo/Simulation_Linux/HLS' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.runs/leading_one_leading_one_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top leading_one_leading_one_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 115528
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2095.145 ; gain = 437.742 ; free physical = 501 ; free virtual = 9281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'leading_one_leading_one_0_0' [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.gen/sources_1/bd/leading_one/ip/leading_one_leading_one_0_0/synth/leading_one_leading_one_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'leading_one' [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.gen/sources_1/bd/leading_one/ipshared/7eaf/hdl/verilog/leading_one.v:9]
+INFO: [Synth 8-6157] synthesizing module 'leading_one_sparsemux_19_8_5_1_1' [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.gen/sources_1/bd/leading_one/ipshared/7eaf/hdl/verilog/leading_one_sparsemux_19_8_5_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'leading_one_sparsemux_19_8_5_1_1' (0#1) [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.gen/sources_1/bd/leading_one/ipshared/7eaf/hdl/verilog/leading_one_sparsemux_19_8_5_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'leading_one' (0#1) [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.gen/sources_1/bd/leading_one/ipshared/7eaf/hdl/verilog/leading_one.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'leading_one_leading_one_0_0' (0#1) [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.gen/sources_1/bd/leading_one/ip/leading_one_leading_one_0_0/synth/leading_one_leading_one_0_0.v:53]
+WARNING: [Synth 8-7129] Port ap_rst in module leading_one is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2169.113 ; gain = 511.711 ; free physical = 407 ; free virtual = 9190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2186.926 ; gain = 529.523 ; free physical = 407 ; free virtual = 9190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2186.926 ; gain = 529.523 ; free physical = 407 ; free virtual = 9190
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2186.926 ; gain = 0.000 ; free physical = 407 ; free virtual = 9190
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.gen/sources_1/bd/leading_one/ip/leading_one_leading_one_0_0/constraints/leading_one_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.gen/sources_1/bd/leading_one/ip/leading_one_leading_one_0_0/constraints/leading_one_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.runs/leading_one_leading_one_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.runs/leading_one_leading_one_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2258.664 ; gain = 0.000 ; free physical = 406 ; free virtual = 9202
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2258.699 ; gain = 0.000 ; free physical = 401 ; free virtual = 9198
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2258.699 ; gain = 601.297 ; free physical = 407 ; free virtual = 9204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2266.668 ; gain = 609.266 ; free physical = 407 ; free virtual = 9204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2266.668 ; gain = 609.266 ; free physical = 407 ; free virtual = 9204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2266.668 ; gain = 609.266 ; free physical = 406 ; free virtual = 9204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ap_rst in module leading_one is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2266.668 ; gain = 609.266 ; free physical = 392 ; free virtual = 9191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2344.668 ; gain = 687.266 ; free physical = 291 ; free virtual = 9097
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2344.668 ; gain = 687.266 ; free physical = 291 ; free virtual = 9097
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2354.684 ; gain = 697.281 ; free physical = 283 ; free virtual = 9089
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2537.496 ; gain = 880.094 ; free physical = 218 ; free virtual = 8925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2537.496 ; gain = 880.094 ; free physical = 218 ; free virtual = 8925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2537.496 ; gain = 880.094 ; free physical = 218 ; free virtual = 8925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2537.496 ; gain = 880.094 ; free physical = 218 ; free virtual = 8925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2537.496 ; gain = 880.094 ; free physical = 218 ; free virtual = 8925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2537.496 ; gain = 880.094 ; free physical = 218 ; free virtual = 8925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |     3|
+|2     |LUT6 |     5|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2537.496 ; gain = 880.094 ; free physical = 218 ; free virtual = 8925
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2537.496 ; gain = 808.320 ; free physical = 220 ; free virtual = 8927
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2537.504 ; gain = 880.094 ; free physical = 220 ; free virtual = 8927
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2537.504 ; gain = 0.000 ; free physical = 221 ; free virtual = 8929
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2593.523 ; gain = 0.000 ; free physical = 383 ; free virtual = 9092
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4ddcb86e
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2593.559 ; gain = 1078.273 ; free physical = 383 ; free virtual = 9092
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1729.077; main = 1729.077; forked = 275.917
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3230.539; main = 2593.527; forked = 963.867
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.535 ; gain = 0.000 ; free physical = 383 ; free virtual = 9092
+INFO: [Common 17-1381] The checkpoint '/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.runs/leading_one_leading_one_0_0_synth_1/leading_one_leading_one_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP leading_one_leading_one_0_0, cache-ID = 7270bd4d1bf1dcf3
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.535 ; gain = 0.000 ; free physical = 368 ; free virtual = 9078
+INFO: [Common 17-1381] The checkpoint '/home/lenovo/Simulation_Linux/HLS/Leading_One_Vivado/Leading_One_Vivado.runs/leading_one_leading_one_0_0_synth_1/leading_one_leading_one_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file leading_one_leading_one_0_0_utilization_synth.rpt -pb leading_one_leading_one_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 16 16:35:39 2025...

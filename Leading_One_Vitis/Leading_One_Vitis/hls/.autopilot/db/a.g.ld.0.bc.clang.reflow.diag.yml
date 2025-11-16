@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_leading_one_ir
+Args:            
+  - Callee:          'leading_one(ap_uint<9>)'
+    DebugLoc:        { File: main_leading_one.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_leading_one_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

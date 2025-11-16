@@ -1,0 +1,234 @@
+{
+    "rules": {
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.bc', '/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.bc.d']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=/opt/Xilinx/2025.1/lnx64/tools/vcxx/data/autopilot",
+                "-vitis-hls=/opt/Xilinx/2025.1/Vitis",
+                "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+                "-hls-clock-period=20.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fhlstoplevel=leading_one",
+                "main_leading_one.cpp",
+                "-o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.bc"
+            ],
+            "exectime": 1.1186022758483887,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.o', '/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.o.d']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/opt/Xilinx/2025.1/lnx64/tools/vcxx/data/include",
+                "-vitis-hls=/opt/Xilinx/2025.1/Vitis",
+                "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=leading_one",
+                "main_leading_one.cpp",
+                "-o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.o"
+            ],
+            "exectime": 1.4010305404663086,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/leading_one_tb.cpp.0.o', '/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/leading_one_tb.cpp.0.o.d']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/leading_one_tb.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/opt/Xilinx/2025.1/lnx64/tools/vcxx/data/include",
+                "-vitis-hls=/opt/Xilinx/2025.1/Vitis",
+                "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=leading_one",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/leading_one_tb.cpp",
+                "-o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/leading_one_tb.cpp.0.o"
+            ],
+            "exectime": 1.5295498371124268,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/syn_srcs.bc']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/llvm-link",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.bc",
+                "-o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/syn_srcs.bc"
+            ],
+            "exectime": 0.03384852409362793,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/opt",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/syn_srcs.bc",
+                "-o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc"
+            ],
+            "exectime": 0.06890463829040527,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/app.exe']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang++",
+                "-o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/app.exe",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/leading_one_tb.cpp.0.o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/main_leading_one.cpp.0.o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=leading_one",
+                "-Wl,--as-needed",
+                "-L/opt/Xilinx/2025.1/Vitis/lnx64/tools/dds_v6_0",
+                "-lIp_dds_compiler_v6_0_bitacc_cmodel",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/opt/Xilinx/2025.1/Vitis/lnx64/tools/dds_v6_0",
+                "-L/opt/Xilinx/2025.1/Vitis/lnx64/tools/fft_v9_1",
+                "-lIp_xfft_v9_1_bitacc_cmodel",
+                "-Wl,-rpath=/opt/Xilinx/2025.1/Vitis/lnx64/tools/fft_v9_1",
+                "-L/opt/Xilinx/2025.1/Vitis/lnx64/tools/fir_v7_0",
+                "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+                "-Wl,-rpath=/opt/Xilinx/2025.1/Vitis/lnx64/tools/fir_v7_0",
+                "-L/opt/Xilinx/2025.1/Vitis/lnx64/tools/fpo_v7_1",
+                "-lIp_floating_point_v7_1_bitacc_cmodel",
+                "-Wl,-rpath=/opt/Xilinx/2025.1/Vitis/lnx64/tools/fpo_v7_1",
+                "-lm",
+                "-L/opt/Xilinx/2025.1/Vitis/lnx64/lib/csim",
+                "-lhlsm-GCC46",
+                "-Wl,-rpath=/opt/Xilinx/2025.1/Vitis/lnx64/lib/csim",
+                "-lhlsmc++-GCC46",
+                "-lgmp",
+                "-lmpfr",
+                "-Wl,--no-as-needed",
+                "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/lib64",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-Wl,-mllvm,-profilerOutputDirectory=/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/profiler/0",
+                "-fslxpthreads"
+            ],
+            "exectime": 0.6136703491210938,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/irInfoDump",
+                "--ir-module",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--json-output",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json",
+                "--hw-function",
+                "leading_one"
+            ],
+            "exectime": 0.058156728744506836,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang-scan-deps",
+                "--compilation-database=/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json"
+            ],
+            "exectime": 0.07252025604248047,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/bin/.tracing_stdout.txt', '/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/bin/.tracing_stderr.txt']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/rwd",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/build/app.exe"
+            ],
+            "exectime": 0.0524296760559082,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/tracing/csim/build"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/optimizer",
+                "-DFGPass",
+                "-outputDir",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/output",
+                "-logDir",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/log",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "-staticFile",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-traceFile",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/profiler/0/app_0_0/thread0000-trace.txt",
+                "-o",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc"
+            ],
+            "exectime": 0.24533390998840332,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        },
+        "['/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/dataflow/0/taskgraph.json']": {
+            "command": [
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/libexec/parallelismSelector",
+                "--basepath",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis",
+                "--fpga-part",
+                "xc7a35t-cpg236-1",
+                "--device-totals",
+                "/opt/Xilinx/2025.1/lnx64/tools/vcxx/data/platform/logic/fpga.devicetotals",
+                "--clock-frequency",
+                "50.0",
+                "--out-dir",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/output",
+                "--log-dir",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/log",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--ir-module",
+                "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis/Leading_One_Vitis/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F385"
+            ],
+            "exectime": 0.4685204029083252,
+            "cwd": "/home/lenovo/Simulation_Linux/HLS/Leading_One_Vitis"
+        }
+    }
+}

@@ -1,0 +1,76 @@
+
+
+\chapter{Seven Segment Dsiplay}
+
+\section{Introduction}
+
+Seven segement display are one of the classical display units which are present in many electronics systems as shown in \autoref{fig:seven_seg:applications}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30,frame]{Figures/seven_seg/applications}
+\caption{Seven segement presence in many electronic systems}
+\label{fig:seven_seg:applications}
+\end{figure}
+
+In this chapter, we learn how to deal with these display using \verb|HLS|.\\
+
+\newpage
+\subsection{Basys 3}
+
+The Basys 3 board contains 4 segment display.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/seven_seg/basys3_7_seg}
+\caption{7 Segment on Basys 3}
+\label{fig:seven_seg:basys3_7_seg}
+\end{figure}
+
+
+\subsection{Driver}
+
+The driver for this type of display should contains 2 group of signal s as shown in \autoref{fig:seven_seg:driver}:
+
+\begin{itemize}
+
+\item Data signal: control which number to be displayed
+
+\item Control signal: select the target, that is which sgement we want to use.
+
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/seven_seg/driver}
+\caption{Signals for 7 segment}
+\label{fig:seven_seg:driver}
+\end{figure}
+
+
+\underline{Notes regarding 7 Segement:}
+
+\begin{itemize}
+
+\item Multiple 7 segment share the same data signals and use them in a multiplex fashion managed by control signals.
+
+\item The 7 segment uses a sequential circuit part, but we focus on this chapter on the combinational part, and explain some simple circuit and examples
+
+\end{itemize}
+
+\todo{7 Segment Notes:} \uti{7 Segment Notes:}
+
+\begin{itemize}
+
+\item \textit{To see what it does mean about the $\mathrm{1}^\mathrm{st}$ point above about sharing the same data signals} 
+
+\item \textit{To be seen this later once I start reviewing the logic desing course and make the recap}
+
+\end{itemize}
+
+
+
+
+
+
