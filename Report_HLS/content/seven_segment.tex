@@ -17,17 +17,6 @@ Seven segement display are one of the classical display units which are present 
 In this chapter, we learn how to deal with these display using \verb|HLS|.\\
 
 \newpage
-\subsection{Basys 3}
-
-The Basys 3 board contains 4 segment display.
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.35,frame]{Figures/seven_seg/basys3_7_seg}
-\caption{7 Segment on Basys 3}
-\label{fig:seven_seg:basys3_7_seg}
-\end{figure}
-
 
 \subsection{Driver}
 
@@ -69,6 +58,196 @@ The driver for this type of display should contains 2 group of signal s as shown
 
 \end{itemize}
 
+\newpage
+\section{7 Segement Structure}
+
+Now to dive into more technical details for 7 segment.\\
+
+7 segment consist of 8 LED: 7 LED from A $\rightarrow$ G to display a digit, and 1 LED to display the digit point denoted as DP.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/seven_seg/7seg_led}
+\caption{7 segment LED structure}
+\label{fig:seven_seg:7seg_led}
+\end{figure}
+
+7 segment has 2 types of connections: common anode and common cathode. In these configurations, multiple LED are connected together to a single point.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/seven_seg/7seg_conf}
+\caption{7 segment LED configuration: common anode and common cathode}
+\label{fig:seven_seg:7seg_conf}
+\end{figure}
+
+\begin{itemize}
+
+\item Common anaode is where the $+$ side of the LED are connected to high voltage. In this configuration, a logic value of 0 turns the LED ON.
+
+\item Common cathode is where the $-$ side are connected to low voltage. Therefore, a logic value of 1 turns a segment ON.
+
+\end{itemize}
+
+
+\newpage
+\todo{Common Anode and cathode, insert in an appendix} \uti{Common Anode and cathode, insert in an appendix:}
+
+\begin{itemize}
+
+\item \textit{To make a review later about the circuit concept, like :}
+
+	\begin{itemize}
+	\item \textit{Common anode, cathode}
+	
+	\item \textit{Current flow,$\cdots$}
+	\end{itemize}
+
+\item \textit{To insert all these concepts in an appendix later}
+
+\end{itemize}
+
+To control a 7 segment regardless of the code which drives the 7 segment, a switch is used to turn ON or OFF the 7 segment. An example is shown in \autoref{fig:seven_seg:7seg_switch}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/seven_seg/7seg_switch}
+\caption{Switch control for a 7 segment using common anode configuration}
+\label{fig:seven_seg:7seg_switch}
+\end{figure}
+
+\begin{itemize}
+
+\item To turn ON the 7 segment, the switch should be driven by the logic value zero and
+
+\item Proper data should be applied to the cathode
+
+\end{itemize}
+
+\newpage
+\subsection{Quiz}
+
+\underline{Quiz:} Find the logic values in the control and data signals to show the number 4 on this common anode 7 segment of \autoref{fig:seven_seg:quiz_7seg}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.37,frame]{Figures/seven_seg/quiz_7seg}
+\caption{Quiz 7 Segment}
+\label{fig:seven_seg:quiz_7seg}
+\end{figure}
+
+\underline{Solution:}
+
+\begin{itemize}
+
+\item To turn on the 7-segment, the control signal connected to the PNP transistor switch should be 0.
+
+\item To show the number 4, the data signal should turn on the LEDs on the four segments $B$, $C$, $F$ and $G$. So, as the 7-segment configuration is common anode the data is $0b10011001$
+
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.37,frame]{Figures/seven_seg/quiz_7seg_sol}
+\caption{Quiz 7 Segment Solution}
+\label{fig:seven_seg:quiz_7seg_sol}
+\end{figure}
+
+\newpage
+\section{Digit Codes}
+
+\autoref{fig:seven_seg:anode_digit_codes} shows the different digit codes for common anaode configuration, where the control signal should be 0, and the data line also should be 0.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.42,frame]{Figures/seven_seg/anode_digit_codes}
+\caption{Digit codes for common anaode configuration}
+\label{fig:seven_seg:anode_digit_codes}
+\end{figure}
+
+In a \verb|HLS| program, we can store these digit codes in an array and access them by their index as shown in \autoref{fig:seven_seg:codes_in_array}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.40,frame]{Figures/seven_seg/codes_in_array}
+\caption{Digit codes stored in an array}
+\label{fig:seven_seg:codes_in_array}
+\end{figure}
+
+
+\newpage
+\section{7 Segment on Basys3}
+
+After understanding general concepts of 7 segment circuit, we move to see the 7 segment on \verb|Basys3| board.\\
+
+
+The Basys 3 board contains 4 segment display shown in \autoref{fig:seven_seg:basys3_7_seg}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.32,frame]{Figures/seven_seg/basys3_7_seg}
+\caption{7 Segment on Basys 3}
+\label{fig:seven_seg:basys3_7_seg}
+\end{figure}
+
+The pins configuration is shown in \autoref{fig:seven_seg:basys3_7seg_datasheet}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.38,frame]{Figures/seven_seg/basys3_7seg_datasheet}
+\caption{7 Segment pins configuration on Basys 3}
+\label{fig:seven_seg:basys3_7seg_datasheet}
+\end{figure}
+
+\begin{itemize}
+
+\item 12 pins are dedicated for the 4 7-seg:
+
+	\begin{itemize}
+	\item 4 pins for controls, where we have transistors acting a switch 
+	
+	\item 8 pins for data lines, shared among the 4 7-seg
+	\end{itemize}
+
+\item To display a digit using a 7 seg, and since the data lines are shared, \textit{time multiplexing} technique should be applied to the data signals
+
+	\begin{itemize}
+	\item Multiplexing requires a \textit{sequential desing}, which we will see in next chapters
+	
+	\item \todo{Multiplexing for 7 seg} \uti{Multiplexing for 7 seg:} \textit{To review this topic when started later in the sequential desing course}
+	
+	\item \textit{To cite the chapter later here}
+	 
+	\end{itemize}	   
+
+\end{itemize}
+
+
+\subsection{Quiz}
+
+\underline{Quiz:} Find the control signal value and data code to write the number 5 on the left hand side 7 segment (according to \autoref{fig:seven_seg:basys3_7seg_datasheet}) and turn off the others.\\
+
+\underline{Solution:}
+
+\begin{itemize}
+
+\item To enable the left-hand side display, we should apply 0 on W4 pin
+
+\item To disable the others, V4, U4 and U2 should receive the logic value 1.
+
+\item The code on the data pins is 0b10010010
+
+\end{itemize}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.42,frame]{Figures/seven_seg/quiz_7seg_basys3_sol}
+\caption{7 Segment quiz solution}
+\label{fig:seven_seg:quiz_7seg_basys3_sol}
+\end{figure}
 
 
 
