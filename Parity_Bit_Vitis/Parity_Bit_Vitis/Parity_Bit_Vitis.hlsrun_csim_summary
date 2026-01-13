@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis/Parity_Bit_Vitis/Parity_Bit_Vitis.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Dec  8 14:07:19 2025",
+ "timestampMillis": "1765199239858",
+ "buildStep": {
+  "cmdId": "7fa0c148-da38-4c2b-a4d4-4bc895af1713",
+  "name": "vitis-run",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis/Parity_Bit_Vitis/logs/Parity_Bit_Vitis.steps.log",
+  "commandLine": "/opt/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis/hls_config.cfg --work_dir Parity_Bit_Vitis ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis/hls_config.cfg",
+   "--work_dir",
+   "Parity_Bit_Vitis"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec  8 14:07:19 2025",
+ "timestampMillis": "1765199239858",
+ "status": {
+  "cmdId": "7fa0c148-da38-4c2b-a4d4-4bc895af1713",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Dec  8 14:07:23 2025",
+ "timestampMillis": "1765199243048",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "parity_generator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis/main_parity_bit.cpp",
+     "/home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis/parity_bit.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Dec  8 14:07:23 2025",
+ "timestampMillis": "1765199243049",
+ "buildStep": {
+  "cmdId": "c2eb784e-6b6c-4fd4-9b60-0f16f7bb34fa",
+  "name": "",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis/Parity_Bit_Vitis/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Parity_Bit_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec  8 14:07:23 2025",
+ "timestampMillis": "1765199243049",
+ "status": {
+  "cmdId": "c2eb784e-6b6c-4fd4-9b60-0f16f7bb34fa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec  8 14:07:26 2025",
+ "timestampMillis": "1765199246432",
+ "status": {
+  "cmdId": "c2eb784e-6b6c-4fd4-9b60-0f16f7bb34fa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec  8 14:07:26 2025",
+ "timestampMillis": "1765199246514",
+ "status": {
+  "cmdId": "7fa0c148-da38-4c2b-a4d4-4bc895af1713",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Dec  8 14:07:26 2025",
+ "timestampMillis": "1765199246515",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Dec  8 14:07:26 2025",
+ "timestampMillis": "1765199246515",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

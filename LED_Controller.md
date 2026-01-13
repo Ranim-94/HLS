@@ -24,7 +24,7 @@
 
 This document illustrate the `LED_Controller`, as it plays the role of hello world project in HLS.
 
-The code for truning LED is straightforward, so we focus more on the development environment which are: `Vitis` (for writing HLS code), and `Vivado` (for generating bitstream file and programming the FGPA board)
+The code for turning LED is straightforward, so we focus more on the development environment which are: `Vitis` (for writing HLS code), and `Vivado` (for generating bitstream file and programming the FGPA board)
 
 ## Resources
 
@@ -146,7 +146,7 @@ This connection is done via the concept of **constraints**, that is the mapping 
 
 This mapping is provided by some constraint file of extension `.XDC` provided by the FPGA vendor
 
-### Creating a projects in Vivado 
+### Creating a projects in Vivado
 
 Creating project is straightoforward. Just pay attention in `Project Type` step shown in [Figure 9](#fig9), to select the option Do not specify sources at this time.
 
@@ -211,7 +211,7 @@ Under `Sources`, right click `LED_Controller.bd`
  
 ### Generating Bitstream File
 
-   1. Under the flow navigator section, click on `Generating Bitstream`
+   1. In the flow navigator section, under the `PROGRAM and DEBUG`, click on `Generating Bitstream`
    2. The bit stream file location will be at:
 
    <pre>LED_Controller_Vivado/LED_Controller_Vivado.runs/impl_1/LED_Controller_wrapper.bit</pre>

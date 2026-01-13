@@ -1,0 +1,14 @@
+{
+    "0": {
+        "name": "home_alarm_system",
+        "file": "main_home_alarm_sys.cpp",
+        "fileloc": "11",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "31",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "3"
+    }
+}

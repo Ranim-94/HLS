@@ -1,0 +1,13 @@
+{
+  "name": "Home_Alarm_Sys_Vitis",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Home_Alarm_Sys_Vitis"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

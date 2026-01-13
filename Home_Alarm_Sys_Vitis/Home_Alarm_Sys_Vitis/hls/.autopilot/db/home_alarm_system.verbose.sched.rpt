@@ -1,0 +1,218 @@
+
+
+================================================================
+== Vitis HLS Report for 'home_alarm_system'
+================================================================
+* Date:           Sun Jan 11 11:26:19 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        Home_Alarm_Sys_Vitis
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.659 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        4|  10.000 ns|  40.000 ns|    2|    5|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 5 2 3 
+2 --> 3 
+3 --> 4 5 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.65>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%spectopmodule_ln11 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [main_home_alarm_sys.cpp:11]   --->   Operation 6 'spectopmodule' 'spectopmodule_ln11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln11 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0" [main_home_alarm_sys.cpp:11]   --->   Operation 7 'specinterface' 'specinterface_ln11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %slide_switches"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %slide_switches, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %push_buttons"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %push_buttons, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %leds"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %leds, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %sg_data"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %sg_data, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %sg_enable"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i4 %sg_enable, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%push_buttons_read = read i5 @_ssdm_op_Read.ap_none.i5, i5 %push_buttons" [main_home_alarm_sys.cpp:12]   --->   Operation 18 'read' 'push_buttons_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%slide_switches_read = read i16 @_ssdm_op_Read.ap_none.i16, i16 %slide_switches" [main_home_alarm_sys.cpp:12]   --->   Operation 19 'read' 'slide_switches_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%window_sensors = trunc i16 %slide_switches_read" [main_home_alarm_sys.cpp:35]   --->   Operation 20 'trunc' 'window_sensors' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%motion_detectors = partselect i2 @_ssdm_op_PartSelect.i2.i16.i32, i16 %slide_switches_read, i32 6" [main_home_alarm_sys.cpp:36]   --->   Operation 21 'partselect' 'motion_detectors' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%switch_code = partselect i4 @_ssdm_op_PartSelect.i4.i16.i32, i16 %slide_switches_read, i32 12" [main_home_alarm_sys.cpp:37]   --->   Operation 22 'partselect' 'switch_code' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%write_ln50 = write void @_ssdm_op_Write.ap_none.i16P0A, i16 %leds, i16 %slide_switches_read" [main_home_alarm_sys.cpp:50]   --->   Operation 23 'write' 'write_ln50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.77ns)   --->   "%icmp_ln53 = icmp_eq  i4 %switch_code, i4 11" [main_home_alarm_sys.cpp:53]   --->   Operation 24 'icmp' 'icmp_ln53' <Predicate = true> <Delay = 1.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln53 = br i1 %icmp_ln53, void %if.else11, void %if.then" [main_home_alarm_sys.cpp:53]   --->   Operation 25 'br' 'br_ln53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%write_ln77 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 192" [main_home_alarm_sys.cpp:77]   --->   Operation 26 'write' 'write_ln77' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%write_ln78 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 0" [main_home_alarm_sys.cpp:78]   --->   Operation 27 'write' 'write_ln78' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end13"   --->   Operation 28 'br' 'br_ln0' <Predicate = (!icmp_ln53)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.68ns)   --->   "%icmp_ln57 = icmp_ne  i3 %window_sensors, i3 0" [main_home_alarm_sys.cpp:57]   --->   Operation 29 'icmp' 'icmp_ln57' <Predicate = (icmp_ln53)> <Delay = 1.68> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.68> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (1.58ns)   --->   "%icmp_ln57_1 = icmp_ne  i2 %motion_detectors, i2 0" [main_home_alarm_sys.cpp:57]   --->   Operation 30 'icmp' 'icmp_ln57_1' <Predicate = (icmp_ln53)> <Delay = 1.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.58> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.97ns)   --->   "%or_ln57 = or i1 %icmp_ln57, i1 %icmp_ln57_1" [main_home_alarm_sys.cpp:57]   --->   Operation 31 'or' 'or_ln57' <Predicate = (icmp_ln53)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln57 = br i1 %or_ln57, void %if.else, void %if.then7" [main_home_alarm_sys.cpp:57]   --->   Operation 32 'br' 'br_ln57' <Predicate = (icmp_ln53)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%write_ln65 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 136" [main_home_alarm_sys.cpp:65]   --->   Operation 33 'write' 'write_ln65' <Predicate = (icmp_ln53 & !or_ln57)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%write_ln66 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 0" [main_home_alarm_sys.cpp:66]   --->   Operation 34 'write' 'write_ln66' <Predicate = (icmp_ln53 & !or_ln57)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end"   --->   Operation 35 'br' 'br_ln0' <Predicate = (icmp_ln53 & !or_ln57)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%write_ln105 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 134" [home_alarm_sys.cpp:105->main_home_alarm_sys.cpp:60]   --->   Operation 36 'write' 'write_ln105' <Predicate = (icmp_ln53 & or_ln57)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%write_ln106 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 0" [home_alarm_sys.cpp:106->main_home_alarm_sys.cpp:60]   --->   Operation 37 'write' 'write_ln106' <Predicate = (icmp_ln53 & or_ln57)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (1.86ns)   --->   "%icmp_ln108 = icmp_eq  i5 %push_buttons_read, i5 0" [home_alarm_sys.cpp:108->main_home_alarm_sys.cpp:60]   --->   Operation 38 'icmp' 'icmp_ln108' <Predicate = (icmp_ln53 & or_ln57)> <Delay = 1.86> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln108 = br i1 %icmp_ln108, void %if.then.i, void %_Z12fault_detect7ap_uintILi3EES_ILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE.exit" [home_alarm_sys.cpp:108->main_home_alarm_sys.cpp:60]   --->   Operation 39 'br' 'br_ln108' <Predicate = (icmp_ln53 & or_ln57)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln125 = br i1 %icmp_ln57, void %if.end.i, void %if.then2.i" [home_alarm_sys.cpp:125->main_home_alarm_sys.cpp:60]   --->   Operation 40 'br' 'br_ln125' <Predicate = (icmp_ln53 & or_ln57 & !icmp_ln108)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln44 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 134" [home_alarm_sys.cpp:44->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 41 'write' 'write_ln44' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%write_ln45 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 0" [home_alarm_sys.cpp:45->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 42 'write' 'write_ln45' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%trunc_ln47 = trunc i5 %push_buttons_read" [home_alarm_sys.cpp:47->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 43 'trunc' 'trunc_ln47' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln47 = br i1 %trunc_ln47, void %if.else.i.i, void %land.lhs.true.i.i" [home_alarm_sys.cpp:47->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 44 'br' 'br_ln47' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%trunc_ln47_1 = trunc i16 %slide_switches_read" [home_alarm_sys.cpp:47->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 45 'trunc' 'trunc_ln47_1' <Predicate = (trunc_ln47)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln47 = br i1 %trunc_ln47_1, void %if.else.i.i, void %if.then.i.i" [home_alarm_sys.cpp:47->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 46 'br' 'br_ln47' <Predicate = (trunc_ln47)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i5.i32, i5 %push_buttons_read, i32 1" [home_alarm_sys.cpp:52->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 47 'bitselect' 'tmp' <Predicate = (!trunc_ln47_1) | (!trunc_ln47)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln52 = br i1 %tmp, void %if.else11.i.i, void %land.lhs.true6.i.i" [home_alarm_sys.cpp:52->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 48 'br' 'br_ln52' <Predicate = (!trunc_ln47_1) | (!trunc_ln47)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %slide_switches_read, i32 1" [home_alarm_sys.cpp:52->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 49 'bitselect' 'tmp_1' <Predicate = (!trunc_ln47_1 & tmp) | (!trunc_ln47 & tmp)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln52 = br i1 %tmp_1, void %if.else11.i.i, void %if.then9.i.i" [home_alarm_sys.cpp:52->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 50 'br' 'br_ln52' <Predicate = (!trunc_ln47_1 & tmp) | (!trunc_ln47 & tmp)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i5.i32, i5 %push_buttons_read, i32 2" [home_alarm_sys.cpp:57->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 51 'bitselect' 'tmp_2' <Predicate = (!trunc_ln47_1 & !tmp_1) | (!trunc_ln47_1 & !tmp) | (!trunc_ln47 & !tmp_1) | (!trunc_ln47 & !tmp)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln57 = br i1 %tmp_2, void %if.end.i.i, void %land.lhs.true14.i.i" [home_alarm_sys.cpp:57->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 52 'br' 'br_ln57' <Predicate = (!trunc_ln47_1 & !tmp_1) | (!trunc_ln47_1 & !tmp) | (!trunc_ln47 & !tmp_1) | (!trunc_ln47 & !tmp)> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_3 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %slide_switches_read, i32 2" [home_alarm_sys.cpp:57->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 53 'bitselect' 'tmp_3' <Predicate = (!trunc_ln47_1 & !tmp_1 & tmp_2) | (!trunc_ln47_1 & !tmp & tmp_2) | (!trunc_ln47 & !tmp_1 & tmp_2) | (!trunc_ln47 & !tmp & tmp_2)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln57 = br i1 %tmp_3, void %if.end.i.i, void %if.then17.i.i" [home_alarm_sys.cpp:57->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 54 'br' 'br_ln57' <Predicate = (!trunc_ln47_1 & !tmp_1 & tmp_2) | (!trunc_ln47_1 & !tmp & tmp_2) | (!trunc_ln47 & !tmp_1 & tmp_2) | (!trunc_ln47 & !tmp & tmp_2)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%write_ln59 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 176" [home_alarm_sys.cpp:59->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 55 'write' 'write_ln59' <Predicate = (icmp_ln57 & !trunc_ln47_1 & !tmp_1 & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47_1 & !tmp & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47 & !tmp_1 & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47 & !tmp & tmp_2 & tmp_3)> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%write_ln60 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 14" [home_alarm_sys.cpp:60->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 56 'write' 'write_ln60' <Predicate = (icmp_ln57 & !trunc_ln47_1 & !tmp_1 & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47_1 & !tmp & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47 & !tmp_1 & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47 & !tmp & tmp_2 & tmp_3)> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln61 = br void %if.end.i.i" [home_alarm_sys.cpp:61->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 57 'br' 'br_ln61' <Predicate = (icmp_ln57 & !trunc_ln47_1 & !tmp_1 & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47_1 & !tmp & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47 & !tmp_1 & tmp_2 & tmp_3) | (icmp_ln57 & !trunc_ln47 & !tmp & tmp_2 & tmp_3)> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end19.i.i"   --->   Operation 58 'br' 'br_ln0' <Predicate = (icmp_ln57 & !trunc_ln47_1 & !tmp_1) | (icmp_ln57 & !trunc_ln47_1 & !tmp) | (icmp_ln57 & !trunc_ln47 & !tmp_1) | (icmp_ln57 & !trunc_ln47 & !tmp)> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%write_ln54 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 164" [home_alarm_sys.cpp:54->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 59 'write' 'write_ln54' <Predicate = (icmp_ln57 & !trunc_ln47_1 & tmp & tmp_1) | (icmp_ln57 & !trunc_ln47 & tmp & tmp_1)> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%write_ln55 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 14" [home_alarm_sys.cpp:55->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 60 'write' 'write_ln55' <Predicate = (icmp_ln57 & !trunc_ln47_1 & tmp & tmp_1) | (icmp_ln57 & !trunc_ln47 & tmp & tmp_1)> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%br_ln57 = br void %if.end19.i.i" [home_alarm_sys.cpp:57->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 61 'br' 'br_ln57' <Predicate = (icmp_ln57 & !trunc_ln47_1 & tmp & tmp_1) | (icmp_ln57 & !trunc_ln47 & tmp & tmp_1)> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_Z14display_window7ap_uintILi3EES_ILi5EEPS_ILi8EEPS_ILi4EE.exit.i"   --->   Operation 62 'br' 'br_ln0' <Predicate = (icmp_ln57 & !trunc_ln47_1) | (icmp_ln57 & !trunc_ln47)> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%write_ln49 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 249" [home_alarm_sys.cpp:49->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 63 'write' 'write_ln49' <Predicate = (icmp_ln57 & trunc_ln47 & trunc_ln47_1)> <Delay = 0.00>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%write_ln50 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 14" [home_alarm_sys.cpp:50->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 64 'write' 'write_ln50' <Predicate = (icmp_ln57 & trunc_ln47 & trunc_ln47_1)> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln52 = br void %_Z14display_window7ap_uintILi3EES_ILi5EEPS_ILi8EEPS_ILi4EE.exit.i" [home_alarm_sys.cpp:52->home_alarm_sys.cpp:126->main_home_alarm_sys.cpp:60]   --->   Operation 65 'br' 'br_ln52' <Predicate = (icmp_ln57 & trunc_ln47 & trunc_ln47_1)> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln127 = br void %if.end.i" [home_alarm_sys.cpp:127->main_home_alarm_sys.cpp:60]   --->   Operation 66 'br' 'br_ln127' <Predicate = (icmp_ln57)> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%br_ln129 = br i1 %icmp_ln57_1, void %if.end8.i, void %if.then5.i" [home_alarm_sys.cpp:129->main_home_alarm_sys.cpp:60]   --->   Operation 67 'br' 'br_ln129' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%write_ln75 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 134" [home_alarm_sys.cpp:75->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 68 'write' 'write_ln75' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%write_ln76 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 0" [home_alarm_sys.cpp:76->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 69 'write' 'write_ln76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_4 = bitselect i1 @_ssdm_op_BitSelect.i1.i5.i32, i5 %push_buttons_read, i32 3" [home_alarm_sys.cpp:78->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 70 'bitselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln78 = br i1 %tmp_4, void %if.else.i3.i, void %land.lhs.true.i1.i" [home_alarm_sys.cpp:78->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 71 'br' 'br_ln78' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [1/1] (0.00ns)   --->   "%tmp_5 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %slide_switches_read, i32 6" [home_alarm_sys.cpp:78->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 72 'bitselect' 'tmp_5' <Predicate = (tmp_4)> <Delay = 0.00>
+ST_4 : Operation 73 [1/1] (0.00ns)   --->   "%br_ln78 = br i1 %tmp_5, void %if.else.i3.i, void %if.then.i2.i" [home_alarm_sys.cpp:78->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 73 'br' 'br_ln78' <Predicate = (tmp_4)> <Delay = 0.00>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i5.i32, i5 %push_buttons_read, i32 4" [home_alarm_sys.cpp:83->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 74 'bitselect' 'tmp_6' <Predicate = (!tmp_5) | (!tmp_4)> <Delay = 0.00>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln83 = br i1 %tmp_6, void %if.end.i6.i, void %land.lhs.true6.i4.i" [home_alarm_sys.cpp:83->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 75 'br' 'br_ln83' <Predicate = (!tmp_5) | (!tmp_4)> <Delay = 0.00>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %slide_switches_read, i32 7" [home_alarm_sys.cpp:83->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 76 'bitselect' 'tmp_7' <Predicate = (!tmp_5 & tmp_6) | (!tmp_4 & tmp_6)> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%br_ln83 = br i1 %tmp_7, void %if.end.i6.i, void %if.then9.i5.i" [home_alarm_sys.cpp:83->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 77 'br' 'br_ln83' <Predicate = (!tmp_5 & tmp_6) | (!tmp_4 & tmp_6)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 78 [1/1] (0.00ns)   --->   "%write_ln85 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 164" [home_alarm_sys.cpp:85->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 78 'write' 'write_ln85' <Predicate = (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & !tmp_5 & tmp_6 & tmp_7) | (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & !tmp_4 & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%write_ln86 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 13" [home_alarm_sys.cpp:86->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 79 'write' 'write_ln86' <Predicate = (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & !tmp_5 & tmp_6 & tmp_7) | (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & !tmp_4 & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] (0.00ns)   --->   "%br_ln88 = br void %if.end.i6.i" [home_alarm_sys.cpp:88->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 80 'br' 'br_ln88' <Predicate = (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & !tmp_5 & tmp_6 & tmp_7) | (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & !tmp_4 & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_Z14display_motion7ap_uintILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE.exit.i"   --->   Operation 81 'br' 'br_ln0' <Predicate = (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & !tmp_5) | (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & !tmp_4)> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%write_ln80 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %sg_data, i8 249" [home_alarm_sys.cpp:80->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 82 'write' 'write_ln80' <Predicate = (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & tmp_4 & tmp_5)> <Delay = 0.00>
+ST_5 : Operation 83 [1/1] (0.00ns)   --->   "%write_ln81 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %sg_enable, i4 13" [home_alarm_sys.cpp:81->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 83 'write' 'write_ln81' <Predicate = (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & tmp_4 & tmp_5)> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%br_ln83 = br void %_Z14display_motion7ap_uintILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE.exit.i" [home_alarm_sys.cpp:83->home_alarm_sys.cpp:130->main_home_alarm_sys.cpp:60]   --->   Operation 84 'br' 'br_ln83' <Predicate = (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108 & tmp_4 & tmp_5)> <Delay = 0.00>
+ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%br_ln131 = br void %if.end8.i" [home_alarm_sys.cpp:131->main_home_alarm_sys.cpp:60]   --->   Operation 85 'br' 'br_ln131' <Predicate = (icmp_ln53 & or_ln57 & icmp_ln57_1 & !icmp_ln108)> <Delay = 0.00>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "%br_ln133 = br void %_Z12fault_detect7ap_uintILi3EES_ILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE.exit" [home_alarm_sys.cpp:133->main_home_alarm_sys.cpp:60]   --->   Operation 86 'br' 'br_ln133' <Predicate = (icmp_ln53 & or_ln57 & !icmp_ln108)> <Delay = 0.00>
+ST_5 : Operation 87 [1/1] (0.00ns)   --->   "%br_ln62 = br void %if.end" [main_home_alarm_sys.cpp:62]   --->   Operation 87 'br' 'br_ln62' <Predicate = (icmp_ln53 & or_ln57)> <Delay = 0.00>
+ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%br_ln69 = br void %if.end13" [main_home_alarm_sys.cpp:69]   --->   Operation 88 'br' 'br_ln69' <Predicate = (icmp_ln53)> <Delay = 0.00>
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%ret_ln81 = ret" [main_home_alarm_sys.cpp:81]   --->   Operation 89 'ret' 'ret_ln81' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.659ns
+The critical path consists of the following:
+	wire read operation ('slide_switches_read', main_home_alarm_sys.cpp:12) on port 'slide_switches' (main_home_alarm_sys.cpp:12) [19]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln57', main_home_alarm_sys.cpp:57) [31]  (1.680 ns)
+	'or' operation 1 bit ('or_ln57', main_home_alarm_sys.cpp:57) [33]  (0.978 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,111 @@
+
+
+================================================================
+== Synthesis Summary Report of 'home_alarm_system'
+================================================================
++ General Information: 
+    * Date:           Sun Jan 11 11:26:19 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        Home_Alarm_Sys_Vitis
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |       Modules       | Issue|      |      Latency     | Iteration|         | Trip |          |      |    |          |           |     |
+    |       & Loops       | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +---------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ home_alarm_system  |     -|  4.64|        4|  40.000|         -|        5|     -|        no|     -|   -|  41 (~0%)|  120 (~0%)|    -|
+    +---------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++----------------+---------+-----------+----------+
+| Port           | Mode    | Direction | Bitwidth |
++----------------+---------+-----------+----------+
+| leds           | ap_none | out       | 16       |
+| push_buttons   | ap_none | in        | 5        |
+| sg_data        | ap_none | out       | 8        |
+| sg_enable      | ap_none | out       | 4        |
+| slide_switches | ap_none | in        | 16       |
++----------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------+-----------+--------------+
+| Argument       | Direction | Datatype     |
++----------------+-----------+--------------+
+| slide_switches | in        | ap_uint<16>  |
+| push_buttons   | in        | ap_uint<5>   |
+| leds           | out       | ap_uint<16>* |
+| sg_data        | out       | ap_uint<8>*  |
+| sg_enable      | out       | ap_uint<4>*  |
++----------------+-----------+--------------+
+
+* SW-to-HW Mapping
++----------------+----------------+---------+
+| Argument       | HW Interface   | HW Type |
++----------------+----------------+---------+
+| slide_switches | slide_switches | port    |
+| push_buttons   | push_buttons   | port    |
+| leds           | leds           | port    |
+| sg_data        | sg_data        | port    |
+| sg_enable      | sg_enable      | port    |
++----------------+----------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+-------------+-------+------+---------+
+| Name                    | DSP | Pragma | Variable    | Op    | Impl | Latency |
++-------------------------+-----+--------+-------------+-------+------+---------+
+| + home_alarm_system     | 0   |        |             |       |      |         |
+|   icmp_ln53_fu_149_p2   |     |        | icmp_ln53   | seteq | auto | 0       |
+|   icmp_ln57_fu_155_p2   |     |        | icmp_ln57   | setne | auto | 0       |
+|   icmp_ln57_1_fu_161_p2 |     |        | icmp_ln57_1 | setne | auto | 0       |
+|   or_ln57_fu_167_p2     |     |        | or_ln57     | or    | auto | 0       |
+|   icmp_ln108_fu_173_p2  |     |        | icmp_ln108  | seteq | auto | 0       |
++-------------------------+-----+--------+-------------+-------+------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------------+-----------------------------------------------------------------+
+| Type      | Options                     | Location                                                        |
++-----------+-----------------------------+-----------------------------------------------------------------+
+| INTERFACE | ap_ctrl_none port=return    | main_home_alarm_sys.cpp:23 in home_alarm_system, return         |
+| INTERFACE | ap_none port=slide_switches | main_home_alarm_sys.cpp:26 in home_alarm_system, slide_switches |
+| INTERFACE | ap_none port=push_buttons   | main_home_alarm_sys.cpp:27 in home_alarm_system, push_buttons   |
+| INTERFACE | ap_none port=leds           | main_home_alarm_sys.cpp:29 in home_alarm_system, leds           |
+| INTERFACE | ap_none port=sg_data        | main_home_alarm_sys.cpp:30 in home_alarm_system, sg_data        |
+| INTERFACE | ap_none port=sg_enable      | main_home_alarm_sys.cpp:31 in home_alarm_system, sg_enable      |
++-----------+-----------------------------+-----------------------------------------------------------------+
+
+

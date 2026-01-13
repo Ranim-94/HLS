@@ -1,0 +1,8 @@
+<pragmas>
+<pragma file="main_parity_bit.cpp" line="18" pragmaType="unroll" parentfunction="parity_generator" factor="-1" skip_exit_check="0"/>
+<pragma file="main_parity_bit.cpp" line="8" pragmaType="interface" parentfunction="parity_generator" mode="ap_none" port="a" name="" register="0"/>
+<pragma file="main_parity_bit.cpp" line="9" pragmaType="interface" parentfunction="parity_generator" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<16, false>::operator bool() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<16, false>::ap_bit_ref(ap_int_base<16, false>*, int)" off="0" region="0" recursive="0"/>
+</pragmas>

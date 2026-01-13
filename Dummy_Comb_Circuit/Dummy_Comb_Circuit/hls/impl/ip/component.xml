@@ -404,8 +404,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Dummy_comb_circuit</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114305855</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-10-16T07:55:11Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114366365</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-11-27T08:25:11Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

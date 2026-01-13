@@ -1,0 +1,161 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/Home_Alarm_Sys_Vitis/hls/.autopilot/db/main_home_alarm_sys.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_main_home_alarm_sys.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: ./home_alarm_sys.hpp, Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_main_home_alarm_sys.pp.0.cpp
+    DebugLoc:        { File: /home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/Home_Alarm_Sys_Vitis/hls/.autopilot/db/main_home_alarm_sys.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/Home_Alarm_Sys_Vitis/hls/.autopilot/db/home_alarm_sys.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_home_alarm_sys.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.2
+    DebugLoc:        { File: ./home_alarm_sys.hpp, Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_home_alarm_sys.pp.0.cpp
+    DebugLoc:        { File: /home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/Home_Alarm_Sys_Vitis/hls/.autopilot/db/home_alarm_sys.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: home_alarm_sys.cpp, Line: 130, Column: 4 }
+Function:        _Z12fault_detect7ap_uintILi3EES_ILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE
+Args:            
+  - Callee:          'display_motion(ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 72, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: home_alarm_sys.cpp, Line: 126, Column: 4 }
+Function:        _Z12fault_detect7ap_uintILi3EES_ILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE
+Args:            
+  - Callee:          'display_window(ap_uint<3>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: main_home_alarm_sys.cpp, Line: 60, Column: 4 }
+Function:        _Z17home_alarm_system7ap_uintILi16EES_ILi5EEPS0_PS_ILi8EEPS_ILi4EE
+Args:            
+  - Callee:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'home_alarm_system(ap_uint<16>, ap_uint<5>, ap_uint<16>*, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: main_home_alarm_sys.cpp, Line: 18, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: home_alarm_sys.cpp, Line: 126, Column: 4 }
+Function:        _Z12fault_detect7ap_uintILi3EES_ILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE
+Args:            
+  - Callee:          'display_window(ap_uint<3>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: home_alarm_sys.cpp, Line: 130, Column: 4 }
+Function:        _Z12fault_detect7ap_uintILi3EES_ILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE
+Args:            
+  - Callee:          'display_motion(ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 72, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: main_home_alarm_sys.cpp, Line: 60, Column: 4 }
+Function:        _Z17home_alarm_system7ap_uintILi16EES_ILi5EEPS0_PS_ILi8EEPS_ILi4EE
+Args:            
+  - Callee:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'home_alarm_system(ap_uint<16>, ap_uint<5>, ap_uint<16>*, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: main_home_alarm_sys.cpp, Line: 18, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_home_alarm_system_ir
+Args:            
+  - Callee:          'home_alarm_system(ap_uint<16>, ap_uint<5>, ap_uint<16>*, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: main_home_alarm_sys.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_home_alarm_system_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+Function:        _Z12fault_detect7ap_uintILi3EES_ILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'display_window(ap_uint<3>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 35, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+Function:        _Z12fault_detect7ap_uintILi3EES_ILi2EES_ILi5EEPS_ILi8EEPS_ILi4EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'display_motion(ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 72, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: main_home_alarm_sys.cpp, Line: 18, Column: 0 }
+Function:        _Z17home_alarm_system7ap_uintILi16EES_ILi5EEPS0_PS_ILi8EEPS_ILi4EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fault_detect(ap_uint<3>, ap_uint<2>, ap_uint<5>, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: home_alarm_sys.cpp, Line: 100, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'home_alarm_system(ap_uint<16>, ap_uint<5>, ap_uint<16>*, ap_uint<8>*, ap_uint<4>*)'
+    DebugLoc:        { File: main_home_alarm_sys.cpp, Line: 18, Column: 0 }
+  - String:          ''''
+...

@@ -117,3 +117,12 @@ Note: refer to this [installation board files blog](https://digilent.com/referen
 
 [Mohammad Hosseinabady Website](https://highlevel-synthesis.com/)
     - there is also a Githiub for the code
+
+[Jie LEI](https://www.linkedin.com/in/jie-lei-601342112/)
+  -  A researcher in wireless commmunication, DSP and FPGA prototyping (HLS and HDL)
+  -  [Github](https://github.com/rockyco)
+  -  [Github-IO](https://rockyco.github.io/)
+
+[Dmitrii Labunskii](https://www.linkedin.com/in/labunsky/)
+  - FPGA Engineer with DSP orientation
+

@@ -1,0 +1,18 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="parity_generator" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=parity_generator" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parity_bit.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parity_generator" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parity_bit.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parity_generator" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parity_bit.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parity_generator" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="main_parity_bit.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_16_1' (main_parity_bit.cpp:16:19) in function 'parity_generator' completely with a factor of 16">
+        <args Factor="16" LoopLoc="main_parity_bit.cpp:16:19" LoopName="VITIS_LOOP_16_1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

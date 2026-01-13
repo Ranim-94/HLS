@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op seteq" ID="" IMPL="auto" LATENCY="0" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln53_fu_149_p2" SOURCE="main_home_alarm_sys.cpp:53" VARIABLE="icmp_ln53" MODULE="home_alarm_system" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setne" ID="" IMPL="auto" LATENCY="0" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln57_fu_155_p2" SOURCE="main_home_alarm_sys.cpp:57" VARIABLE="icmp_ln57" MODULE="home_alarm_system" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setne" ID="" IMPL="auto" LATENCY="0" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln57_1_fu_161_p2" SOURCE="main_home_alarm_sys.cpp:57" VARIABLE="icmp_ln57_1" MODULE="home_alarm_system" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="or_ln57_fu_167_p2" SOURCE="main_home_alarm_sys.cpp:57" VARIABLE="or_ln57" MODULE="home_alarm_system" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op seteq" ID="" IMPL="auto" LATENCY="0" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln108_fu_173_p2" SOURCE="home_alarm_sys.cpp:108" VARIABLE="icmp_ln108" MODULE="home_alarm_system" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+</BindInfo>

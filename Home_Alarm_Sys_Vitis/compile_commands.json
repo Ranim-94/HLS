@@ -1,0 +1,40 @@
+[
+  {
+    "directory": "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis",
+    "arguments": [
+      "/opt/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.1/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=home_alarm_system",
+      "-c",
+      "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/./main_home_alarm_sys.cpp"
+    ],
+    "file": "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/./main_home_alarm_sys.cpp"
+  },
+  {
+    "directory": "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis",
+    "arguments": [
+      "/opt/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.1/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=home_alarm_system",
+      "-c",
+      "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/./home_alarm_sys.cpp"
+    ],
+    "file": "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/./home_alarm_sys.cpp"
+  },
+  {
+    "directory": "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis",
+    "arguments": [
+      "/opt/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.1/Vitis/include",
+      "-c",
+      "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/./home_alarm_sys_tb.cpp"
+    ],
+    "file": "/home/lenovo/Simulation_Linux/HLS/Home_Alarm_Sys_Vitis/./home_alarm_sys_tb.cpp"
+  }
+]

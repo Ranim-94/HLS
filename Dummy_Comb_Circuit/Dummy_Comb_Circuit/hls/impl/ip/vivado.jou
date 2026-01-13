@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Oct 16 09:55:06 2025
-# Process ID         : 7726
+# Start of session at: Thu Nov 27 09:25:08 2025
+# Process ID         : 17813
 # Current directory  : /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/impl/ip
 # Command line       : vivado -notrace -mode batch -source run_ippack.tcl
 # Log file           : /home/lenovo/Simulation_Linux/HLS/Dummy_Comb_Circuit/Dummy_Comb_Circuit/hls/impl/ip/vivado.log
@@ -13,12 +13,12 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
 # Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics
-# CPU Frequency      : 3967.412 MHz
+# CPU Frequency      : 3393.338 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 14496 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 16644 MB
-# Available Virtual  : 10726 MB
+# Available Virtual  : 8232 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace

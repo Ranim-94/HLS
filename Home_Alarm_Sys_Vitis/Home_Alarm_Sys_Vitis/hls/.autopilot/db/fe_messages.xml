@@ -1,0 +1,33 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="home_alarm_system" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=home_alarm_system" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_home_alarm_sys.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="home_alarm_system" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_home_alarm_sys.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="home_alarm_system" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=slide_switches" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_home_alarm_sys.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="home_alarm_system" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=push_buttons" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_home_alarm_sys.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="home_alarm_system" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=leds" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_home_alarm_sys.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="home_alarm_system" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=sg_data" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_home_alarm_sys.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="home_alarm_system" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=sg_enable" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="home_alarm_sys.cpp:100:0" msg_body="Inlining function 'display_window(ap_uint&lt;3&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)' into 'fault_detect(ap_uint&lt;3&gt;, ap_uint&lt;2&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)'">
+        <args Callee="display_window(ap_uint&lt;3&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)" Callee-DebugLoc="File home_alarm_sys.cpp Line 35 Column 0" Caller="fault_detect(ap_uint&lt;3&gt;, ap_uint&lt;2&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)" Caller-DebugLoc="File home_alarm_sys.cpp Line 100 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="home_alarm_sys.cpp:100:0" msg_body="Inlining function 'display_motion(ap_uint&lt;2&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)' into 'fault_detect(ap_uint&lt;3&gt;, ap_uint&lt;2&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)'">
+        <args Callee="display_motion(ap_uint&lt;2&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)" Callee-DebugLoc="File home_alarm_sys.cpp Line 72 Column 0" Caller="fault_detect(ap_uint&lt;3&gt;, ap_uint&lt;2&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)" Caller-DebugLoc="File home_alarm_sys.cpp Line 100 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="main_home_alarm_sys.cpp:18:0" msg_body="Inlining function 'fault_detect(ap_uint&lt;3&gt;, ap_uint&lt;2&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)' into 'home_alarm_system(ap_uint&lt;16&gt;, ap_uint&lt;5&gt;, ap_uint&lt;16&gt;*, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)'">
+        <args Callee="fault_detect(ap_uint&lt;3&gt;, ap_uint&lt;2&gt;, ap_uint&lt;5&gt;, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)" Callee-DebugLoc="File home_alarm_sys.cpp Line 100 Column 0" Caller="home_alarm_system(ap_uint&lt;16&gt;, ap_uint&lt;5&gt;, ap_uint&lt;16&gt;*, ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;*)" Caller-DebugLoc="File main_home_alarm_sys.cpp Line 18 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

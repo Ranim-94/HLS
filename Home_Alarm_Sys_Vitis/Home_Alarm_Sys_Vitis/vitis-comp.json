@@ -1,0 +1,9 @@
+{
+  "name": "Home_Alarm_Sys_Vitis",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

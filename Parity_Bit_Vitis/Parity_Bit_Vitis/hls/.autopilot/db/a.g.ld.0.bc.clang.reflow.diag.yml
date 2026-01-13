@@ -1,0 +1,27 @@
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: main_parity_bit.cpp, Line: 6, Column: 0 }
+Function:        _Z16parity_generator7ap_uintILi16EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_16_1
+  - String:          ''' ('
+  - LoopLoc:         'main_parity_bit.cpp:16:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parity_generator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_parity_generator_ir
+Args:            
+  - Callee:          'parity_generator(ap_uint<16>)'
+    DebugLoc:        { File: main_parity_bit.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_parity_generator_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

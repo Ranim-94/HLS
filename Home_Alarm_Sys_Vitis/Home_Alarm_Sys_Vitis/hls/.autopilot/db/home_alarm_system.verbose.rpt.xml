@@ -1,0 +1,133 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'home_alarm_system'" level="0">
+<item name = "Date">Sun Jan 11 11:26:19 2026
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">Home_Alarm_Sys_Vitis</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a35t-cpg236-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 2.659 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 4, 10.000 ns, 40.000 ns, 2, 5, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 49, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 71, -</column>
+<column name="Register">-, -, 41, -, -</column>
+<specialColumn name="Available">100, 90, 41600, 20800, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="icmp_ln108_fu_173_p2">icmp, 0, 0, 13, 5, 1</column>
+<column name="icmp_ln53_fu_149_p2">icmp, 0, 0, 13, 4, 4</column>
+<column name="icmp_ln57_1_fu_161_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln57_fu_155_p2">icmp, 0, 0, 11, 3, 1</column>
+<column name="or_ln57_fu_167_p2">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">25, 6, 1, 6</column>
+<column name="sg_data">29, 7, 8, 56</column>
+<column name="sg_enable">17, 4, 4, 16</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="icmp_ln108_reg_275">1, 0, 1, 0</column>
+<column name="icmp_ln53_reg_259">1, 0, 1, 0</column>
+<column name="icmp_ln57_1_reg_267">1, 0, 1, 0</column>
+<column name="icmp_ln57_reg_263">1, 0, 1, 0</column>
+<column name="or_ln57_reg_271">1, 0, 1, 0</column>
+<column name="push_buttons_read_reg_241">5, 0, 5, 0</column>
+<column name="slide_switches_read_reg_250">16, 0, 16, 0</column>
+<column name="tmp_1_reg_291">1, 0, 1, 0</column>
+<column name="tmp_2_reg_295">1, 0, 1, 0</column>
+<column name="tmp_3_reg_299">1, 0, 1, 0</column>
+<column name="tmp_4_reg_303">1, 0, 1, 0</column>
+<column name="tmp_5_reg_307">1, 0, 1, 0</column>
+<column name="tmp_6_reg_311">1, 0, 1, 0</column>
+<column name="tmp_7_reg_315">1, 0, 1, 0</column>
+<column name="tmp_reg_287">1, 0, 1, 0</column>
+<column name="trunc_ln47_1_reg_283">1, 0, 1, 0</column>
+<column name="trunc_ln47_reg_279">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_none, home_alarm_system, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_none, home_alarm_system, return value</column>
+<column name="slide_switches">in, 16, ap_none, slide_switches, scalar</column>
+<column name="push_buttons">in, 5, ap_none, push_buttons, scalar</column>
+<column name="leds">out, 16, ap_none, leds, pointer</column>
+<column name="sg_data">out, 8, ap_none, sg_data, pointer</column>
+<column name="sg_enable">out, 4, ap_none, sg_enable, pointer</column>
+</table>
+</item>
+</section>
+</profile>

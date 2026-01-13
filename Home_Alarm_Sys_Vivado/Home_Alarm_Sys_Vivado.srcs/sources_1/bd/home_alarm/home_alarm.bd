@@ -1,0 +1,66 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCCCA50DDCCCA50DD",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Home_Alarm_Sys_Vivado.gen/sources_1/bd/home_alarm",
+      "name": "home_alarm",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1"
+    },
+    "design_tree": {
+      "home_alarm_system_0": ""
+    },
+    "ports": {
+      "sg_data_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "sg_enable_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "leds_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "home_alarm_system_0": {
+        "vlnv": "xilinx.com:hls:home_alarm_system:1.0",
+        "ip_revision": "2114427157",
+        "xci_name": "home_alarm_home_alarm_system_0_0",
+        "xci_path": "ip/home_alarm_home_alarm_system_0_0/home_alarm_home_alarm_system_0_0.xci",
+        "inst_hier_path": "home_alarm_system_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "home_alarm_system_0_leds": {
+        "ports": [
+          "home_alarm_system_0/leds",
+          "leds_0"
+        ]
+      },
+      "home_alarm_system_0_sg_data": {
+        "ports": [
+          "home_alarm_system_0/sg_data",
+          "sg_data_0"
+        ]
+      },
+      "home_alarm_system_0_sg_enable": {
+        "ports": [
+          "home_alarm_system_0/sg_enable",
+          "sg_enable_0"
+        ]
+      }
+    }
+  }
+}
