@@ -1,0 +1,15 @@
+<pragmas>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDq4_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="main_one_digit_7seg.cpp" line="8" pragmaType="interface" parentfunction="single_seven_segment" mode="ap_none" port="control_signals" name="" register="0"/>
+<pragma file="main_one_digit_7seg.cpp" line="9" pragmaType="interface" parentfunction="single_seven_segment" mode="ap_none" port="code7segment" name="" register="0"/>
+<pragma file="main_one_digit_7seg.cpp" line="10" pragmaType="interface" parentfunction="single_seven_segment" mode="ap_none" port="digit" name="" register="0"/>
+<pragma file="main_one_digit_7seg.cpp" line="11" pragmaType="interface" parentfunction="single_seven_segment" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

@@ -1,0 +1,92 @@
+
+
+================================================================
+== Synthesis Summary Report of 'single_seven_segment'
+================================================================
++ General Information: 
+    * Date:           Thu Nov 27 09:31:33 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        Seven_Seg_Single_Digit_Vitis
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+----------+-----+
+    |         Modules        | Issue|      |     Latency     | Iteration|         | Trip |          |      |    |   |          |     |
+    |         & Loops        | Type | Slack| (cycles)|  (ns) |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT   | URAM|
+    +------------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+----------+-----+
+    |+ single_seven_segment  |     -|  5.18|        0|  0.000|         -|        1|     -|        no|     -|   -|  -|  49 (~0%)|    -|
+    +------------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------------+---------+-----------+----------+
+| Port            | Mode    | Direction | Bitwidth |
++-----------------+---------+-----------+----------+
+| code7segment    | ap_none | out       | 8        |
+| control_signals | ap_none | out       | 4        |
+| digit           | ap_none | in        | 8        |
++-----------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------------+-----------+-------------+
+| Argument        | Direction | Datatype    |
++-----------------+-----------+-------------+
+| digit           | in        | ap_uint<8>  |
+| code7segment    | out       | ap_uint<8>* |
+| control_signals | out       | ap_uint<4>* |
++-----------------+-----------+-------------+
+
+* SW-to-HW Mapping
++-----------------+-----------------+---------+
+| Argument        | HW Interface    | HW Type |
++-----------------+-----------------+---------+
+| digit           | digit           | port    |
+| code7segment    | code7segment    | port    |
+| control_signals | control_signals | port    |
++-----------------+-----------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------+--------------------------------------------------------------------+
+| Type      | Options                      | Location                                                           |
++-----------+------------------------------+--------------------------------------------------------------------+
+| INTERFACE | ap_none port=control_signals | main_one_digit_7seg.cpp:8 in single_seven_segment, control_signals |
+| INTERFACE | ap_none port=code7segment    | main_one_digit_7seg.cpp:9 in single_seven_segment, code7segment    |
+| INTERFACE | ap_none port=digit           | main_one_digit_7seg.cpp:10 in single_seven_segment, digit          |
+| INTERFACE | ap_ctrl_none port=return     | main_one_digit_7seg.cpp:11 in single_seven_segment, return         |
++-----------+------------------------------+--------------------------------------------------------------------+
+
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1764255691">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="SevenSeg_SingleDigit_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="SevenSeg_SingleDigit_wrapper_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="SevenSeg_SingleDigit_wrapper.vdi"/>
+  <File Type="BG-DRC" Name="SevenSeg_SingleDigit_wrapper.drc"/>
+  <File Type="BG-BGN" Name="SevenSeg_SingleDigit_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="SevenSeg_SingleDigit_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="SevenSeg_SingleDigit_wrapper.ltx"/>
+  <File Type="PL-LTX-FILE" Name="SevenSeg_SingleDigit_wrapper_pld.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="SevenSeg_SingleDigit_wrapper_boot.ltx"/>
+  <File Type="LTX-FILE" Name="SevenSeg_SingleDigit_wrapper.ltx"/>
+  <File Type="PL-BIF-FILE" Name="SevenSeg_SingleDigit_wrapper_pld.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="SevenSeg_SingleDigit_wrapper_boot.bif"/>
+  <File Type="BIF-FILE" Name="SevenSeg_SingleDigit_wrapper.bif"/>
+  <File Type="MMI-FILE" Name="SevenSeg_SingleDigit_wrapper.mmi"/>
+  <File Type="RBD_FILE" Name="SevenSeg_SingleDigit_wrapper.rbd"/>
+  <File Type="NPI_FILE" Name="SevenSeg_SingleDigit_wrapper.npi"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="SevenSeg_SingleDigit_wrapper_pld_unmask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="SevenSeg_SingleDigit_wrapper_pld_unmask_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="SevenSeg_SingleDigit_wrapper_pld_mask.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="SevenSeg_SingleDigit_wrapper_pld_markers.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="SevenSeg_SingleDigit_wrapper_pld_clear.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="SevenSeg_SingleDigit_wrapper_pld.rcdo"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="SevenSeg_SingleDigit_wrapper_pld_unmask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="SevenSeg_SingleDigit_wrapper_pld_shutdown.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="SevenSeg_SingleDigit_wrapper_pld_mask.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="SevenSeg_SingleDigit_wrapper_pld_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="SevenSeg_SingleDigit_wrapper_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="SevenSeg_SingleDigit_wrapper_boot_markers.rnpi"/>
+  <File Type="BOOT_RNPI_FILE" Name="SevenSeg_SingleDigit_wrapper_boot.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="SevenSeg_SingleDigit_wrapper_markers.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="SevenSeg_SingleDigit_wrapper_markers.rnpi"/>
+  <File Type="RCDO-FILE" Name="SevenSeg_SingleDigit_wrapper.rcdo"/>
+  <File Type="RNPI_FILE" Name="SevenSeg_SingleDigit_wrapper.rnpi"/>
+  <File Type="CFI_FILE" Name="SevenSeg_SingleDigit_wrapper.cfi"/>
+  <File Type="RCFI_FILE" Name="SevenSeg_SingleDigit_wrapper.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="SevenSeg_SingleDigit_wrapper_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="SevenSeg_SingleDigit_wrapper_boot.pdi"/>
+  <File Type="PDI-FILE" Name="SevenSeg_SingleDigit_wrapper.pdi"/>
+  <File Type="BITSTR-MMI" Name="SevenSeg_SingleDigit_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="SevenSeg_SingleDigit_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="SevenSeg_SingleDigit_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="SevenSeg_SingleDigit_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="SevenSeg_SingleDigit_wrapper.msk"/>
+  <File Type="BG-BIN" Name="SevenSeg_SingleDigit_wrapper.bin"/>
+  <File Type="BG-BIT" Name="SevenSeg_SingleDigit_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SevenSeg_SingleDigit_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SevenSeg_SingleDigit_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SevenSeg_SingleDigit_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SevenSeg_SingleDigit_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SevenSeg_SingleDigit_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SevenSeg_SingleDigit_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SevenSeg_SingleDigit_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SevenSeg_SingleDigit_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="SevenSeg_SingleDigit_wrapper_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="SevenSeg_SingleDigit_wrapper_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="SevenSeg_SingleDigit_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="SevenSeg_SingleDigit_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="SevenSeg_SingleDigit_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="SevenSeg_SingleDigit_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SevenSeg_SingleDigit_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="SevenSeg_SingleDigit_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SevenSeg_SingleDigit_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SevenSeg_SingleDigit_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="SevenSeg_SingleDigit_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="SevenSeg_SingleDigit_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="SevenSeg_SingleDigit_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="SevenSeg_SingleDigit_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SevenSeg_SingleDigit_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SevenSeg_SingleDigit_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SevenSeg_SingleDigit_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="SevenSeg_SingleDigit_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="SevenSeg_SingleDigit_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="SevenSeg_SingleDigit_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="SevenSeg_SingleDigit_wrapper_utilization_routed.pb"/>
+  <File Type="ROUTE-UTIL" Name="SevenSeg_SingleDigit_wrapper_utilization_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SevenSeg_SingleDigit_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="SevenSeg_SingleDigit_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SevenSeg_SingleDigit_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="SevenSeg_SingleDigit_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="SevenSeg_SingleDigit_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SevenSeg_SingleDigit_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SevenSeg_SingleDigit_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SevenSeg_SingleDigit_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="SevenSeg_SingleDigit_wrapper_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="SevenSeg_SingleDigit_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SevenSeg_SingleDigit_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SevenSeg_SingleDigit_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="SevenSeg_SingleDigit_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SevenSeg_SingleDigit_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="SevenSeg_SingleDigit_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SevenSeg_SingleDigit_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="SevenSeg_SingleDigit_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="SevenSeg_SingleDigit_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="SevenSeg_SingleDigit_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="SevenSeg_SingleDigit_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="SevenSeg_SingleDigit_wrapper_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="SevenSeg_SingleDigit_wrapper_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="SevenSeg_SingleDigit_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SevenSeg_SingleDigit_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SevenSeg_SingleDigit_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="SevenSeg_SingleDigit_wrapper_utilization_opted.pb"/>
+  <File Type="OPT-UTIL" Name="SevenSeg_SingleDigit_wrapper_utilization_opted.rpt"/>
+  <File Type="OPT-DRC" Name="SevenSeg_SingleDigit_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="SevenSeg_SingleDigit_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="SevenSeg_SingleDigit_wrapper_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="SevenSeg_SingleDigit_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="SevenSeg_SingleDigit_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/SevenSeg_SingleDigit/SevenSeg_SingleDigit.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/SevenSeg_SingleDigit/hdl/SevenSeg_SingleDigit_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SevenSeg_SingleDigit_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/seven_seg_single_digit.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/SevenSeg_SingleDigit_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="SevenSeg_SingleDigit_single_seven_segment_0_0"/>
+</GenRun>

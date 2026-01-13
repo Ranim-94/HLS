@@ -1,0 +1,4 @@
+single_seven_segment.v,verilog,xil_defaultlib,../../../../Seven_Seg_Single_Digit_Vivado.gen/sources_1/bd/SevenSeg_SingleDigit/ipshared/7a59/hdl/verilog/single_seven_segment.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+SevenSeg_SingleDigit_single_seven_segment_0_0.v,verilog,xil_defaultlib,../../../bd/SevenSeg_SingleDigit/ip/SevenSeg_SingleDigit_single_seven_segment_0_0/sim/SevenSeg_SingleDigit_single_seven_segment_0_0.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+SevenSeg_SingleDigit.v,verilog,xil_defaultlib,../../../bd/SevenSeg_SingleDigit/sim/SevenSeg_SingleDigit.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,18 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="single_seven_segment" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=single_seven_segment" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_one_digit_7seg.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="single_seven_segment" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=control_signals" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_one_digit_7seg.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="single_seven_segment" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=code7segment" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_one_digit_7seg.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="single_seven_segment" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=digit" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_one_digit_7seg.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="single_seven_segment" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis/Seven_Seg_Single_Digit_Vitis/Seven_Seg_Single_Digit_Vitis.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Nov 27 09:32:21 2025",
+ "timestampMillis": "1764232341453",
+ "buildStep": {
+  "cmdId": "22bfd976-4d99-4433-9f7f-2ab4d0eeb08a",
+  "name": "vitis-run",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis/Seven_Seg_Single_Digit_Vitis/logs/Seven_Seg_Single_Digit_Vitis.steps.log",
+  "commandLine": "/opt/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis/hls_config.cfg --work_dir Seven_Seg_Single_Digit_Vitis ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis/hls_config.cfg",
+   "--work_dir",
+   "Seven_Seg_Single_Digit_Vitis"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Nov 27 09:32:21 2025",
+ "timestampMillis": "1764232341453",
+ "status": {
+  "cmdId": "22bfd976-4d99-4433-9f7f-2ab4d0eeb08a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Nov 27 09:32:24 2025",
+ "timestampMillis": "1764232344820",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "single_seven_segment",
+     "file": "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis/Seven_Seg_Single_Digit_Vitis/single_seven_segment.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis/main_one_digit_7seg.cpp",
+     "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis/one_digit_7seg.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Nov 27 09:32:24 2025",
+ "timestampMillis": "1764232344821",
+ "buildStep": {
+  "cmdId": "c6568522-2987-42e4-bf5f-0ef3710c1e6d",
+  "name": "",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis/Seven_Seg_Single_Digit_Vitis/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Seven_Seg_Single_Digit_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Nov 27 09:32:24 2025",
+ "timestampMillis": "1764232344821",
+ "status": {
+  "cmdId": "c6568522-2987-42e4-bf5f-0ef3710c1e6d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Nov 27 09:32:35 2025",
+ "timestampMillis": "1764232355727",
+ "status": {
+  "cmdId": "c6568522-2987-42e4-bf5f-0ef3710c1e6d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Nov 27 09:32:35 2025",
+ "timestampMillis": "1764232355817",
+ "status": {
+  "cmdId": "22bfd976-4d99-4433-9f7f-2ab4d0eeb08a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Nov 27 09:32:35 2025",
+ "timestampMillis": "1764232355818",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Nov 27 09:32:35 2025",
+ "timestampMillis": "1764232355818",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

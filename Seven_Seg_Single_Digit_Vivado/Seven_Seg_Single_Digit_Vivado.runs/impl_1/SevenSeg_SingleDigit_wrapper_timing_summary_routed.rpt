@@ -1,0 +1,562 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Thu Nov 27 16:02:29 2025
+| Host         : lenovo-Legion-5-17ACH6H running 64-bit Ubuntu 24.04.2 LTS
+| Command      : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file SevenSeg_SingleDigit_wrapper_timing_summary_routed.rpt -pb SevenSeg_SingleDigit_wrapper_timing_summary_routed.pb -rpx SevenSeg_SingleDigit_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : SevenSeg_SingleDigit_wrapper
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                    7          inf        0.000                      0                    7           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             7 Endpoints
+Min Delay             7 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 digit[7]
+                            (input port)
+  Destination:            code7segment[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.903ns  (logic 5.446ns (45.751%)  route 6.457ns (54.249%))
+  Logic Levels:           4  (IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W13                                               0.000     0.000 r  digit[7] (IN)
+                         net (fo=0)                   0.000     0.000    digit[7]
+    W13                  IBUF (Prop_ibuf_I_O)         1.459     1.459 r  digit_IBUF[7]_inst/O
+                         net (fo=1, routed)           1.147     2.606    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[7]
+    SLICE_X0Y7           LUT4 (Prop_lut4_I3_O)        0.124     2.730 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1/O
+                         net (fo=7, routed)           3.243     5.973    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1_n_0
+    SLICE_X65Y15         LUT5 (Prop_lut5_I3_O)        0.150     6.123 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[0]_INST_0/O
+                         net (fo=1, routed)           2.067     8.190    code7segment_OBUF[0]
+    W7                   OBUF (Prop_obuf_I_O)         3.713    11.903 r  code7segment_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    11.903    code7segment[0]
+    W7                                                                r  code7segment[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[7]
+                            (input port)
+  Destination:            code7segment[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.668ns  (logic 5.460ns (46.791%)  route 6.209ns (53.209%))
+  Logic Levels:           4  (IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W13                                               0.000     0.000 r  digit[7] (IN)
+                         net (fo=0)                   0.000     0.000    digit[7]
+    W13                  IBUF (Prop_ibuf_I_O)         1.459     1.459 r  digit_IBUF[7]_inst/O
+                         net (fo=1, routed)           1.147     2.606    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[7]
+    SLICE_X0Y7           LUT4 (Prop_lut4_I3_O)        0.124     2.730 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1/O
+                         net (fo=7, routed)           3.205     5.935    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1_n_0
+    SLICE_X65Y15         LUT5 (Prop_lut5_I1_O)        0.154     6.089 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[4]_INST_0/O
+                         net (fo=1, routed)           1.856     7.945    code7segment_OBUF[4]
+    U5                   OBUF (Prop_obuf_I_O)         3.723    11.668 r  code7segment_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    11.668    code7segment[4]
+    U5                                                                r  code7segment[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[7]
+                            (input port)
+  Destination:            code7segment[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.628ns  (logic 5.236ns (45.028%)  route 6.392ns (54.972%))
+  Logic Levels:           4  (IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W13                                               0.000     0.000 r  digit[7] (IN)
+                         net (fo=0)                   0.000     0.000    digit[7]
+    W13                  IBUF (Prop_ibuf_I_O)         1.459     1.459 r  digit_IBUF[7]_inst/O
+                         net (fo=1, routed)           1.147     2.606    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[7]
+    SLICE_X0Y7           LUT4 (Prop_lut4_I3_O)        0.124     2.730 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1/O
+                         net (fo=7, routed)           3.243     5.973    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1_n_0
+    SLICE_X65Y15         LUT5 (Prop_lut5_I4_O)        0.124     6.097 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[1]_INST_0/O
+                         net (fo=1, routed)           2.002     8.099    code7segment_OBUF[1]
+    W6                   OBUF (Prop_obuf_I_O)         3.529    11.628 r  code7segment_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    11.628    code7segment[1]
+    W6                                                                r  code7segment[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[7]
+                            (input port)
+  Destination:            code7segment[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.582ns  (logic 5.445ns (47.014%)  route 6.137ns (52.986%))
+  Logic Levels:           4  (IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W13                                               0.000     0.000 r  digit[7] (IN)
+                         net (fo=0)                   0.000     0.000    digit[7]
+    W13                  IBUF (Prop_ibuf_I_O)         1.459     1.459 r  digit_IBUF[7]_inst/O
+                         net (fo=1, routed)           1.147     2.606    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[7]
+    SLICE_X0Y7           LUT4 (Prop_lut4_I3_O)        0.124     2.730 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1/O
+                         net (fo=7, routed)           3.181     5.911    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1_n_0
+    SLICE_X65Y15         LUT5 (Prop_lut5_I4_O)        0.150     6.061 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[5]_INST_0/O
+                         net (fo=1, routed)           1.808     7.870    code7segment_OBUF[5]
+    V5                   OBUF (Prop_obuf_I_O)         3.712    11.582 r  code7segment_OBUF[5]_inst/O
+                         net (fo=0)                   0.000    11.582    code7segment[5]
+    V5                                                                r  code7segment[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[7]
+                            (input port)
+  Destination:            code7segment[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.456ns  (logic 5.242ns (45.761%)  route 6.214ns (54.239%))
+  Logic Levels:           4  (IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W13                                               0.000     0.000 r  digit[7] (IN)
+                         net (fo=0)                   0.000     0.000    digit[7]
+    W13                  IBUF (Prop_ibuf_I_O)         1.459     1.459 r  digit_IBUF[7]_inst/O
+                         net (fo=1, routed)           1.147     2.606    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[7]
+    SLICE_X0Y7           LUT4 (Prop_lut4_I3_O)        0.124     2.730 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1/O
+                         net (fo=7, routed)           3.205     5.935    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1_n_0
+    SLICE_X65Y15         LUT5 (Prop_lut5_I3_O)        0.124     6.059 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[3]_INST_0/O
+                         net (fo=1, routed)           1.861     7.921    code7segment_OBUF[3]
+    V8                   OBUF (Prop_obuf_I_O)         3.536    11.456 r  code7segment_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    11.456    code7segment[3]
+    V8                                                                r  code7segment[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[7]
+                            (input port)
+  Destination:            code7segment[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.434ns  (logic 5.242ns (45.847%)  route 6.192ns (54.153%))
+  Logic Levels:           4  (IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W13                                               0.000     0.000 r  digit[7] (IN)
+                         net (fo=0)                   0.000     0.000    digit[7]
+    W13                  IBUF (Prop_ibuf_I_O)         1.459     1.459 r  digit_IBUF[7]_inst/O
+                         net (fo=1, routed)           1.147     2.606    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[7]
+    SLICE_X0Y7           LUT4 (Prop_lut4_I3_O)        0.124     2.730 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1/O
+                         net (fo=7, routed)           3.181     5.911    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1_n_0
+    SLICE_X65Y15         LUT5 (Prop_lut5_I4_O)        0.124     6.035 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[2]_INST_0/O
+                         net (fo=1, routed)           1.863     7.899    code7segment_OBUF[2]
+    U8                   OBUF (Prop_obuf_I_O)         3.535    11.434 r  code7segment_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    11.434    code7segment[2]
+    U8                                                                r  code7segment[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[7]
+                            (input port)
+  Destination:            code7segment[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.651ns  (logic 5.238ns (49.184%)  route 5.412ns (50.816%))
+  Logic Levels:           4  (IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W13                                               0.000     0.000 r  digit[7] (IN)
+                         net (fo=0)                   0.000     0.000    digit[7]
+    W13                  IBUF (Prop_ibuf_I_O)         1.459     1.459 r  digit_IBUF[7]_inst/O
+                         net (fo=1, routed)           1.147     2.606    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[7]
+    SLICE_X0Y7           LUT4 (Prop_lut4_I3_O)        0.124     2.730 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1/O
+                         net (fo=7, routed)           2.601     5.331    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0_i_1_n_0
+    SLICE_X65Y12         LUT5 (Prop_lut5_I3_O)        0.124     5.455 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0/O
+                         net (fo=1, routed)           1.664     7.119    code7segment_OBUF[6]
+    U7                   OBUF (Prop_obuf_I_O)         3.531    10.651 r  code7segment_OBUF[6]_inst/O
+                         net (fo=0)                   0.000    10.651    code7segment[6]
+    U7                                                                r  code7segment[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 digit[0]
+                            (input port)
+  Destination:            code7segment[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.132ns  (logic 1.498ns (47.842%)  route 1.633ns (52.158%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 r  digit[0] (IN)
+                         net (fo=0)                   0.000     0.000    digit[0]
+    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  digit_IBUF[0]_inst/O
+                         net (fo=7, routed)           1.302     1.523    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[0]
+    SLICE_X65Y12         LUT5 (Prop_lut5_I0_O)        0.045     1.568 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[6]_INST_0/O
+                         net (fo=1, routed)           0.331     1.899    code7segment_OBUF[6]
+    U7                   OBUF (Prop_obuf_I_O)         1.232     3.132 r  code7segment_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     3.132    code7segment[6]
+    U7                                                                r  code7segment[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[2]
+                            (input port)
+  Destination:            code7segment[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.469ns  (logic 1.507ns (43.440%)  route 1.962ns (56.560%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W16                                               0.000     0.000 r  digit[2] (IN)
+                         net (fo=0)                   0.000     0.000    digit[2]
+    W16                  IBUF (Prop_ibuf_I_O)         0.232     0.232 r  digit_IBUF[2]_inst/O
+                         net (fo=7, routed)           1.488     1.720    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[2]
+    SLICE_X65Y15         LUT5 (Prop_lut5_I3_O)        0.045     1.765 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[1]_INST_0/O
+                         net (fo=1, routed)           0.474     2.239    code7segment_OBUF[1]
+    W6                   OBUF (Prop_obuf_I_O)         1.230     3.469 r  code7segment_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     3.469    code7segment[1]
+    W6                                                                r  code7segment[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[2]
+                            (input port)
+  Destination:            code7segment[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.471ns  (logic 1.513ns (43.602%)  route 1.957ns (56.398%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W16                                               0.000     0.000 r  digit[2] (IN)
+                         net (fo=0)                   0.000     0.000    digit[2]
+    W16                  IBUF (Prop_ibuf_I_O)         0.232     0.232 r  digit_IBUF[2]_inst/O
+                         net (fo=7, routed)           1.541     1.773    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[2]
+    SLICE_X65Y15         LUT5 (Prop_lut5_I4_O)        0.045     1.818 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[3]_INST_0/O
+                         net (fo=1, routed)           0.416     2.234    code7segment_OBUF[3]
+    V8                   OBUF (Prop_obuf_I_O)         1.236     3.471 r  code7segment_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     3.471    code7segment[3]
+    V8                                                                r  code7segment[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[0]
+                            (input port)
+  Destination:            code7segment[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.489ns  (logic 1.502ns (43.042%)  route 1.988ns (56.958%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  digit[0] (IN)
+                         net (fo=0)                   0.000     0.000    digit[0]
+    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 f  digit_IBUF[0]_inst/O
+                         net (fo=7, routed)           1.568     1.789    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[0]
+    SLICE_X65Y15         LUT5 (Prop_lut5_I0_O)        0.045     1.834 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[2]_INST_0/O
+                         net (fo=1, routed)           0.419     2.253    code7segment_OBUF[2]
+    U8                   OBUF (Prop_obuf_I_O)         1.236     3.489 r  code7segment_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     3.489    code7segment[2]
+    U8                                                                r  code7segment[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[0]
+                            (input port)
+  Destination:            code7segment[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.501ns  (logic 1.543ns (44.056%)  route 1.959ns (55.944%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 r  digit[0] (IN)
+                         net (fo=0)                   0.000     0.000    digit[0]
+    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  digit_IBUF[0]_inst/O
+                         net (fo=7, routed)           1.568     1.789    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[0]
+    SLICE_X65Y15         LUT5 (Prop_lut5_I0_O)        0.049     1.838 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[5]_INST_0/O
+                         net (fo=1, routed)           0.390     2.229    code7segment_OBUF[5]
+    V5                   OBUF (Prop_obuf_I_O)         1.273     3.501 r  code7segment_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     3.501    code7segment[5]
+    V5                                                                r  code7segment[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[2]
+                            (input port)
+  Destination:            code7segment[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.521ns  (logic 1.569ns (44.555%)  route 1.952ns (55.445%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W16                                               0.000     0.000 r  digit[2] (IN)
+                         net (fo=0)                   0.000     0.000    digit[2]
+    W16                  IBUF (Prop_ibuf_I_O)         0.232     0.232 r  digit_IBUF[2]_inst/O
+                         net (fo=7, routed)           1.541     1.773    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[2]
+    SLICE_X65Y15         LUT5 (Prop_lut5_I0_O)        0.051     1.824 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[4]_INST_0/O
+                         net (fo=1, routed)           0.411     2.235    code7segment_OBUF[4]
+    U5                   OBUF (Prop_obuf_I_O)         1.286     3.521 r  code7segment_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     3.521    code7segment[4]
+    U5                                                                r  code7segment[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 digit[2]
+                            (input port)
+  Destination:            code7segment[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.532ns  (logic 1.554ns (43.983%)  route 1.979ns (56.017%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W16                                               0.000     0.000 r  digit[2] (IN)
+                         net (fo=0)                   0.000     0.000    digit[2]
+    W16                  IBUF (Prop_ibuf_I_O)         0.232     0.232 r  digit_IBUF[2]_inst/O
+                         net (fo=7, routed)           1.488     1.720    SevenSeg_SingleDigit_i/single_seven_segment_0/inst/digit[2]
+    SLICE_X65Y15         LUT5 (Prop_lut5_I4_O)        0.048     1.768 r  SevenSeg_SingleDigit_i/single_seven_segment_0/inst/code7segment[0]_INST_0/O
+                         net (fo=1, routed)           0.491     2.258    code7segment_OBUF[0]
+    W7                   OBUF (Prop_obuf_I_O)         1.274     3.532 r  code7segment_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     3.532    code7segment[0]
+    W7                                                                r  code7segment[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

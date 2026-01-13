@@ -1,0 +1,85 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF31A3C03F31A3C03",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Seven_Seg_Single_Digit_Vivado.gen/sources_1/bd/SevenSeg_SingleDigit",
+      "name": "SevenSeg_SingleDigit",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "single_seven_segment_0": ""
+    },
+    "ports": {
+      "digit": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "code7segment": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "control_signals": {
+        "type": "data",
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "single_seven_segment_0": {
+        "vlnv": "xilinx.com:hls:single_seven_segment:1.0",
+        "ip_revision": "2114366372",
+        "xci_name": "SevenSeg_SingleDigit_single_seven_segment_0_0",
+        "xci_path": "ip/SevenSeg_SingleDigit_single_seven_segment_0_0/SevenSeg_SingleDigit_single_seven_segment_0_0.xci",
+        "inst_hier_path": "single_seven_segment_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "digit_0_1": {
+        "ports": [
+          "digit",
+          "single_seven_segment_0/digit"
+        ]
+      },
+      "single_seven_segment_0_code7segment": {
+        "ports": [
+          "single_seven_segment_0/code7segment",
+          "code7segment"
+        ]
+      },
+      "single_seven_segment_0_control_signals": {
+        "ports": [
+          "single_seven_segment_0/control_signals",
+          "control_signals"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "main_one_digit_7seg.cpp",
+    "fileloc": 6,
+    "instructions": 53,
+    "memory_accesses": 0,
+    "name": "single_seven_segment",
+    "stores": {
+      "T": 12
+    },
+    "total_instructions": 53
+  }
+}

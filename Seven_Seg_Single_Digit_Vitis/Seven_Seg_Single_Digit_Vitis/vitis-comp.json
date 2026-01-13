@@ -1,0 +1,9 @@
+{
+  "name": "Seven_Seg_Single_Digit_Vitis",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

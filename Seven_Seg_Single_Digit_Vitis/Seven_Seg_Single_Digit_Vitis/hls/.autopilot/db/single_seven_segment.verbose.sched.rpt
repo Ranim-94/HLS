@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vitis HLS Report for 'single_seven_segment'
+================================================================
+* Date:           Thu Nov 27 09:31:33 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        Seven_Seg_Single_Digit_Vitis
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.115 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.11>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [main_one_digit_7seg.cpp:6]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln6 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0" [main_one_digit_7seg.cpp:6]   --->   Operation 3 'specinterface' 'specinterface_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %digit"   --->   Operation 4 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %digit, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %code7segment"   --->   Operation 6 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %code7segment, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %control_signals"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i4 %control_signals, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%digit_read = read i8 @_ssdm_op_Read.ap_none.i8, i8 %digit" [main_one_digit_7seg.cpp:6]   --->   Operation 10 'read' 'digit_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (2.11ns)   --->   "%switch_ln14 = switch i8 %digit_read, void %sw.default, i8 0, void %sw.bb, i8 1, void %sw.bb2, i8 2, void %sw.bb4, i8 3, void %sw.bb6, i8 4, void %sw.bb8, i8 5, void %sw.bb10, i8 6, void %sw.bb12, i8 7, void %sw.bb14, i8 8, void %sw.bb16, i8 9, void %sw.bb18" [main_one_digit_7seg.cpp:14]   --->   Operation 11 'switch' 'switch_ln14' <Predicate = true> <Delay = 2.11>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%write_ln44 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 144" [main_one_digit_7seg.cpp:44]   --->   Operation 12 'write' 'write_ln44' <Predicate = (digit_read == 9)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln45 = br void %sw.epilog" [main_one_digit_7seg.cpp:45]   --->   Operation 13 'br' 'br_ln45' <Predicate = (digit_read == 9)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%write_ln41 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 128" [main_one_digit_7seg.cpp:41]   --->   Operation 14 'write' 'write_ln41' <Predicate = (digit_read == 8)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln42 = br void %sw.epilog" [main_one_digit_7seg.cpp:42]   --->   Operation 15 'br' 'br_ln42' <Predicate = (digit_read == 8)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%write_ln38 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 248" [main_one_digit_7seg.cpp:38]   --->   Operation 16 'write' 'write_ln38' <Predicate = (digit_read == 7)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln39 = br void %sw.epilog" [main_one_digit_7seg.cpp:39]   --->   Operation 17 'br' 'br_ln39' <Predicate = (digit_read == 7)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%write_ln35 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 130" [main_one_digit_7seg.cpp:35]   --->   Operation 18 'write' 'write_ln35' <Predicate = (digit_read == 6)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln36 = br void %sw.epilog" [main_one_digit_7seg.cpp:36]   --->   Operation 19 'br' 'br_ln36' <Predicate = (digit_read == 6)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%write_ln32 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 146" [main_one_digit_7seg.cpp:32]   --->   Operation 20 'write' 'write_ln32' <Predicate = (digit_read == 5)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln33 = br void %sw.epilog" [main_one_digit_7seg.cpp:33]   --->   Operation 21 'br' 'br_ln33' <Predicate = (digit_read == 5)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%write_ln29 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 153" [main_one_digit_7seg.cpp:29]   --->   Operation 22 'write' 'write_ln29' <Predicate = (digit_read == 4)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln30 = br void %sw.epilog" [main_one_digit_7seg.cpp:30]   --->   Operation 23 'br' 'br_ln30' <Predicate = (digit_read == 4)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%write_ln26 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 176" [main_one_digit_7seg.cpp:26]   --->   Operation 24 'write' 'write_ln26' <Predicate = (digit_read == 3)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln27 = br void %sw.epilog" [main_one_digit_7seg.cpp:27]   --->   Operation 25 'br' 'br_ln27' <Predicate = (digit_read == 3)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%write_ln23 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 164" [main_one_digit_7seg.cpp:23]   --->   Operation 26 'write' 'write_ln23' <Predicate = (digit_read == 2)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln24 = br void %sw.epilog" [main_one_digit_7seg.cpp:24]   --->   Operation 27 'br' 'br_ln24' <Predicate = (digit_read == 2)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%write_ln20 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 249" [main_one_digit_7seg.cpp:20]   --->   Operation 28 'write' 'write_ln20' <Predicate = (digit_read == 1)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln21 = br void %sw.epilog" [main_one_digit_7seg.cpp:21]   --->   Operation 29 'br' 'br_ln21' <Predicate = (digit_read == 1)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%write_ln17 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 192" [main_one_digit_7seg.cpp:17]   --->   Operation 30 'write' 'write_ln17' <Predicate = (digit_read == 0)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln18 = br void %sw.epilog" [main_one_digit_7seg.cpp:18]   --->   Operation 31 'br' 'br_ln18' <Predicate = (digit_read == 0)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_none.i8P0A, i8 %code7segment, i8 255" [main_one_digit_7seg.cpp:47]   --->   Operation 32 'write' 'write_ln47' <Predicate = (digit_read != 0 & digit_read != 1 & digit_read != 2 & digit_read != 3 & digit_read != 4 & digit_read != 5 & digit_read != 6 & digit_read != 7 & digit_read != 8 & digit_read != 9)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln49 = br void %sw.epilog" [main_one_digit_7seg.cpp:49]   --->   Operation 33 'br' 'br_ln49' <Predicate = (digit_read != 0 & digit_read != 1 & digit_read != 2 & digit_read != 3 & digit_read != 4 & digit_read != 5 & digit_read != 6 & digit_read != 7 & digit_read != 8 & digit_read != 9)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%write_ln52 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %control_signals, i4 14" [main_one_digit_7seg.cpp:52]   --->   Operation 34 'write' 'write_ln52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%ret_ln55 = ret" [main_one_digit_7seg.cpp:55]   --->   Operation 35 'ret' 'ret_ln55' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.115ns
+The critical path consists of the following:
+	wire read operation ('digit_read', main_one_digit_7seg.cpp:6) on port 'digit' (main_one_digit_7seg.cpp:6) [12]  (0.000 ns)
+	blocking operation 2.115 ns on control path)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
