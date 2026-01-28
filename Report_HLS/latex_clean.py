@@ -3,10 +3,10 @@ import os
 # List of LaTeX compilation file extensions to delete
 latex_extensions = [
     ".aux", ".bbl", ".blg", ".dvi", ".fdb_latexmk", ".fls", ".log", ".nlo",
-    ".out", ".synctex.gz", ".tdo", ".toc"
+    ".out", ".synctex.gz", ".tdo", ".toc","lof","lot"
 ]
 
-main_file = "stm32.tex"
+main_file = "main_hls.tex"
 
 for root, dirs, files in os.walk("."):
     for file in files:

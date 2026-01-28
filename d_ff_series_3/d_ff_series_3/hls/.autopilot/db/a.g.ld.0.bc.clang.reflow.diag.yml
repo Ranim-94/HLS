@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_dffs_top_ir
+Args:            
+  - Callee:          'dffs_top(bool, bool&, bool&, bool&)'
+    DebugLoc:        { File: main_dffs.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_dffs_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

@@ -40,6 +40,7 @@ Testbench and simulation are techniques in order to validate our \verb|HLS| desi
 
 \newpage
 \section{Testbench in Vitis}
+\label{sec:tesbench_vitis}
 
 Now we explore the concept using the \verb|Vitis| tool. In \verb|Vitis|, testbench are know under the concept of \textit{C-simulation}. To understand the concept in \verb|Vitis|, we first start by recalling the classical known approach done in chapters before, that is without testbench. This approach is shown in \autoref{fig:testbench:hls_normal_flow}
 
@@ -79,6 +80,9 @@ In simulation, constraint files are not needed. Using only the testbench and des
 \end{figure}
 
 
+\subsection{C RTL Cosimulation}
+\label{sub:c_rtl_cosim}
+
 The \textit{regenerate RTL code} can also be verified, by a process called \tbi{C- RTL cosimulation}. In this process, \verb|HLS| \textit{re-uses} the testbench, and apply it on the re-gerenrate \verb|RTL|. We can check timing as well as the functinanlity in cycle accurate debug environment. 
 
 After checking the regerenated \verb|RTL| files, the hardware \verb|IP| can be regenerate again. These steps are shown in \autoref{fig:testbench:rtl_rechecking}.
@@ -90,6 +94,51 @@ After checking the regerenated \verb|RTL| files, the hardware \verb|IP| can be r
 \caption{Rechecking the re-gerenated RTL code}
 \label{fig:testbench:rtl_rechecking}
 \end{figure}
+
+
+%=============================
+%=============================
+%=============================
+
+\newpage
+\section{Summary Testbench}
+
+\begin{itemize}
+
+\item Testbench is a \tbi{software technique} to verify our desing (the top function)
+
+	\begin{itemize}
+	
+	\item We implement some other function (based on software approach) equivalent to our top function (based on hardware)
+	
+	\item We compare the outputs of these 2 functions based on same input to both
+	
+	\item If our desing is correct, the output shoul be the same
+	\end{itemize}
+
+\item Beside from verifying output, we can verify extra features such as power consumption, timing, $\cdots$
+
+\item In tools such as \verb|Vitis|, testbench is done under the concept of \textit{C simulation}
+
+	\begin{itemize}
+	\item See \ref{sec:tesbench_vitis} for details and see different figures, comparing flow work with and without testbench
+	\end{itemize}
+
+\item Other level of checking: C RTL Cosimulation (\ref{sub:c_rtl_cosim})
+
+	\begin{itemize}
+	\item In this step we check also the RTL code using the \verb|C RTL Cosimulation| functionlaity in \verb|Vitis|
+	
+	\item It uses the testbench files, and the RTL code and dump a trace view in which we have the input and output
+	
+	\item This offer an extra checking at the level of RTL code (\verb|VHDL| and \verb|Verilog|)
+	
+	\end{itemize}
+
+\end{itemize}
+
+
+
 
 
 

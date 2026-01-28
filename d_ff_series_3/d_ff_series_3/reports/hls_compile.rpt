@@ -1,0 +1,97 @@
+
+
+================================================================
+== Synthesis Summary Report of 'dffs_top'
+================================================================
++ General Information: 
+    * Date:           Mon Jan 26 11:25:25 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        d_ff_series_3
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------+------+------+---------+-------+----------+---------+------+----------+------+----+---------+----+-----+
+    |   Modules  | Issue|      |     Latency     | Iteration|         | Trip |          |      |    |         |    |     |
+    |   & Loops  | Type | Slack| (cycles)|  (ns) |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF   | LUT| URAM|
+    +------------+------+------+---------+-------+----------+---------+------+----------+------+----+---------+----+-----+
+    |+ dffs_top  |     -|  7.30|        0|  0.000|         -|        1|     -|        no|     -|   -|  3 (~0%)|   -|    -|
+    +------------+------+------+---------+-------+----------+---------+------+----------+------+----+---------+----+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------+---------+-----------+----------+
+| Port | Mode    | Direction | Bitwidth |
++------+---------+-----------+----------+
+| d    | ap_none | in        | 1        |
+| q1   | ap_none | out       | 1        |
+| q2   | ap_none | out       | 1        |
+| q3   | ap_none | out       | 1        |
++------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| d        | in        | bool     |
+| q1       | out       | bool&    |
+| q2       | out       | bool&    |
+| q3       | out       | bool&    |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| d        | d            | port    |
+| q1       | q1           | port    |
+| q2       | q2           | port    |
+| q3       | q3           | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+--------------------------------------+
+| Type      | Options                  | Location                             |
++-----------+--------------------------+--------------------------------------+
+| INTERFACE | ap_none port=d           | main_dffs.cpp:8 in dffs_top, d       |
+| INTERFACE | ap_none port=q1          | main_dffs.cpp:9 in dffs_top, q1      |
+| INTERFACE | ap_none port=q2          | main_dffs.cpp:10 in dffs_top, q2     |
+| INTERFACE | ap_none port=q3          | main_dffs.cpp:11 in dffs_top, q3     |
+| INTERFACE | ap_ctrl_none port=return | main_dffs.cpp:13 in dffs_top, return |
++-----------+--------------------------+--------------------------------------+
+
+

@@ -1,0 +1,6 @@
+   Build using "/opt/Xilinx/2025.1/Vitis/lnx64/tools/vcxx/libexec//clang++"
+   Compiling apatb_dffs_top.cpp
+   Compiling dffs-tb.cpp_pre.cpp.tb.cpp
+   Compiling main_dffs.cpp_pre.cpp.tb.cpp
+   Compiling apatb_dffs_top_ir.ll
+   Generating cosim.tv.exe

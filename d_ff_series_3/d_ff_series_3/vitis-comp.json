@@ -1,0 +1,9 @@
+{
+  "name": "d_ff_series_3",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

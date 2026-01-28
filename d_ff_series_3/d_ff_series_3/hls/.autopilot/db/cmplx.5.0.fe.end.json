@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "dffs_top",
+        "file": "main_dffs.cpp",
+        "fileloc": "6",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "2"
+        },
+        "stores": {
+            "G": "2"
+        }
+    }
+}

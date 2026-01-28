@@ -1,0 +1,14 @@
+<pragmas>
+<pragma file="main_dff_reg.cpp" line="14" pragmaType="interface" parentfunction="dff_reg_top" mode="ap_none" port="d" name="" register="0"/>
+<pragma file="main_dff_reg.cpp" line="15" pragmaType="interface" parentfunction="dff_reg_top" mode="ap_none" port="q" name="" register="0"/>
+<pragma file="main_dff_reg.cpp" line="17" pragmaType="interface" parentfunction="dff_reg_top" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<3, false>::operator=(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<3>::ap_uint<3, false>(ap_int_base<3, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="_ZN8ssdm_intILi3ELb0EEC2EDq3_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<3, false>::ap_bit_ref(ap_int_base<3, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::RType<3, false>::arg1 operator>><3, false>(ap_int_base<3, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<3>::ap_uint(int)" off="0" region="0" recursive="0"/>
+</pragmas>

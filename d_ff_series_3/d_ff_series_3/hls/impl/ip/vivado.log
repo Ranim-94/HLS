@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Jan 26 11:25:27 2026
+# Process ID         : 10810
+# Current directory  : /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip
+# Command line       : vivado -notrace -mode batch -source run_ippack.tcl
+# Log file           : /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip/vivado.log
+# Journal file       : /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip/vivado.jou
+# Running On         : lenovo-Legion-5-17ACH6H
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics
+# CPU Frequency      : 3427.272 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14496 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 16644 MB
+# Available Virtual  : 9209 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/hls_data.json outdir=/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip srcdir=/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip/misc
+INFO: Copied 1 verilog file(s) to /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip/hdl/verilog
+INFO: Copied 1 vhdl file(s) to /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip/hdl/vhdl
+INFO: Import ports from HDL: /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip/hdl/vhdl/dffs_top.vhd (dffs_top)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add data interface d
+INFO: Add data interface q1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Add data interface q2
+INFO: Add data interface q3
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip/component.xml
+INFO: Created IP archive /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/impl/ip/xilinx_com_hls_dffs_top_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 26 11:25:30 2026...

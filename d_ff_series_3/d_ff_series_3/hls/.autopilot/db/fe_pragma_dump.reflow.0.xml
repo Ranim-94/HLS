@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="main_dffs.cpp" line="8" pragmaType="interface" parentfunction="dffs_top" mode="ap_none" port="d" name="" register="0"/>
+<pragma file="main_dffs.cpp" line="9" pragmaType="interface" parentfunction="dffs_top" mode="ap_none" port="q1" name="" register="0"/>
+<pragma file="main_dffs.cpp" line="10" pragmaType="interface" parentfunction="dffs_top" mode="ap_none" port="q2" name="" register="0"/>
+<pragma file="main_dffs.cpp" line="11" pragmaType="interface" parentfunction="dffs_top" mode="ap_none" port="q3" name="" register="0"/>
+<pragma file="main_dffs.cpp" line="13" pragmaType="interface" parentfunction="dffs_top" mode="ap_ctrl_none" port="return" name=""/>
+</pragmas>

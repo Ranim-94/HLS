@@ -1,0 +1,5 @@
+  CREATE_STREAM @0 {NAME:dffs_top_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.dffs_top_virtual_sqr STREAM:1500}
+  CREATE_STREAM @125000 {NAME:dffs_top_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_d.m_agt.sqr STREAM:1600}
+  CREATE_STREAM @125000 {NAME:dffs_top_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_q1.s_agt.sqr STREAM:1610}
+  CREATE_STREAM @125000 {NAME:dffs_top_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_q2.s_agt.sqr STREAM:1620}
+  CREATE_STREAM @125000 {NAME:dffs_top_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_q3.s_agt.sqr STREAM:1630}

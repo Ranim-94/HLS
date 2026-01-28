@@ -1,0 +1,7 @@
+Running: xsim.dir/dffs_top/xsimk -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=dffs_top_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb dffs_top.wdb -simrunnum 0 -socket 40003
+Design successfully loaded
+Design Loading Memory Usage: 198380 KB (Peak: 198380 KB)
+Design Loading CPU Usage: 790 ms
+Simulation completed
+Simulation Memory Usage: 295496 KB (Peak: 337648 KB)
+Simulation CPU Usage: 840 ms

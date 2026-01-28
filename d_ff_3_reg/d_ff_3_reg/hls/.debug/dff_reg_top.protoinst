@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"dff_reg_top": {
+			"proto_instances": {
+			}
+		}
+	}
+}

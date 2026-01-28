@@ -1,0 +1,1 @@
+xsim {dffs_top} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=dffs_top_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -view {{dffs_top_dataflow_ana.wcfg}} -tclbatch {dffs_top.tcl} -protoinst {dffs_top.protoinst}

@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/d_ff_series_3.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jan 26 11:27:14 2026",
+ "timestampMillis": "1769423234241",
+ "buildStep": {
+  "cmdId": "e04c1cc3-64f9-4789-b8dc-114da66f2633",
+  "name": "vitis-run",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/logs/d_ff_series_3.steps.log",
+  "commandLine": "/opt/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/lenovo/Simulation_Linux/HLS/d_ff_series_3/hls_config.cfg --work_dir d_ff_series_3 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/hls_config.cfg",
+   "--work_dir",
+   "d_ff_series_3"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/d_ff_series_3"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jan 26 11:27:14 2026",
+ "timestampMillis": "1769423234241",
+ "status": {
+  "cmdId": "e04c1cc3-64f9-4789-b8dc-114da66f2633",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jan 26 11:27:17 2026",
+ "timestampMillis": "1769423237383",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dffs_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/dffs.hpp",
+     "/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/main_dffs.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jan 26 11:27:17 2026",
+ "timestampMillis": "1769423237384",
+ "buildStep": {
+  "cmdId": "c3dea2fc-6d79-4653-95f8-94f5c2495a1a",
+  "name": "",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/d_ff_series_3/d_ff_series_3/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/d_ff_series_3"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jan 26 11:27:17 2026",
+ "timestampMillis": "1769423237384",
+ "status": {
+  "cmdId": "c3dea2fc-6d79-4653-95f8-94f5c2495a1a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jan 26 11:27:20 2026",
+ "timestampMillis": "1769423240656",
+ "status": {
+  "cmdId": "c3dea2fc-6d79-4653-95f8-94f5c2495a1a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jan 26 11:27:20 2026",
+ "timestampMillis": "1769423240735",
+ "status": {
+  "cmdId": "e04c1cc3-64f9-4789-b8dc-114da66f2633",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jan 26 11:27:20 2026",
+ "timestampMillis": "1769423240735",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jan 26 11:27:20 2026",
+ "timestampMillis": "1769423240736",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
