@@ -1,0 +1,329 @@
+<profile>
+    <ReportVersion>
+        <Version>2025.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xc7a35t-cpg236-1</Part>
+        <TopModelName>serial2parallel</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>5.140</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>main_serial2parallel.cpp:4</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>49</FF>
+            <LUT>205</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>100</BRAM_18K>
+            <DSP>90</DSP>
+            <FF>41600</FF>
+            <LUT>20800</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>serial2parallel</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>serial2parallel</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>d</name>
+            <Object>d</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>serial_start</name>
+            <Object>serial_start</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a</name>
+            <Object>a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>end_conversion</name>
+            <Object>end_conversion</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>serial2parallel</ModuleName>
+            <BindInstances>next_counter_1_fu_135_p3 icmp_ln62_fu_144_p2 icmp_ln73_fu_150_p2 next_counter_3_fu_180_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>serial2parallel</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.140</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>main_serial2parallel.cpp:4</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>49</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>205</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="next_counter_1_fu_135_p3" SOURCE="main_serial2parallel.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="next_counter_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln62_fu_144_p2" SOURCE="main_serial2parallel.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln73_fu_150_p2" SOURCE="main_serial2parallel.cpp:73" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln73" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="next_counter_3_fu_180_p2" SOURCE="main_serial2parallel.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="next_counter_3" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="d" index="0" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="d" name="d" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="serial_start" index="1" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="serial_start" name="serial_start" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="a" index="2" direction="out" srcType="ap_uint&lt;8&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="a" name="a" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="end_conversion" index="3" direction="out" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="end_conversion" name="end_conversion" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="d" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="d">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>d</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="d"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="serial_start" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="serial_start">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>serial_start</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="serial_start"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="a" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="a">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>a</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="end_conversion" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="end_conversion">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>end_conversion</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="end_conversion"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="a">ap_none, out, 8</column>
+                    <column name="d">ap_none, in, 1</column>
+                    <column name="end_conversion">ap_none, out, 1</column>
+                    <column name="serial_start">ap_none, in, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="d">in, bool</column>
+                    <column name="serial_start">in, bool</column>
+                    <column name="a">out, ap_uint&lt;8&gt;&amp;</column>
+                    <column name="end_conversion">out, bool&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="d">d, port</column>
+                    <column name="serial_start">serial_start, port</column>
+                    <column name="a">a, port</column>
+                    <column name="end_conversion">end_conversion, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="main_serial2parallel.cpp:18" status="valid" parentFunction="serial2parallel" variable="d" isDirective="0" options="ap_none port=d"/>
+        <Pragma type="interface" location="main_serial2parallel.cpp:21" status="valid" parentFunction="serial2parallel" variable="serial_start" isDirective="0" options="ap_none port=serial_start"/>
+        <Pragma type="interface" location="main_serial2parallel.cpp:25" status="valid" parentFunction="serial2parallel" variable="a" isDirective="0" options="ap_none port=a"/>
+        <Pragma type="interface" location="main_serial2parallel.cpp:28" status="valid" parentFunction="serial2parallel" variable="end_conversion" isDirective="0" options="ap_none port=end_conversion"/>
+        <Pragma type="interface" location="main_serial2parallel.cpp:32" status="valid" parentFunction="serial2parallel" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+    </PragmaReport>
+</profile>
+

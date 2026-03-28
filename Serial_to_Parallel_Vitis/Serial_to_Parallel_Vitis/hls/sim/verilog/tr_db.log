@@ -1,0 +1,5 @@
+  CREATE_STREAM @0 {NAME:serial2parallel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.serial2parallel_virtual_sqr STREAM:1502}
+  CREATE_STREAM @125000 {NAME:serial2parallel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_d.m_agt.sqr STREAM:1602}
+  CREATE_STREAM @125000 {NAME:serial2parallel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_serial_start.m_agt.sqr STREAM:1612}
+  CREATE_STREAM @125000 {NAME:serial2parallel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_a.s_agt.sqr STREAM:1622}
+  CREATE_STREAM @125000 {NAME:serial2parallel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_end_conversion.s_agt.sqr STREAM:1632}

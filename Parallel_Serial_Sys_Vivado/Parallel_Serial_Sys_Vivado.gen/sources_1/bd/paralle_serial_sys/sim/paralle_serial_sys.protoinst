@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"paralle_serial_sys": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_parallel2serial_ir
+Args:            
+  - Callee:          'parallel2serial(ap_uint<8>, bool, bool&, bool&, bool&)'
+    DebugLoc:        { File: main_parallel2serial.cpp, Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_parallel2serial_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

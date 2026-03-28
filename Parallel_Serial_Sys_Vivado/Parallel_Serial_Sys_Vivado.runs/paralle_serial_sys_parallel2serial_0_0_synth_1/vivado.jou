@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Mar  2 08:40:32 2026
+# Process ID         : 16668
+# Current directory  : /home/lenovo/Simulation_Linux/HLS/Parallel_Serial_Sys_Vivado/Parallel_Serial_Sys_Vivado.runs/paralle_serial_sys_parallel2serial_0_0_synth_1
+# Command line       : vivado -log paralle_serial_sys_parallel2serial_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source paralle_serial_sys_parallel2serial_0_0.tcl
+# Log file           : /home/lenovo/Simulation_Linux/HLS/Parallel_Serial_Sys_Vivado/Parallel_Serial_Sys_Vivado.runs/paralle_serial_sys_parallel2serial_0_0_synth_1/paralle_serial_sys_parallel2serial_0_0.vds
+# Journal file       : /home/lenovo/Simulation_Linux/HLS/Parallel_Serial_Sys_Vivado/Parallel_Serial_Sys_Vivado.runs/paralle_serial_sys_parallel2serial_0_0_synth_1/vivado.jou
+# Running On         : lenovo-Legion-5-17ACH6H
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics
+# CPU Frequency      : 4242.007 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14496 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 16644 MB
+# Available Virtual  : 10955 MB
+#-----------------------------------------------------------
+source paralle_serial_sys_parallel2serial_0_0.tcl -notrace

@@ -1,0 +1,6 @@
+   Build using "/opt/Xilinx/2025.1/Vitis/lnx64/tools/vcxx/libexec//clang++"
+   Compiling apatb_parallel2serial.cpp
+   Compiling main_parallel2serial.cpp_pre.cpp.tb.cpp
+   Compiling parallel2serial-tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_parallel2serial_ir.ll
+   Generating cosim.tv.exe

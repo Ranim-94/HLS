@@ -1,0 +1,227 @@
+<ENTRY>
+{
+ "thisFile": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Feb 28 08:53:29 2026",
+ "timestampMillis": "1772265209574",
+ "buildStep": {
+  "cmdId": "7be0418f-9c80-4336-b1cc-00a867a286e9",
+  "name": "vitis-run",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/logs/Serial_to_Parallel_Vitis.steps.log",
+  "commandLine": "/opt/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --cosim --config /home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/hls_config.cfg --work_dir Serial_to_Parallel_Vitis ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/hls_config.cfg",
+   "--work_dir",
+   "Serial_to_Parallel_Vitis"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Feb 28 08:53:29 2026",
+ "timestampMillis": "1772265209574",
+ "status": {
+  "cmdId": "7be0418f-9c80-4336-b1cc-00a867a286e9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Feb 28 08:53:32 2026",
+ "timestampMillis": "1772265212954",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "serial2parallel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/main_serial2parallel.cpp",
+     "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/serial2parallel.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Feb 28 08:53:32 2026",
+ "timestampMillis": "1772265212955",
+ "buildStep": {
+  "cmdId": "a3cb96c6-86cc-4be2-8fbe-7b1dd89b0808",
+  "name": "",
+  "logFile": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Feb 28 08:53:32 2026",
+ "timestampMillis": "1772265212955",
+ "status": {
+  "cmdId": "a3cb96c6-86cc-4be2-8fbe-7b1dd89b0808",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Feb 28 08:53:32 2026",
+ "timestampMillis": "1772265212955",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/report/serial2parallel_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Feb 28 08:53:32 2026",
+ "timestampMillis": "1772265212955",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Feb 28 08:53:32 2026",
+ "timestampMillis": "1772265212955",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Feb 28 08:53:32 2026",
+ "timestampMillis": "1772265212955",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Feb 28 08:53:32 2026",
+ "timestampMillis": "1772265212956",
+ "report": {
+  "path": "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Feb 28 08:54:11 2026",
+ "timestampMillis": "1772265251186",
+ "status": {
+  "cmdId": "a3cb96c6-86cc-4be2-8fbe-7b1dd89b0808",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Feb 28 08:54:11 2026",
+ "timestampMillis": "1772265251273",
+ "status": {
+  "cmdId": "7be0418f-9c80-4336-b1cc-00a867a286e9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Feb 28 08:54:11 2026",
+ "timestampMillis": "1772265251273",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Feb 28 08:54:11 2026",
+ "timestampMillis": "1772265251274",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

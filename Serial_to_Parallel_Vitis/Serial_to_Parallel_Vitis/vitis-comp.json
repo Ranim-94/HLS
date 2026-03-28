@@ -1,0 +1,9 @@
+{
+  "name": "Serial_to_Parallel_Vitis",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

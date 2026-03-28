@@ -1,0 +1,11 @@
+sv xil_defaultlib "glbl.v"
+sv xil_defaultlib "serial2parallel.autotb.v"
+sv xil_defaultlib "serial2parallel.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+sv xil_defaultlib "./file_agent/file_agent_pkg.sv"     
+sv xil_defaultlib "./svr/svr_pkg.sv"    
+sv xil_defaultlib "./svr/svr_if.sv"   
+sv xil_defaultlib "./serial2parallel_subsystem/serial2parallel_subsystem_pkg.sv"           
+sv xil_defaultlib "./svtb/misc_interface.sv"    
+sv xil_defaultlib "./svtb/sv_module_top.sv"   
+

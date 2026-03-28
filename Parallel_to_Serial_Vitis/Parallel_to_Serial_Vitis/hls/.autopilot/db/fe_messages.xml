@@ -1,0 +1,24 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="parallel2serial" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=parallel2serial" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parallel2serial.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parallel2serial" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parallel2serial.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parallel2serial" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=begin" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parallel2serial.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parallel2serial" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=d" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parallel2serial.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parallel2serial" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=serial_start" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parallel2serial.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parallel2serial" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=serial_end" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main_parallel2serial.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="parallel2serial" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

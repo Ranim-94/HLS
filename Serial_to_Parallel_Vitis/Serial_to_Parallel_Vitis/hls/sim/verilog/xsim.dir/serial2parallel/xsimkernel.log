@@ -1,0 +1,7 @@
+Running: xsim.dir/serial2parallel/xsimk -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=serial2parallel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb serial2parallel.wdb -simrunnum 0 -socket 59803
+Design successfully loaded
+Design Loading Memory Usage: 201436 KB (Peak: 201444 KB)
+Design Loading CPU Usage: 820 ms
+Simulation completed
+Simulation Memory Usage: 298796 KB (Peak: 340704 KB)
+Simulation CPU Usage: 880 ms

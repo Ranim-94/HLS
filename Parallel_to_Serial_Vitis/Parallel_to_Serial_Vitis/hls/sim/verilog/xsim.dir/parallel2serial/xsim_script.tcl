@@ -1,0 +1,1 @@
+xsim {parallel2serial} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=parallel2serial_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -view {{parallel2serial_dataflow_ana.wcfg}} -tclbatch {parallel2serial.tcl} -protoinst {parallel2serial.protoinst}

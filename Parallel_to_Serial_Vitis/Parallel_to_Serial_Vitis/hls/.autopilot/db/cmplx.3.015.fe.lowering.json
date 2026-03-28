@@ -1,0 +1,21 @@
+{
+  "0": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "main_parallel2serial.cpp",
+    "fileloc": 5,
+    "instructions": 44,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "parallel2serial",
+    "stores": {
+      "G": 5,
+      "T": 9
+    },
+    "total_instructions": 44
+  }
+}

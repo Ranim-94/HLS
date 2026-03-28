@@ -1,0 +1,10 @@
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+ d = 1 serial_start = 1 serial_end = 0
+ d = 1 serial_start = 0 serial_end = 0
+ d = 0 serial_start = 0 serial_end = 0
+ d = 0 serial_start = 0 serial_end = 0
+ d = 1 serial_start = 0 serial_end = 0
+ d = 0 serial_start = 0 serial_end = 0
+ d = 1 serial_start = 0 serial_end = 0
+ d = 1 serial_start = 0 serial_end = 1
+Test Passed

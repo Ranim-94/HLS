@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Feb 28 08:54:07 2026
+# Process ID         : 17692
+# Current directory  : /home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog
+# Command line       : xsim -mode tcl -source {xsim.dir/serial2parallel/xsim_script.tcl}
+# Log file           : /home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/xsim.log
+# Journal file       : /home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/xsim.jou
+# Running On         : lenovo-Legion-5-17ACH6H
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics
+# CPU Frequency      : 4241.697 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14496 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 16644 MB
+# Available Virtual  : 9895 MB
+#-----------------------------------------------------------
+source xsim.dir/serial2parallel/xsim_script.tcl
+open_wave_config serial2parallel_dataflow_ana.wcfg
+source serial2parallel.tcl

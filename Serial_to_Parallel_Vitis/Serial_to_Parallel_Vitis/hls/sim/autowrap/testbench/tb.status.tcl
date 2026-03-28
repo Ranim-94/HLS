@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/./sim/autowrap/testbench/main_serial2parallel.cpp_pre.cpp.tb.cpp

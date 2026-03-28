@@ -1,0 +1,110 @@
+
+
+================================================================
+== Synthesis Summary Report of 'parallel2serial'
+================================================================
++ General Information: 
+    * Date:           Mon Feb 16 10:27:05 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        Parallel_to_Serial_Vitis
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------+------+------+---------+-------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |      Modules      | Issue|      |     Latency     | Iteration|         | Trip |          |      |    |          |           |     |
+    |      & Loops      | Type | Slack| (cycles)|  (ns) |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +-------------------+------+------+---------+-------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ parallel2serial  |     -|  2.16|        0|  0.000|         -|        1|     -|        no|     -|   -|  33 (~0%)|  174 (~0%)|    -|
+    +-------------------+------+------+---------+-------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++--------------+---------+-----------+----------+
+| Port         | Mode    | Direction | Bitwidth |
++--------------+---------+-----------+----------+
+| a            | ap_none | in        | 8        |
+| begin_r      | ap_none | in        | 1        |
+| d            | ap_none | out       | 1        |
+| serial_end   | ap_none | out       | 1        |
+| serial_start | ap_none | out       | 1        |
++--------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+------------+
+| Argument     | Direction | Datatype   |
++--------------+-----------+------------+
+| a            | in        | ap_uint<8> |
+| begin        | in        | bool       |
+| d            | out       | bool&      |
+| serial_start | out       | bool&      |
+| serial_end   | out       | bool&      |
++--------------+-----------+------------+
+
+* SW-to-HW Mapping
++--------------+--------------+---------+
+| Argument     | HW Interface | HW Type |
++--------------+--------------+---------+
+| a            | a            | port    |
+| begin        | begin_r      | port    |
+| d            | d            | port    |
+| serial_start | serial_start | port    |
+| serial_end   | serial_end   | port    |
++--------------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------+-----+--------+-------------+-----------+----------+---------+
+| Name                             | DSP | Pragma | Variable    | Op        | Impl     | Latency |
++----------------------------------+-----+--------+-------------+-----------+----------+---------+
+| + parallel2serial                | 0   |        |             |           |          |         |
+|   select_ln25_fu_107_p3          |     |        | select_ln25 | select    | auto_sel | 0       |
+|   icmp_ln51_fu_141_p2            |     |        | icmp_ln51   | setlt     | auto     | 0       |
+|   add_ln56_fu_147_p2             |     |        | add_ln56    | add       | fabric   | 0       |
+|   bitselect_1ns_8ns_3ns_1_1_1_U1 |     |        | tmp_1       | bitselect | auto     | 0       |
++----------------------------------+-----+--------+-------------+-----------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------+--------------------------------------------------------------+
+| Type      | Options                   | Location                                                     |
++-----------+---------------------------+--------------------------------------------------------------+
+| INTERFACE | ap_none port=a            | main_parallel2serial.cpp:11 in parallel2serial, a            |
+| INTERFACE | ap_none port=begin        | main_parallel2serial.cpp:12 in parallel2serial, begin        |
+| INTERFACE | ap_none port=d            | main_parallel2serial.cpp:15 in parallel2serial, d            |
+| INTERFACE | ap_none port=serial_start | main_parallel2serial.cpp:16 in parallel2serial, serial_start |
+| INTERFACE | ap_none port=serial_end   | main_parallel2serial.cpp:17 in parallel2serial, serial_end   |
+| INTERFACE | ap_ctrl_none port=return  | main_parallel2serial.cpp:20 in parallel2serial, return       |
++-----------+---------------------------+--------------------------------------------------------------+
+
+

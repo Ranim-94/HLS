@@ -1,0 +1,7 @@
+serial2parallel.v,verilog,xil_defaultlib,../../../../Parallel_Serial_Sys_Vivado.gen/sources_1/bd/paralle_serial_sys/ipshared/c8b6/hdl/verilog/serial2parallel.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+paralle_serial_sys_serial2parallel_0_0.v,verilog,xil_defaultlib,../../../bd/paralle_serial_sys/ip/paralle_serial_sys_serial2parallel_0_0/sim/paralle_serial_sys_serial2parallel_0_0.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+parallel2serial_bitselect_1ns_8ns_3ns_1_1_1.v,verilog,xil_defaultlib,../../../../Parallel_Serial_Sys_Vivado.gen/sources_1/bd/paralle_serial_sys/ipshared/b8a2/hdl/verilog/parallel2serial_bitselect_1ns_8ns_3ns_1_1_1.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+parallel2serial.v,verilog,xil_defaultlib,../../../../Parallel_Serial_Sys_Vivado.gen/sources_1/bd/paralle_serial_sys/ipshared/b8a2/hdl/verilog/parallel2serial.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+paralle_serial_sys_parallel2serial_0_0.v,verilog,xil_defaultlib,../../../bd/paralle_serial_sys/ip/paralle_serial_sys_parallel2serial_0_0/sim/paralle_serial_sys_parallel2serial_0_0.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+paralle_serial_sys.v,verilog,xil_defaultlib,../../../bd/paralle_serial_sys/sim/paralle_serial_sys.v,incdir="../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

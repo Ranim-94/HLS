@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar  2 08:41:25 2026" VIVADOVERSION="2025.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="paralle_serial_sys" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="7" NAME="LED" RIGHT="0" SIGIS="data" SIGNAME="serial2parallel_0_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="serial2parallel_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="parallel2serial_0" PORT="ap_clk"/>
+        <CONNECTION INSTANCE="serial2parallel_0" PORT="ap_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="parallel2serial_0" PORT="ap_rst"/>
+        <CONNECTION INSTANCE="serial2parallel_0" PORT="ap_rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="begin_conversion" SIGIS="data" SIGNAME="External_Ports_begin_conversion">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="parallel2serial_0" PORT="begin_r"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="sw" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_sw">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="parallel2serial_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2114497732" FULLNAME="/parallel2serial_0" HWVERSION="1.0" INSTANCE="parallel2serial_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="parallel2serial" VLNV="xilinx.com:hls:parallel2serial:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="paralle_serial_sys_parallel2serial_0_0"/>
+        <PARAMETER NAME="II" VALUE="1"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="0"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="a" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_sw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="begin_r" SIGIS="data" SIGNAME="External_Ports_begin_conversion">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="begin_conversion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="d" SIGIS="data" SIGNAME="parallel2serial_0_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="serial2parallel_0" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="serial_end" SIGIS="data"/>
+        <PORT DIR="O" NAME="serial_start" SIGIS="data" SIGNAME="parallel2serial_0_serial_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="serial2parallel_0" PORT="serial_start"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2114500282" FULLNAME="/serial2parallel_0" HWVERSION="1.0" INSTANCE="serial2parallel_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="serial2parallel" VLNV="xilinx.com:hls:serial2parallel:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="paralle_serial_sys_serial2parallel_0_0"/>
+        <PARAMETER NAME="II" VALUE="1"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="0"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="7" NAME="a" RIGHT="0" SIGIS="data" SIGNAME="serial2parallel_0_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="d" SIGIS="data" SIGNAME="parallel2serial_0_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="parallel2serial_0" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="end_conversion" SIGIS="data"/>
+        <PORT DIR="I" NAME="serial_start" SIGIS="data" SIGNAME="parallel2serial_0_serial_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="parallel2serial_0" PORT="serial_start"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

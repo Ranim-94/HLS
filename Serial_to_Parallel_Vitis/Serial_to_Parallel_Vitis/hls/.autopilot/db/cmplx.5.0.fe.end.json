@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "serial2parallel",
+        "file": "main_serial2parallel.cpp",
+        "fileloc": "4",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "5",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "3",
+        "loads": {
+            "G": "3"
+        },
+        "stores": {
+            "G": "3"
+        }
+    }
+}

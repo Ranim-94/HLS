@@ -1,0 +1,161 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE19DC3C07954FAC6",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Parallel_Serial_Sys_Vivado.gen/sources_1/bd/paralle_serial_sys",
+      "name": "paralle_serial_sys",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "serial2parallel_0": "",
+      "parallel2serial_0": ""
+    },
+    "ports": {
+      "sw": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "paralle_serial_sys_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "begin_conversion": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "LED": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "serial2parallel_0": {
+        "vlnv": "xilinx.com:hls:serial2parallel:1.0",
+        "ip_revision": "2114500282",
+        "xci_name": "paralle_serial_sys_serial2parallel_0_0",
+        "xci_path": "ip/paralle_serial_sys_serial2parallel_0_0/paralle_serial_sys_serial2parallel_0_0.xci",
+        "inst_hier_path": "serial2parallel_0",
+        "has_run_ip_tcl": "true"
+      },
+      "parallel2serial_0": {
+        "vlnv": "xilinx.com:hls:parallel2serial:1.0",
+        "ip_revision": "2114497732",
+        "xci_name": "paralle_serial_sys_parallel2serial_0_0",
+        "xci_path": "ip/paralle_serial_sys_parallel2serial_0_0/paralle_serial_sys_parallel2serial_0_0.xci",
+        "inst_hier_path": "parallel2serial_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "a_0_1": {
+        "ports": [
+          "sw",
+          "parallel2serial_0/a"
+        ]
+      },
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk",
+          "parallel2serial_0/ap_clk",
+          "serial2parallel_0/ap_clk"
+        ]
+      },
+      "ap_rst_0_1": {
+        "ports": [
+          "ap_rst",
+          "parallel2serial_0/ap_rst",
+          "serial2parallel_0/ap_rst"
+        ]
+      },
+      "begin_r_0_1": {
+        "ports": [
+          "begin_conversion",
+          "parallel2serial_0/begin_r"
+        ]
+      },
+      "parallel2serial_0_d": {
+        "ports": [
+          "parallel2serial_0/d",
+          "serial2parallel_0/d"
+        ]
+      },
+      "parallel2serial_0_serial_start": {
+        "ports": [
+          "parallel2serial_0/serial_start",
+          "serial2parallel_0/serial_start"
+        ]
+      },
+      "serial2parallel_0_a": {
+        "ports": [
+          "serial2parallel_0/a",
+          "LED"
+        ]
+      }
+    }
+  }
+}

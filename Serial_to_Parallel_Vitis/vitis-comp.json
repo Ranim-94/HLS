@@ -1,0 +1,13 @@
+{
+  "name": "Serial_to_Parallel_Vitis",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Serial_to_Parallel_Vitis"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

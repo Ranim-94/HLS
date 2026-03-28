@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/lenovo/Simulation_Linux/HLS/Parallel_to_Serial_Vitis",
+    "arguments": [
+      "/opt/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.1/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=parallel2serial",
+      "-c",
+      "/home/lenovo/Simulation_Linux/HLS/Parallel_to_Serial_Vitis/./main_parallel2serial.cpp"
+    ],
+    "file": "/home/lenovo/Simulation_Linux/HLS/Parallel_to_Serial_Vitis/./main_parallel2serial.cpp"
+  },
+  {
+    "directory": "/home/lenovo/Simulation_Linux/HLS/Parallel_to_Serial_Vitis",
+    "arguments": [
+      "/opt/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.1/Vitis/include",
+      "-c",
+      "/home/lenovo/Simulation_Linux/HLS/Parallel_to_Serial_Vitis/./parallel2serial-tb.cpp"
+    ],
+    "file": "/home/lenovo/Simulation_Linux/HLS/Parallel_to_Serial_Vitis/./parallel2serial-tb.cpp"
+  }
+]

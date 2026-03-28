@@ -1,0 +1,3 @@
+relativeroot=/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis
+original_argv=--mode hls --package --config /home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/hls_config.cfg --work_dir Serial_to_Parallel_Vitis 
+

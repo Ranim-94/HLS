@@ -1,0 +1,301 @@
+
+	 -> output a = 0b01001101
+	 -> Test Passed
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/Xilinx/2025.1/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_serial2parallel_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj serial2parallel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./serial2parallel_subsystem -s serial2parallel -debug all 
+Multi-threading is on. Using 14 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/serial2parallel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_serial2parallel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/serial2parallel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial2parallel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/svr/svr_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/svr/svr_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/serial2parallel_subsystem/serial2parallel_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lenovo/Simulation_Linux/HLS/Serial_to_Parallel_Vitis/Serial_to_Parallel_Vitis/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.svr_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.serial2parallel_subsystem_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.serial2parallel
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=1)
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=8)
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.dataflow_monitor
+Compiling module xil_defaultlib.apatb_serial2parallel_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial2parallel
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sat Feb 28 08:54:07 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/serial2parallel/xsim_script.tcl
+# xsim {serial2parallel} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=serial2parallel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -view {{serial2parallel_dataflow_ana.wcfg}} -tclbatch {serial2parallel.tcl} -protoinst {serial2parallel.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file serial2parallel.protoinst
+Time resolution is 1 ps
+open_wave_config serial2parallel_dataflow_ana.wcfg
+source serial2parallel.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $coutputgroup]
+## add_wave /apatb_serial2parallel_top/AESL_inst_serial2parallel/end_conversion -into $return_group -radix hex
+## add_wave /apatb_serial2parallel_top/AESL_inst_serial2parallel/a -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $cinputgroup]
+## add_wave /apatb_serial2parallel_top/AESL_inst_serial2parallel/serial_start -into $return_group -radix hex
+## add_wave /apatb_serial2parallel_top/AESL_inst_serial2parallel/d -into $return_group -radix hex
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_serial2parallel_top/AESL_inst_serial2parallel/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_serial2parallel_top/AESL_inst_serial2parallel/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_serial2parallel_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_serial2parallel_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_serial2parallel_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_serial2parallel_top/LENGTH_a -into $tb_portdepth_group -radix hex
+## add_wave /apatb_serial2parallel_top/LENGTH_d -into $tb_portdepth_group -radix hex
+## add_wave /apatb_serial2parallel_top/LENGTH_end_conversion -into $tb_portdepth_group -radix hex
+## add_wave /apatb_serial2parallel_top/LENGTH_serial_start -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(wire) -into $tbcoutputgroup]
+## add_wave /apatb_serial2parallel_top/end_conversion -into $tb_return_group -radix hex
+## add_wave /apatb_serial2parallel_top/a -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(wire) -into $tbcinputgroup]
+## add_wave /apatb_serial2parallel_top/serial_start -into $tb_return_group -radix hex
+## add_wave /apatb_serial2parallel_top/d -into $tb_return_group -radix hex
+## save_wave_config serial2parallel.wcfg
+## run all
+UVM_INFO /opt/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /opt/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO /opt/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+---------------------------------------------------------------------------------------------------------------------------
+Name                                                      Type                                       Size  Value           
+---------------------------------------------------------------------------------------------------------------------------
+uvm_test_top                                              serial2parallel_test_lib                   -     @354            
+  top_env                                                 serial2parallel_env                        -     @365            
+    env_master_svr_d                                      uvm_env                                    -     @388            
+      m_agt                                               uvm_agent                                  -     @631            
+        drv                                               uvm_driver #(REQ,RSP)                      -     @779            
+          rsp_port                                        uvm_analysis_port                          -     @798            
+          seq_item_port                                   uvm_seq_item_pull_port                     -     @788            
+        mon                                               uvm_monitor                                -     @808            
+          item_collect_port                               uvm_analysis_port                          -     @819            
+        sqr                                               uvm_sequencer                              -     @642            
+          rsp_export                                      uvm_analysis_export                        -     @651            
+          seq_item_export                                 uvm_seq_item_pull_imp                      -     @769            
+          arbitration_queue                               array                                      0     -               
+          lock_queue                                      array                                      0     -               
+          num_last_reqs                                   integral                                   32    'd1             
+          num_last_rsps                                   integral                                   32    'd1             
+    env_master_svr_serial_start                           uvm_env                                    -     @401            
+      m_agt                                               uvm_agent                                  -     @837            
+        drv                                               uvm_driver #(REQ,RSP)                      -     @985            
+          rsp_port                                        uvm_analysis_port                          -     @1004           
+          seq_item_port                                   uvm_seq_item_pull_port                     -     @994            
+        mon                                               uvm_monitor                                -     @1014           
+          item_collect_port                               uvm_analysis_port                          -     @1025           
+        sqr                                               uvm_sequencer                              -     @848            
+          rsp_export                                      uvm_analysis_export                        -     @857            
+          seq_item_export                                 uvm_seq_item_pull_imp                      -     @975            
+          arbitration_queue                               array                                      0     -               
+          lock_queue                                      array                                      0     -               
+          num_last_reqs                                   integral                                   32    'd1             
+          num_last_rsps                                   integral                                   32    'd1             
+    env_slave_svr_a                                       uvm_env                                    -     @411            
+      s_agt                                               uvm_agent                                  -     @1043           
+        drv                                               uvm_driver #(REQ,RSP)                      -     @1191           
+          rsp_port                                        uvm_analysis_port                          -     @1210           
+          seq_item_port                                   uvm_seq_item_pull_port                     -     @1200           
+        mon                                               uvm_monitor                                -     @1220           
+          item_collect_port                               uvm_analysis_port                          -     @1231           
+        sqr                                               uvm_sequencer                              -     @1054           
+          rsp_export                                      uvm_analysis_export                        -     @1063           
+          seq_item_export                                 uvm_seq_item_pull_imp                      -     @1181           
+          arbitration_queue                               array                                      0     -               
+          lock_queue                                      array                                      0     -               
+          num_last_reqs                                   integral                                   32    'd1             
+          num_last_rsps                                   integral                                   32    'd1             
+    env_slave_svr_end_conversion                          uvm_env                                    -     @421            
+      s_agt                                               uvm_agent                                  -     @1249           
+        drv                                               uvm_driver #(REQ,RSP)                      -     @1397           
+          rsp_port                                        uvm_analysis_port                          -     @1416           
+          seq_item_port                                   uvm_seq_item_pull_port                     -     @1406           
+        mon                                               uvm_monitor                                -     @1426           
+          item_collect_port                               uvm_analysis_port                          -     @1437           
+        sqr                                               uvm_sequencer                              -     @1260           
+          rsp_export                                      uvm_analysis_export                        -     @1269           
+          seq_item_export                                 uvm_seq_item_pull_imp                      -     @1387           
+          arbitration_queue                               array                                      0     -               
+          lock_queue                                      array                                      0     -               
+          num_last_reqs                                   integral                                   32    'd1             
+          num_last_rsps                                   integral                                   32    'd1             
+    refm                                                  serial2parallel_reference_model            -     @431            
+      trans_num_idx                                       integral                                   32    'h0             
+    serial2parallel_virtual_sqr                           serial2parallel_virtual_sequencer          -     @493            
+      rsp_export                                          uvm_analysis_export                        -     @502            
+      seq_item_export                                     uvm_seq_item_pull_imp                      -     @620            
+      arbitration_queue                                   array                                      0     -               
+      lock_queue                                          array                                      0     -               
+      num_last_reqs                                       integral                                   32    'd1             
+      num_last_rsps                                       integral                                   32    'd1             
+    subsys_mon                                            serial2parallel_subsystem_monitor          -     @444            
+      scbd                                                serial2parallel_scoreboard                 -     @1464           
+        refm                                              serial2parallel_reference_model            -     @431            
+          trans_num_idx                                   integral                                   32    'h0             
+        TVOUT_transaction_size_queue                      da(integral)                               0     -               
+        file_wr_port_a_a                                  <unknown>                                  -     @1474           
+          TV_FILE                                         string                                     0     ""              
+          fp                                              integral                                   32    'hxxxxxxxx      
+          file_open                                       integral                                   32    'h0             
+          write_file_done                                 integral                                   32    'h0             
+          write_section_done                              integral                                   32    'h0             
+          TRANSACTION_NUM                                 integral                                   32    'h0             
+          transaction_num_idx                             integral                                   32    'h0             
+          TRANSACTION_DEPTH                               integral                                   32    'h0             
+          TRANSACTION_DEPTH_queue                         da(integral)                               0     -               
+          TRANSACTION_DEPTH_queue_for_depth_check         da(integral)                               0     -               
+          transaction_depth_idx                           integral                                   32    'h0             
+          ap_done_num_idx                                 integral                                   32    'h0             
+          is_binary                                       integral                                   32    'h0             
+        write_file_done_a_a                               integral                                   32    'h0             
+        write_section_done_a_a                            integral                                   32    'h0             
+        file_wr_port_end_conversion_end_conversion        <unknown>                                  -     @1475           
+          TV_FILE                                         string                                     0     ""              
+          fp                                              integral                                   32    'hxxxxxxxx      
+          file_open                                       integral                                   32    'h0             
+          write_file_done                                 integral                                   32    'h0             
+          write_section_done                              integral                                   32    'h0             
+          TRANSACTION_NUM                                 integral                                   32    'h0             
+          transaction_num_idx                             integral                                   32    'h0             
+          TRANSACTION_DEPTH                               integral                                   32    'h0             
+          TRANSACTION_DEPTH_queue                         da(integral)                               0     -               
+          TRANSACTION_DEPTH_queue_for_depth_check         da(integral)                               0     -               
+          transaction_depth_idx                           integral                                   32    'h0             
+          ap_done_num_idx                                 integral                                   32    'h0             
+          is_binary                                       integral                                   32    'h0             
+        write_file_done_end_conversion_end_conversion     integral                                   32    'h0             
+        write_section_done_end_conversion_end_conversion  integral                                   32    'h0             
+      svr_master_d_imp                                    uvm_analysis_imp_svr_master_d              -     @453            
+      svr_master_serial_start_imp                         uvm_analysis_imp_svr_master_serial_start   -     @463            
+      svr_slave_a_imp                                     uvm_analysis_imp_svr_slave_a               -     @473            
+      svr_slave_end_conversion_imp                        uvm_analysis_imp_svr_slave_end_conversion  -     @483            
+    env_master_svr_d                                      uvm_env                                    -     @388            
+    env_master_svr_serial_start                           uvm_env                                    -     @401            
+    env_slave_svr_a                                       uvm_env                                    -     @411            
+    env_slave_svr_end_conversion                          uvm_env                                    -     @421            
+    refm                                                  serial2parallel_reference_model            -     @431            
+    serial2parallel_virtual_sqr                           serial2parallel_virtual_sequencer          -     @493            
+    serial2parallel_cfg                                   serial2parallel_config                     -     @379            
+      port_d_cfg                                          svr_config                                 -     @380            
+        svr_type                                          svr_inst_type                              32    SVR_MASTER      
+        prt_type                                          svr_protocol_type                          32    AP_NONE         
+        is_active                                         svr_active_passive_enum                    1     SVR_ACTIVE      
+        reset_level                                       svr_reset_level_enum                       1     RESET_LEVEL_HIGH
+        spec_cfg                                          svr_spec_cfg_enum                          32    NORMAL          
+        clatency                                          svr_latency                                -     @381            
+          transfer_latency                                integral                                   32    'h0             
+      port_serial_start_cfg                               svr_config                                 -     @382            
+        svr_type                                          svr_inst_type                              32    SVR_MASTER      
+        prt_type                                          svr_protocol_type                          32    AP_NONE         
+        is_active                                         svr_active_passive_enum                    1     SVR_ACTIVE      
+        reset_level                                       svr_reset_level_enum                       1     RESET_LEVEL_HIGH
+        spec_cfg                                          svr_spec_cfg_enum                          32    NORMAL          
+        clatency                                          svr_latency                                -     @383            
+          transfer_latency                                integral                                   32    'h0             
+      port_a_cfg                                          svr_config                                 -     @384            
+        svr_type                                          svr_inst_type                              32    SVR_SLAVE       
+        prt_type                                          svr_protocol_type                          32    AP_NONE         
+        is_active                                         svr_active_passive_enum                    1     SVR_ACTIVE      
+        reset_level                                       svr_reset_level_enum                       1     RESET_LEVEL_HIGH
+        spec_cfg                                          svr_spec_cfg_enum                          32    NORMAL          
+        clatency                                          svr_latency                                -     @385            
+          transfer_latency                                integral                                   32    'h0             
+      port_end_conversion_cfg                             svr_config                                 -     @386            
+        svr_type                                          svr_inst_type                              32    SVR_SLAVE       
+        prt_type                                          svr_protocol_type                          32    AP_NONE         
+        is_active                                         svr_active_passive_enum                    1     SVR_ACTIVE      
+        reset_level                                       svr_reset_level_enum                       1     RESET_LEVEL_HIGH
+        spec_cfg                                          svr_spec_cfg_enum                          32    NORMAL          
+        clatency                                          svr_latency                                -     @387            
+          transfer_latency                                integral                                   32    'h0             
+      check_ena                                           integral                                   32    'h0             
+      cover_ena                                           integral                                   32    'h0             
+---------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /opt/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 8 [n/a] @ "125000"
+// RTL Simulation : 1 / 8 [n/a] @ "135000"
+// RTL Simulation : 2 / 8 [n/a] @ "145000"
+// RTL Simulation : 3 / 8 [n/a] @ "155000"
+// RTL Simulation : 4 / 8 [n/a] @ "165000"
+// RTL Simulation : 5 / 8 [n/a] @ "175000"
+// RTL Simulation : 6 / 8 [n/a] @ "185000"
+// RTL Simulation : 7 / 8 [n/a] @ "195000"
+// RTL Simulation : 8 / 8 [n/a] @ "205000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 275 ns : File "/opt/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Feb 28 08:54:10 2026...
+
+	 -> output a = 0b01001101
+	 -> Test Passed

@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../parallel2serial-tb.cpp in debug mode
+   Compiling ../../../../main_parallel2serial.cpp in debug mode
+   Generating csim.exe
+ d = 1 serial_start = 1 serial_end = 0
+ d = 1 serial_start = 0 serial_end = 0
+ d = 0 serial_start = 0 serial_end = 0
+ d = 0 serial_start = 0 serial_end = 0
+ d = 1 serial_start = 0 serial_end = 0
+ d = 0 serial_start = 0 serial_end = 0
+ d = 1 serial_start = 0 serial_end = 0
+ d = 1 serial_start = 0 serial_end = 1
+Test Passed
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,23 @@
+<pragmas>
+<pragma file="main_serial2parallel.cpp" line="18" pragmaType="interface" parentfunction="serial2parallel" mode="ap_none" port="d" name="" register="0"/>
+<pragma file="main_serial2parallel.cpp" line="21" pragmaType="interface" parentfunction="serial2parallel" mode="ap_none" port="serial_start" name="" register="0"/>
+<pragma file="main_serial2parallel.cpp" line="25" pragmaType="interface" parentfunction="serial2parallel" mode="ap_none" port="a" name="" register="0"/>
+<pragma file="main_serial2parallel.cpp" line="28" pragmaType="interface" parentfunction="serial2parallel" mode="ap_none" port="end_conversion" name="" register="0"/>
+<pragma file="main_serial2parallel.cpp" line="32" pragmaType="interface" parentfunction="serial2parallel" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="_ZN8ssdm_intILi7ELb0EEC2EDq7_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<7, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base<7, false>(ap_int_base<7, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::RType<8, false>::arg1 operator<<<8, false>(ap_int_base<8, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::RType<8, false>::arg1 operator>><8, false>(ap_int_base<8, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<7>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::RType<8, false>::logic operator|<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<(7) + (1), false> operator,<7, false>(bool, ap_int_base<7, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>& ap_int_base<8, false>::operator|=<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+</pragmas>

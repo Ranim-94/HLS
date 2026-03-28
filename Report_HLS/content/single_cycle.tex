@@ -1,17 +1,604 @@
 
 
 \chapter{Single Cycle Desing}
+\label{chap:single_desing_flow}
 
-After introducing the basic idea about sequential circuits in \autoref{chap:d_ff}, now we see some techinques to desing some real world sequential circuits.
+\section{Introduction}
 
-The main objectives in this chapter are:
+After introducing basic idea about sequential circuits in \autoref{chap:d_ff}, we explore in this chapter some techniques describing some real world sequential circuits.
 
-\begin{itemize}
+The main objectives are:
 
-\item Understand single desing technique and how to implement it in \verb|Vitis-HLS|
+\begin{itemize}	
+
+\item Understand single cycle desing technique and how to implement it in \verb|Vitis-HLS|
 
 \item IP centric desing in \verb|Vivado|
 
 \item Investigate circuit signals through RTL co-simulation
 
 \end{itemize}
+
+
+\newpage
+\section{Single Cycle Desing Method}
+
+\subsection{Sequential circuit}
+
+\underline{Note:} review also \ref{sec:seq_circuit}, it contains same information in different style.\\
+
+As a reminder, a sequential circuit model consist of a combinational circuit and some memory cells to save the circuit states. The circuit preforms its task through several clock cycles. \\
+
+The clock cycle is defined as longest path in the combinational circuit, which has the highest $t_d$.\\
+
+In each clock cycle, the combinational circuit:
+
+\begin{itemize}
+
+\item read the current state
+
+\item generate outputs and next states
+
+\item save next states in memory cells
+
+\end{itemize}
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/seq_circuit}
+\caption{Sequential circuit}
+\label{fig:single_cycle:seq_circuit}
+\end{figure}
+
+
+\newpage
+From \verb|HLS| point of view, the \verb|C/C++| function should have 4 part as shown in \autoref{fig:single_cycle:seq_hls}:
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/seq_hls}
+\caption{Sequential circuit using functions}
+\label{fig:single_cycle:seq_hls}
+\end{figure}
+
+\begin{itemize}
+
+\item define some register variable using some static variables
+
+\item read the current state
+
+\item perform the task (arithmetic, logical, computing,$\cdots$)
+
+\item update or modify register values
+
+\end{itemize}
+
+The key idea is we want to develop a code that is executed during 1 clock cycle. We call this desing method \tbi{single cycle development}, and later we see that this method gives some nice performances close to \verb|HDL| desing techniques.
+
+
+\subsection{Quiz}
+\label{sub:quiz_single_cycle}
+
+\underline{Given:} \autoref{fig:single_cycle:quiz_single_cycle}
+shows some \verb|HLS| code along with its scheduler viewer.\\
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/quiz_single_cycle}
+\caption{Quiz Given}
+\label{fig:single_cycle:quiz_single_cycle}
+\end{figure}
+
+\underline{Question:} what can we do for the variable \verb|a|, in order have a single cycle development ?\\
+
+
+\underline{Solution:} see \verb|single_cycle.pdf|.
+
+\newpage
+\section{General Guidelines}
+
+In this section we present some general guidelines related to \verb|HLS|.
+
+
+The particular concept is called \textit{IP centric design flow}.
+
+This concept has been seen in sections and project before, and that when we integrate our code into a package called \verb|IP| using tools such as \verb|Vivado|. 
+
+In \autoref{part:fundamentals}, we integrate our \verb|IP| for combinational logic circuit, but now in \autoref{part:sequential}, we deal with sequential circuit and notion related to time (clock period), so we revisit in this chapter the notion of \verb|IP| integration taken into account sequential and time related system.\\
+
+When dealing with  sequential and time related system, the following approach is the following:
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/ip_sequential}
+\caption{Integration of IP in sequential circuits}
+\label{fig:single_cycle:ip_sequential}
+\end{figure}
+
+\begin{itemize}
+
+\item Divide our application into smaller functions
+
+\item Use single desing approach to describe each function separately
+
+\item Test and synthesis our code, to generate the corresponding \verb|IP|
+
+\item Integrate the \verb|IP| using tools such as \verb|Vivado| to generate the bitstream file and program the FPGA
+
+\end{itemize}
+
+\newpage
+\subsection{Divide and Conquere guidilines}
+
+Here are the general guidilines that we will use allot through \autoref{part:sequential}:
+
+\begin{itemize}
+
+\item Use dataflow graph to represent the hardware logic controller
+
+	\begin{itemize}
+	\item See \autoref{sec:dataflow} to recap about the concept of dataflow graph
+	\end{itemize}
+
+\item Implement each node in with \verb|HLS| and generate the corresponding \verb|IP|
+
+\item Connect the \verb|IP|s in \verb|Vivado| 
+
+\item Generate bitstream and program the board
+
+\item Evaluate the desing on the board by using Ingrated logic analyser \verb|IP|
+
+\end{itemize}
+
+The implementation of data-flow graph in \verb|HLS| will be explained in part 3, since we need before to gain more knowlege in advanced \verb|HLS| technique and sequential system desing.\\
+
+\uti{data flow} \todo{data flow}
+
+\begin{itemize}
+
+\item \textit{To cite part 3 later when reaching out course 3 of the series}
+
+\item \textit{To do some search about data flow concept in general, and its role in FPGA/HDL developement}
+
+\end{itemize}
+
+
+\subsection{Chapter planning}
+
+\autoref{fig:single_cycle:paralle_serial_planning} contains \autoref{chap:single_desing_flow} planning 
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35,frame]{Figures/single_cycle/paralle_serial_planning}
+\caption{Planning of the chapter}
+\label{fig:single_cycle:paralle_serial_planning}
+\end{figure}
+
+
+\begin{itemize}
+
+\item The exercice used to gain knowledge about single cycle desing technique is parallel serial converter
+
+\item In next sections (\ref{sec:parallel_serial} and \ref{sec:serial_parallel}), we:
+
+	\begin{itemize}
+	\item explain their concept: definition, input output,
+	
+	\item Walk through \verb|HLS| code
+	
+	\item Then finally do the actual exercice using \verb|Basys3| board
+	\end{itemize}
+
+
+\end{itemize}
+
+\newpage
+\section{Parallel to Serial}
+\label{sec:parallel_serial}
+
+We take parallel to serial converter as example for sequential system, and see how to implement it in \verb|HLS|.
+
+
+\subsection{Overview}
+\label{sub:parallel_serial_overview}
+
+\autoref{fig:single_cycle:parallel_serial} shows the circuit.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/parallel_serial}
+\caption{Paralle to serial}
+\label{fig:single_cycle:parallel_serial}
+\end{figure}
+
+\begin{itemize}
+
+\item It receives 8 bit data through 8 bit port, and sends out 1 bit data in each clock cycle starting from the LSB
+
+\item Also for desing purposes, we have extra outpus denoted as \verb|start| and \verb|end|, to denote the start and end of conversion
+
+\item We also have the timing diagram in \autoref{fig:single_cycle:parallel_serial}, which shows in each clock cycle which bit we have first.
+
+\item Note that at the $\mathrm{8}^\mathrm{th}$ clock cycle, the \verb|end| bit is 1 indicating end of conversion.
+
+\end{itemize}
+
+\newpage
+\autoref{fig:single_cycle:parallel_serial_rtl_cosim} shows the timing diagram after runnning RTL co-simulation.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/parallel_serial_rtl_cosim}
+\caption{Parallel to serial RTL cosimulation}
+\label{fig:single_cycle:parallel_serial_rtl_cosim}
+\end{figure}
+
+
+\subsection{Desing}
+
+
+The parallel to serial circuit consists of a set a combinational circuit, and a set of FF to save the state of the circuit.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/parallel_serial_blocks}
+\caption{Parallel to serial desing blocks}
+\label{fig:single_cycle:parallel_serial_blocks}
+\end{figure}
+
+The number of states equal to the number of bits sent out serially. In other words, it count the number of bits send out serially.
+
+\newpage
+In a single desing approach, we should write a function that:
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/parallel_serial_single_desing}
+\caption{Parallel to serial using single cycle approach}
+\label{fig:single_cycle:parallel_serial_single_desing}
+\end{figure}
+
+\begin{itemize}
+
+\item Reads the state
+
+\item Sends 1 bit out
+
+\item Modifies the state
+
+\end{itemize}
+
+
+\autoref{fig:single_cycle:parallel_serial_begin_input} shows an extra input named \verb|begin| to indicate the start of the conversion. Once the circuit detects it, the conversion starts.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/parallel_serial_begin_input}
+\caption{Parallel to serial extra input}
+\label{fig:single_cycle:parallel_serial_begin_input}
+\end{figure}
+
+\newpage
+\subsection{Code flow chart}
+\label{sub:parallel_ser_flow_chart}
+
+\autoref{fig:single_cycle:parallel_serial_code_flow_chart} shows the code flow chart.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/parallel_serial_code_flow_chart}
+\caption{Parallel to serial code flow chart}
+\label{fig:single_cycle:parallel_serial_code_flow_chart}
+\end{figure}
+
+\underline{Notes:} 
+
+\begin{itemize}
+
+\item the the circuit has \verb|counter| as its state variable
+
+\item \verb|N| denotes the number of bits
+
+\item \verb|d| represents the serial output and \verb|a| represent the input coming from a certain port
+
+\end{itemize}
+
+Now let's start by the flow chart. We begin by the the upper half of it.
+
+\begin{itemize}
+
+\item The desing starts by checking the value of the \verb|begin| signal (see \autoref{fig:single_cycle:parallel_serial_begin_input} for the role of the \verb|begin| signal)
+
+	\begin{itemize}
+	\item If it is 1, it resets the \verb|counter| to 0 and then check the \verb|counter| value
+	
+	\item if it is 0, it directly check the \verb|counter| value
+	
+	\end{itemize}
+\end{itemize}
+
+Now we move the $\mathrm{2}^\mathrm{nd}$ half, based on the value in \verb|counter| variable, we have 4 path in the flow chart:
+
+\begin{enumerate}
+
+\item If the \verb|counter| is 0, then the circuit starts conversion
+
+	\begin{itemize}
+	\item It activate the \verb|serial_start| signal
+	
+	\item Put the LSB at the output line
+	
+	\item Increment the counter
+	\end{itemize}
+
+\newpage
+
+\item  If \verb|counter| $<$ \verb|N - 1| 
+
+	\begin{itemize}
+	\item It sends out the next bit
+	
+	\item increment the counter
+	\end{itemize}
+
+\item If \verb|count| reaches \verb|N - 1| bit
+
+	\begin{itemize}
+	\item It activates \verb|serial_end| signal, indicating ends of conversion
+	
+	\item Puts the MSB bit at the output line
+	
+	\item Insert \verb|N| at the \verb|counter| variable to stop converison in the next iteration
+	\end{itemize}
+
+\item If the \verb|counter| is \verb|N|, the circuit does nothing.
+
+\end{enumerate}
+
+Note that the steps of flow chart of \autoref{fig:single_cycle:parallel_serial_code_flow_chart} represents the circuit functionality during a period of clock. In other words, performing 1 iteration of this flow chart represents 1 clock cycle
+
+\subsection{HLS code}
+
+\autoref{fig:single_cycle:parallel_serial_hls} contains the \verb|HLS| code.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/parallel_serial_hls}
+\caption{Parallel to serial HLS code}
+\label{fig:single_cycle:parallel_serial_hls}
+\end{figure}
+
+
+\newpage
+\section{Serial to Parallel}
+\label{sec:serial_parallel}
+
+Now we take the counter part circuit, that is the serial to parallel, shown in \autoref{fig:single_cycle:serial_parallel}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4,frame]{Figures/single_cycle/serial_parallel}
+\caption{Serial to parallel}
+\label{fig:single_cycle:serial_parallel}
+\end{figure}
+
+The circuit takes a stream of bit sequentially, and save the data in a multibit register, and send the parallel data at the end of the conversion.\\
+
+The \verb|end| signal is activated when the last bit is received, and the parallel output is available and valid.
+
+In the cosimulation of \autoref{fig:single_cycle:serial_parallel}:
+
+\begin{itemize}
+
+\item From the input side \verb|d|: the diagram shows from the LSB side, that is 1 , 0, ,1, $\cdots$
+
+\item So from a timing view (order):
+
+	\begin{itemize}
+	\item The circuit receives (\verb|d|) 1,0,1,0,0,$\cdots$
+	
+	\item The output would be 1,1,1,0,0,1,0,1
+	\end{itemize}
+
+\item \todo{output part} \uti{To redo it later from the output part}
+
+\end{itemize}
+
+\uti{definition of serial to parallel:} \todo{definition of serial to parallel}
+
+\begin{itemize}
+
+\item \textit{To check out the definition later after doing the exercices}
+
+\item \textit{Especially the output part of the timing diagram}
+
+\end{itemize}
+
+
+\newpage
+\subsection{HLS Code}
+
+The \verb|HLS| code is shown in \autoref{fig:single_cycle:serial_parallel_hls}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,frame]{Figures/single_cycle/serial_parallel_hls}
+\caption{Serial to parallel HLS code}
+\label{fig:single_cycle:serial_parallel_hls}
+\end{figure}
+
+Let's explain the pieces of this code
+
+\begin{itemize}
+
+\item $\mathrm{1}^\mathrm{st}$ we have 3 \verb|static| variables that will be synthesised using register in the code
+
+	\begin{itemize}
+	\item \todo{static variable synthesis} \uti{static variable synthesis:} 
+	
+	\textit{To see what is the meaning of this synthesis, after finishing course}
+	
+	\textit{And finish VHDL also, and review the theory}
+	\end{itemize}
+
+	\begin{itemize}
+
+	\item \verb|state_reg|: holds the received data
+	
+	\item \verb|a_reg_out|: the output data
+	
+	\item \verb|counter| the number of received bits
+
+	\end{itemize}
+
+\item Then we define 2 variables \verb|next_counter| and \verb|next_state|
+
+	\begin{itemize}
+	\item \verb|next_counter|: to save next value of \verb|counter|
+	
+	\item \verb|nex_state|: for next states values, and it is initialized to \verb|state_reg| 
+	
+	\end{itemize}
+
+Later we explain in separate sections the utilities of such variables and why we define them here.
+
+\end{itemize}
+
+\newpage
+Now moving to the $\mathrm{2}^\mathrm{nd}$ half of the code, the different \verb|if| blocks
+
+\begin{itemize}
+
+\item $\mathrm{1}^\mathrm{st}$ we check for \verb|start_serial_data| value. 
+
+	\begin{itemize}
+	\item If it is 1, we set \verb|next_counter| to 0.
+	
+	This enable us to start the conversion
+	
+	
+	\end{itemize}
+
+
+\item $\mathrm{2}^\mathrm{nd}$ we move to compare the value of \verb|next_counter| value (similar to cases in \ref{sub:parallel_ser_flow_chart})
+
+	\begin{itemize}
+	
+	\item \verb|< N - 1|: we shift \verb|next_state| to next value
+	
+	\item \verb|== N - 1| we shift, and save the value to \verb|a_reg_out|
+	
+	Also set \verb|end_conversion| to 1
+	
+	\item if \verb|> N - 1|, no conversion at all
+
+	\end{itemize}
+
+
+\end{itemize}
+
+After finishing the \verb|if| blocks, we save temporary variables to values to correspondant variables, that is \verb|a|, \verb|state_reg|,$\cdots$
+
+\subsection{Glitches}
+\label{sub:glitches}
+
+Notice that in diagram of \autoref{fig:single_cycle:serial_parallel_hls}, the \verb|end_conversion| variable is generated directly by a combinational circuit.
+
+We should pay attention to such outputs, that is generated by combinational circuit due to \textit{glitches}, which are some undisireable spikes or voltages causing the signal to drift a little.\\
+
+A more details example is shown in \autoref{fig:single_cycle:glitches}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.40,frame]{Figures/single_cycle/glitches}
+\caption{Glitches concept}
+\label{fig:single_cycle:glitches}
+\end{figure}
+
+\begin{itemize}
+
+\item The \verb|and| gate is taken as combinational circuit example
+
+\item In \verb|and| gate, if 1 of the input is low, the output should be low
+
+\item Due to propagation delay in \verb|b|, the input signal may comes after \verb|a|, casusing some glitches
+
+\item To avoid such glitches at the output, we use FF or some register to save the intermediate value, and drive the output signal
+
+\end{itemize}
+
+\todo{glitches} \uti{glitches:}
+
+\begin{itemize}
+
+\item \textit{To see later where glitches are used in VHDL or FPGA development}
+
+\end{itemize}
+
+\newpage
+\section{Summary Single Cycle}
+
+\begin{itemize}
+
+\item Single cycle method:
+
+	\begin{itemize}
+	\item Definition: perform circuit task within the clock period
+	\end{itemize}
+
+\item \ref{sub:quiz_single_cycle} presents a nice exercice about all the solution to have a 1 cycle desing
+
+
+\item Parallel to serial circuit (\ref{sec:parallel_serial})
+
+	\begin{itemize}
+
+	\item its job: sends out 1 bit at each edge of the clock (\ref{sub:parallel_serial_overview}) 
+
+	\item \ref{sub:parallel_ser_flow_chart}: concrete example 
+	about an algorithm that we want to perform during 1 clock cycle 
+	
+	\item \ref{sub:parallel_ser_flow_chart} mainly 4 phases for conversion of $N$ bits: at the start, at the end, in between, and some default case where \verb|counter| states variable is $\geq$ \verb|N|
+
+	\end{itemize}
+
+\item The output produced by combinational circuit may corrupted by glitches (\ref{sub:glitches})
+
+	\begin{itemize}
+
+	\item The output signal may be corrupted due to propagation delay
+	
+	\item We use FF or some register to save intermediate value and drive the signal
+	
+	\end{itemize}
+
+\end{itemize}
+
+
+\newpage
+\section{Lab and Take Away}
+
+\begin{itemize}
+
+\item See the labs for this chapter, \verb|Parallel_Serial_System.md| contains the details
+
+\item A complex sequential desing can be represented  by a dataflow graph in which each node can be an IP generated by \verb|HLS| toolset
+
+\item \verb|Vivado| can easily build the dataflow of an intricate desing by connected IPs together
+
+\end{itemize}
+
+\uti{Sequential, dataflow, graph and IP} \todo{Sequential, dataflow, graph and IP}
+
+\begin{itemize}
+
+\item \textit{To revisit these points later, and see what they means}
+
+\end{itemize}
+
+
+
+
+
+

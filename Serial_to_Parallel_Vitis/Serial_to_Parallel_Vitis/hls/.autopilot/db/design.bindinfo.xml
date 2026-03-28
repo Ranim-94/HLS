@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="next_counter_1_fu_135_p3" SOURCE="main_serial2parallel.cpp:49" VARIABLE="next_counter_1" MODULE="serial2parallel" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setlt" ID="" IMPL="auto" LATENCY="0" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln62_fu_144_p2" SOURCE="main_serial2parallel.cpp:62" VARIABLE="icmp_ln62" MODULE="serial2parallel" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op seteq" ID="" IMPL="auto" LATENCY="0" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln73_fu_150_p2" SOURCE="main_serial2parallel.cpp:73" VARIABLE="icmp_ln73" MODULE="serial2parallel" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="next_counter_3_fu_180_p2" SOURCE="main_serial2parallel.cpp:69" VARIABLE="next_counter_3" MODULE="serial2parallel" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+</BindInfo>

@@ -1,0 +1,11 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::operator bool() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::ap_bit_ref(ap_int_base<8, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="main_parallel2serial.cpp" line="11" pragmaType="interface" parentfunction="parallel2serial" mode="ap_none" port="a" name="" register="0"/>
+<pragma file="main_parallel2serial.cpp" line="12" pragmaType="interface" parentfunction="parallel2serial" mode="ap_none" port="begin" name="" register="0"/>
+<pragma file="main_parallel2serial.cpp" line="15" pragmaType="interface" parentfunction="parallel2serial" mode="ap_none" port="d" name="" register="0"/>
+<pragma file="main_parallel2serial.cpp" line="16" pragmaType="interface" parentfunction="parallel2serial" mode="ap_none" port="serial_start" name="" register="0"/>
+<pragma file="main_parallel2serial.cpp" line="17" pragmaType="interface" parentfunction="parallel2serial" mode="ap_none" port="serial_end" name="" register="0"/>
+<pragma file="main_parallel2serial.cpp" line="20" pragmaType="interface" parentfunction="parallel2serial" mode="ap_ctrl_none" port="return" name=""/>
+</pragmas>
