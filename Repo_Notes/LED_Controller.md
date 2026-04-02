@@ -8,6 +8,7 @@
   - [Resources](#resources)
   - [Creating Project in Vitis](#creating-project-in-vitis)
   - [Building LED Controller Project](#building-led-controller-project)
+    - [Vitis IDE](#vitis-ide)
     - [Selecting Top Functions](#selecting-top-functions)
     - [Running Simulation](#running-simulation)
     - [Generating IP Package](#generating-ip-package)
@@ -83,13 +84,17 @@ After finishing this steps, inside the `LED_Controller_Vitis`, we will have some
 
 ## Building LED Controller Project
 
-Now we have `LED_Controller` created, we see now how to implement the code, and generate the `IP` pacakge.
+Now we have `LED_Controller` project created, we see now how to implement the code, and generate the `IP` pacakge.
 
-<u>Note:</u> read [Launching Vitis IDE](https://docs.amd.com/r/en-US/ug1399-vitis-hls/Launching-the-Vitis-Unified-IDE), section `Features of the Vitis Unified IDE` , to see different sections of the `Vitis` IDE. The important sections for us are:
+### Vitis IDE
 
-1. The component explorer
+<u>Note:</u> read [Launching Vitis IDE](https://docs.amd.com/r/en-US/ug1399-vitis-hls/Launching-the-Vitis-Unified-IDE), section `Features of the Vitis Unified IDE` , to see different sections of the `Vitis` IDE.
+
+The important sections for us are:
+
+1. The **component explorer**
    1. enable us to see our workspace, hierachy in each project
-2. The flow navigator (directly beneath the component explorer)
+2. The **flow navigator** (directly beneath the component explorer)
    1. we can run each step of the desing from it
    2. And usually we use it allot to run our code, generating our `IP`,...
 
