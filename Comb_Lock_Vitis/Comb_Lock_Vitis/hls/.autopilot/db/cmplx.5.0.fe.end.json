@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "combination_lock",
+        "file": "top_comb_lock.cpp",
+        "fileloc": "61",
+        "instructions": "54",
+        "total_instructions": "54",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "8",
+        "control_depth": "0",
+        "def_use_depth": "6",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    }
+}

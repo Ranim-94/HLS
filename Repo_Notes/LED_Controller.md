@@ -175,7 +175,7 @@ Creating project is straightoforward. Just pay attention in `Project Type` step 
 <p><strong>Figure 10:</strong> IP detection </p>
 </div>
 
-4. Once `IP` are added to the project, we can hit again the `plus` sign on the `Diagram` windwo, and search for the `IP` needed
+4. Once `IP` are added to the project, we can hit again the `plus` sign on the `Diagram` window, and search for the `IP` needed
    1. By default, it takes the name of the top level function when it was geenerated by `Vitis`
    2. In our case its name `led_on` (see [Figure 11](#fig11))
 
@@ -202,7 +202,7 @@ Now we need to connect the output port `LED[7:0]` to the FPGA pins. This will be
 
    1. Under `Block Desgin`, in `Sources` tab, click on `Constraints->Add Sources`
    2. Select on `Add or create constraints`
-   3. We create a file called  `LED_Controller.xdc`
+   3. We create a file called `LED_Controller.xdc`
    4. The `LED_Controller.xdc` file will now be available under `Constraints_1` under `Sources` tab 
    5. From `Basys3_Master.xdc`, we copy and paste to `LED_Controller.xdc` 1st 8 led (from 0->7) in the `.xdc` file, and we change the name from `led` to `LED`, so the `.xdc` file contains the same port name of our `IP`
 

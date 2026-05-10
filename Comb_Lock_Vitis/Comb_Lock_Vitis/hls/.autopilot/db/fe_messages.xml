@@ -1,0 +1,36 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_seven_segment_code" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=combination_lock" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=enter" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=lock" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=door_open" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=seven_segment_data" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=seven_segment_enable" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_comb_lock.cpp:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="combination_lock" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top_comb_lock.cpp:228:23" msg_body="Inlining function 'get_seven_segment_code(state_type)' into 'combination_lock(ap_uint&lt;4&gt;, bool, bool, bool&amp;, ap_uint&lt;8&gt;&amp;, ap_uint&lt;4&gt;&amp;)'">
+        <args Callee="get_seven_segment_code(state_type)" Callee-DebugLoc="File top_comb_lock.cpp Line 7 Column 0" Caller="combination_lock(ap_uint&lt;4&gt;, bool, bool, bool&amp;, ap_uint&lt;8&gt;&amp;, ap_uint&lt;4&gt;&amp;)" Caller-DebugLoc="File top_comb_lock.cpp Line 66 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

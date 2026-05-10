@@ -1,0 +1,23 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../top_comb_lock.cpp in debug mode
+   Generating csim.exe
+ x = 1 enter = 1 lock = 0 door_open = 0 seven_segment_data = 0b11000000
+ x = 2 enter = 1 lock = 0 door_open = 0 seven_segment_data = 0b11111001
+ x = 3 enter = 1 lock = 0 door_open = 0 seven_segment_data = 0b10100100
+ x = 1 enter = 1 lock = 0 door_open = 0 seven_segment_data = 0b11000000
+ x = 2 enter = 1 lock = 0 door_open = 0 seven_segment_data = 0b11111001
+ x = 3 enter = 1 lock = 0 door_open = 0 seven_segment_data = 0b10100100
+ x = 4 enter = 1 lock = 0 door_open = 0 seven_segment_data = 0b10110000
+ x = 6 enter = 0 lock = 0 door_open = 0 seven_segment_data = 0b10110000
+ x = 6 enter = 0 lock = 0 door_open = 0 seven_segment_data = 0b10110000
+ x = 6 enter = 0 lock = 0 door_open = 0 seven_segment_data = 0b10110000
+ x = 6 enter = 1 lock = 0 door_open = 1 seven_segment_data = 0b10011001
+ x = 1 enter = 1 lock = 0 door_open = 1 seven_segment_data = 0b10011001
+ x = 2 enter = 1 lock = 0 door_open = 1 seven_segment_data = 0b10011001
+ x = 2 enter = 1 lock = 0 door_open = 1 seven_segment_data = 0b10011001
+ x = 2 enter = 1 lock = 0 door_open = 1 seven_segment_data = 0b10011001
+ x = 2 enter = 1 lock = 1 door_open = 0 seven_segment_data = 0b11000000
+ x = 2 enter = 1 lock = 0 door_open = 0 seven_segment_data = 0b11111001
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

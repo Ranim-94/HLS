@@ -1,0 +1,244 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x14D356811EE1AEDB",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Comb_Lock_Vivado.gen/sources_1/bd/comb_lock",
+      "name": "comb_lock",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "combination_lock_0": "",
+      "debouncer_0": "",
+      "debouncer_1": "",
+      "pulse_generator_0": "",
+      "pulse_generator_1": ""
+    },
+    "ports": {
+      "ap_clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "comb_lock_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "x": {
+        "type": "data",
+        "direction": "I",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "sev_seg_data": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "door_open": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "sev_seg_en": {
+        "type": "data",
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lock": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "enter": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      }
+    },
+    "components": {
+      "combination_lock_0": {
+        "vlnv": "xilinx.com:hls:combination_lock:1.0",
+        "ip_revision": "2114556247",
+        "xci_name": "comb_lock_combination_lock_0_0",
+        "xci_path": "ip/comb_lock_combination_lock_0_0/comb_lock_combination_lock_0_0.xci",
+        "inst_hier_path": "combination_lock_0",
+        "has_run_ip_tcl": "true"
+      },
+      "debouncer_0": {
+        "vlnv": "xilinx.com:user:debouncer:1.0",
+        "ip_revision": "2",
+        "xci_name": "comb_lock_debouncer_0_0",
+        "xci_path": "ip/comb_lock_debouncer_0_0/comb_lock_debouncer_0_0.xci",
+        "inst_hier_path": "debouncer_0",
+        "has_run_ip_tcl": "true"
+      },
+      "debouncer_1": {
+        "vlnv": "xilinx.com:user:debouncer:1.0",
+        "ip_revision": "2",
+        "xci_name": "comb_lock_debouncer_1_0",
+        "xci_path": "ip/comb_lock_debouncer_1_0/comb_lock_debouncer_1_0.xci",
+        "inst_hier_path": "debouncer_1",
+        "has_run_ip_tcl": "true"
+      },
+      "pulse_generator_0": {
+        "vlnv": "xilinx.com:hls:pulse_generator:1.0",
+        "ip_revision": "2101040813",
+        "xci_name": "comb_lock_pulse_generator_0_0",
+        "xci_path": "ip/comb_lock_pulse_generator_0_0/comb_lock_pulse_generator_0_0.xci",
+        "inst_hier_path": "pulse_generator_0",
+        "has_run_ip_tcl": "true"
+      },
+      "pulse_generator_1": {
+        "vlnv": "xilinx.com:hls:pulse_generator:1.0",
+        "ip_revision": "2101040813",
+        "xci_name": "comb_lock_pulse_generator_1_1",
+        "xci_path": "ip/comb_lock_pulse_generator_1_1/comb_lock_pulse_generator_1_1.xci",
+        "inst_hier_path": "pulse_generator_1",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "SIGNAL_I_0_1": {
+        "ports": [
+          "lock",
+          "debouncer_1/SIGNAL_I"
+        ]
+      },
+      "SIGNAL_I_0_2": {
+        "ports": [
+          "enter",
+          "debouncer_0/SIGNAL_I"
+        ]
+      },
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk_0",
+          "combination_lock_0/ap_clk",
+          "pulse_generator_0/ap_clk",
+          "pulse_generator_1/ap_clk",
+          "debouncer_0/CLK_I",
+          "debouncer_1/CLK_I"
+        ]
+      },
+      "ap_rst_0_1": {
+        "ports": [
+          "ap_rst_0",
+          "combination_lock_0/ap_rst",
+          "pulse_generator_0/ap_rst",
+          "pulse_generator_1/ap_rst"
+        ]
+      },
+      "combination_lock_0_door_open": {
+        "ports": [
+          "combination_lock_0/door_open",
+          "door_open"
+        ]
+      },
+      "combination_lock_0_seven_segment_data": {
+        "ports": [
+          "combination_lock_0/seven_segment_data",
+          "sev_seg_data"
+        ]
+      },
+      "combination_lock_0_seven_segment_enable": {
+        "ports": [
+          "combination_lock_0/seven_segment_enable",
+          "sev_seg_en"
+        ]
+      },
+      "debouncer_0_SIGNAL_O": {
+        "ports": [
+          "debouncer_0/SIGNAL_O",
+          "pulse_generator_0/input_r"
+        ]
+      },
+      "debouncer_1_SIGNAL_O": {
+        "ports": [
+          "debouncer_1/SIGNAL_O",
+          "pulse_generator_1/input_r"
+        ]
+      },
+      "pulse_generator_0_pulse": {
+        "ports": [
+          "pulse_generator_0/pulse",
+          "combination_lock_0/enter"
+        ]
+      },
+      "pulse_generator_1_pulse": {
+        "ports": [
+          "pulse_generator_1/pulse",
+          "combination_lock_0/lock"
+        ]
+      },
+      "x_0_1": {
+        "ports": [
+          "x",
+          "combination_lock_0/x"
+        ]
+      }
+    }
+  }
+}

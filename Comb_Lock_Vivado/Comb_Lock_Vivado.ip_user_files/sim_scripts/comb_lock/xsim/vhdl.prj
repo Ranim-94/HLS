@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/comb_lock/ipshared/4b65/src/debouncer.vhd" \
+"../../../bd/comb_lock/ip/comb_lock_debouncer_0_0/sim/comb_lock_debouncer_0_0.vhd" \
+"../../../bd/comb_lock/ip/comb_lock_debouncer_1_0/sim/comb_lock_debouncer_1_0.vhd" \
+
+# Do not sort compile order
+nosort

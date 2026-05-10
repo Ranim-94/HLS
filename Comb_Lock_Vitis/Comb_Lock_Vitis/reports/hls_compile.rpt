@@ -1,0 +1,138 @@
+
+
+================================================================
+== Synthesis Summary Report of 'combination_lock'
+================================================================
++ General Information: 
+    * Date:           Fri May  8 19:19:34 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        Comb_Lock_Vitis
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---------+----------+-----+
+    |       Modules      | Issue|      |     Latency     | Iteration|         | Trip |          |      |    |         |          |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns) |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF   |    LUT   | URAM|
+    +--------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---------+----------+-----+
+    |+ combination_lock  |     -|  1.00|        0|  0.000|         -|        1|     -|       yes|     -|   -|  4 (~0%)|  208 (1%)|    -|
+    +--------------------+------+------+---------+-------+----------+---------+------+----------+------+----+---------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++----------------------+---------+-----------+----------+
+| Port                 | Mode    | Direction | Bitwidth |
++----------------------+---------+-----------+----------+
+| door_open            | ap_none | out       | 1        |
+| enter                | ap_none | in        | 1        |
+| lock                 | ap_none | in        | 1        |
+| seven_segment_data   | ap_none | out       | 8        |
+| seven_segment_enable | ap_none | out       | 4        |
+| x                    | ap_none | in        | 4        |
++----------------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------------+-----------+-------------+
+| Argument             | Direction | Datatype    |
++----------------------+-----------+-------------+
+| x                    | in        | ap_uint<4>  |
+| enter                | in        | bool        |
+| lock                 | in        | bool        |
+| door_open            | out       | bool&       |
+| seven_segment_data   | out       | ap_uint<8>& |
+| seven_segment_enable | out       | ap_uint<4>& |
++----------------------+-----------+-------------+
+
+* SW-to-HW Mapping
++----------------------+----------------------+---------+
+| Argument             | HW Interface         | HW Type |
++----------------------+----------------------+---------+
+| x                    | x                    | port    |
+| enter                | enter                | port    |
+| lock                 | lock                 | port    |
+| door_open            | door_open            | port    |
+| seven_segment_data   | seven_segment_data   | port    |
+| seven_segment_enable | seven_segment_enable | port    |
++----------------------+----------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------+-----+--------+-------------------+-----------+-------------------------+---------+
+| Name                          | DSP | Pragma | Variable          | Op        | Impl                    | Latency |
++-------------------------------+-----+--------+-------------------+-----------+-------------------------+---------+
+| + combination_lock            | 0   |        |                   |           |                         |         |
+|   next_state_4_fu_340_p2      |     |        | next_state        | select    | auto_sel                | 0       |
+|   door_open_local_2_fu_396_p2 |     |        | door_open_local   | xor       | auto                    | 0       |
+|   next_state_1_fu_182_p2      |     |        | next_state_1      | seteq     | auto                    | 0       |
+|   icmp_ln135_fu_192_p2        |     |        | icmp_ln135        | seteq     | auto                    | 0       |
+|   next_state_4_fu_340_p8      |     |        | select_ln155      | select    | auto_sel                | 0       |
+|   next_state_2_fu_206_p2      |     |        | next_state_2      | seteq     | auto                    | 0       |
+|   next_state_4_fu_340_p6      |     |        | select_ln88       | select    | auto_sel                | 0       |
+|   door_open_local_1_fu_220_p2 |     |        | door_open_local_1 | seteq     | auto                    | 0       |
+|   next_state_4_fu_340_p4      |     |        | next_state_3      | select    | auto_sel                | 0       |
+|   icmp_ln95_fu_234_p2         |     |        | icmp_ln95         | seteq     | auto                    | 0       |
+|   icmp_ln95_1_fu_240_p2       |     |        | icmp_ln95_1       | seteq     | auto                    | 0       |
+|   and_ln62_fu_246_p2          |     |        | and_ln62          | and       | auto                    | 0       |
+|   icmp_ln95_2_fu_252_p2       |     |        | icmp_ln95_2       | seteq     | auto                    | 0       |
+|   and_ln62_1_fu_258_p2        |     |        | and_ln62_1        | and       | auto                    | 0       |
+|   icmp_ln95_3_fu_264_p2       |     |        | icmp_ln95_3       | seteq     | auto                    | 0       |
+|   and_ln62_2_fu_270_p2        |     |        | and_ln62_2        | and       | auto                    | 0       |
+|   icmp_ln95_4_fu_276_p2       |     |        | icmp_ln95_4       | seteq     | auto                    | 0       |
+|   and_ln62_3_fu_282_p2        |     |        | and_ln62_3        | and       | auto                    | 0       |
+|   xor_ln62_fu_288_p2          |     |        | xor_ln62          | xor       | auto                    | 0       |
+|   and_ln62_4_fu_294_p2        |     |        | and_ln62_4        | and       | auto                    | 0       |
+|   and_ln62_5_fu_300_p2        |     |        | and_ln62_5        | and       | auto                    | 0       |
+|   and_ln62_6_fu_306_p2        |     |        | and_ln62_6        | and       | auto                    | 0       |
+|   and_ln62_7_fu_312_p2        |     |        | and_ln62_7        | and       | auto                    | 0       |
+|   sparsemux_19_9_3_1_1_U1     |     |        | next_state_4      | sparsemux | onehotencoding_dontcare | 0       |
+|   sparsemux_7_2_1_1_1_U2      |     |        | door_open_local_2 | sparsemux | onehotencoding_realdef  | 0       |
+|   sparsemux_11_32_8_1_1_U3    |     |        | ref_tmp_0_0_0_s   | sparsemux | compactencoding_realdef | 0       |
++-------------------------------+-----+--------+-------------------+-----------+-------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------------------+----------------------------------------------------------------+
+| Type      | Options                           | Location                                                       |
++-----------+-----------------------------------+----------------------------------------------------------------+
+| INLINE    |                                   | top_comb_lock.cpp:23 in get_seven_segment_code                 |
+| PIPELINE  |                                   | top_comb_lock.cpp:68 in combination_lock                       |
+| INTERFACE | ap_none port=x                    | top_comb_lock.cpp:71 in combination_lock, x                    |
+| INTERFACE | ap_none port=enter                | top_comb_lock.cpp:72 in combination_lock, enter                |
+| INTERFACE | ap_none port=lock                 | top_comb_lock.cpp:73 in combination_lock, lock                 |
+| INTERFACE | ap_none port=door_open            | top_comb_lock.cpp:76 in combination_lock, door_open            |
+| INTERFACE | ap_none port=seven_segment_data   | top_comb_lock.cpp:77 in combination_lock, seven_segment_data   |
+| INTERFACE | ap_none port=seven_segment_enable | top_comb_lock.cpp:78 in combination_lock, seven_segment_enable |
+| INTERFACE | ap_ctrl_none port=return          | top_comb_lock.cpp:80 in combination_lock, return               |
++-----------+-----------------------------------+----------------------------------------------------------------+
+
+

@@ -1,0 +1,205 @@
+
+*** Running vivado
+    with args -log comb_lock_debouncer_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source comb_lock_debouncer_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Apr  8 08:10:11 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source comb_lock_debouncer_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lenovo/Simulation_Linux/HLS'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/lenovo/Simulation_Linux/HLS' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/comb_lock_debouncer_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top comb_lock_debouncer_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16847
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1947.230 ; gain = 386.844 ; free physical = 336 ; free virtual = 7373
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'comb_lock_debouncer_0_0' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_debouncer_0_0/synth/comb_lock_debouncer_0_0.vhd:64]
+	Parameter DEBNC_CLOCKS bound to: 65536 - type: integer 
+	Parameter PORT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'debouncer' declared at '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/4b65/src/debouncer.vhd:42' bound to instance 'U0' of component 'debouncer' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_debouncer_0_0/synth/comb_lock_debouncer_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/4b65/src/debouncer.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/4b65/src/debouncer.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'comb_lock_debouncer_0_0' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_debouncer_0_0/synth/comb_lock_debouncer_0_0.vhd:64]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2021.199 ; gain = 460.812 ; free physical = 267 ; free virtual = 7065
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2039.012 ; gain = 478.625 ; free physical = 216 ; free virtual = 7011
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2039.012 ; gain = 478.625 ; free physical = 206 ; free virtual = 7002
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2047.020 ; gain = 486.633 ; free physical = 193 ; free virtual = 6989
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2165.926 ; gain = 605.539 ; free physical = 166 ; free virtual = 6722
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2165.926 ; gain = 605.539 ; free physical = 166 ; free virtual = 6722
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2165.926 ; gain = 605.539 ; free physical = 166 ; free virtual = 6722
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.738 ; gain = 765.352 ; free physical = 151 ; free virtual = 6571
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.738 ; gain = 765.352 ; free physical = 151 ; free virtual = 6571
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.738 ; gain = 765.352 ; free physical = 151 ; free virtual = 6571
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.738 ; gain = 765.352 ; free physical = 151 ; free virtual = 6571
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.738 ; gain = 765.352 ; free physical = 151 ; free virtual = 6571
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.738 ; gain = 765.352 ; free physical = 151 ; free virtual = 6571
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    20|
+|2     |LUT1   |     5|
+|3     |LUT4   |    20|
+|4     |LUT5   |     5|
+|5     |LUT6   |     5|
+|6     |FDRE   |    85|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   140|
+|2     |  U0     |debouncer |   140|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.738 ; gain = 765.352 ; free physical = 151 ; free virtual = 6571
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.738 ; gain = 765.352 ; free physical = 154 ; free virtual = 6573
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.746 ; gain = 765.352 ; free physical = 154 ; free virtual = 6574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2339.613 ; gain = 0.000 ; free physical = 230 ; free virtual = 6601
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2415.395 ; gain = 0.000 ; free physical = 256 ; free virtual = 6630
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8d492878
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2416.430 ; gain = 856.043 ; free physical = 256 ; free virtual = 6630
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1586.554; main = 1494.030; forked = 211.385
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3264.793; main = 2416.398; forked = 963.863
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.352 ; gain = 0.000 ; free physical = 198 ; free virtual = 6436
+INFO: [Common 17-1381] The checkpoint '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/comb_lock_debouncer_0_0_synth_1/comb_lock_debouncer_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP comb_lock_debouncer_0_0, cache-ID = 3a6fb32c840fc76a
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2735.320 ; gain = 0.000 ; free physical = 155 ; free virtual = 6352
+INFO: [Common 17-1381] The checkpoint '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/comb_lock_debouncer_0_0_synth_1/comb_lock_debouncer_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file comb_lock_debouncer_0_0_utilization_synth.rpt -pb comb_lock_debouncer_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  8 08:10:32 2026...

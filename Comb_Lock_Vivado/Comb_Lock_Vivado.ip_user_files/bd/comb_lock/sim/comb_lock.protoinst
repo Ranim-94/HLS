@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"comb_lock": {
+			"proto_instances": {
+			}
+		}
+	}
+}

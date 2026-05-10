@@ -1,0 +1,21 @@
+{
+  "0": {
+    "basicblocks": 42,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 3,
+    "file": "top_comb_lock.cpp",
+    "fileloc": 61,
+    "instructions": 75,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 5,
+    "name": "combination_lock",
+    "stores": {
+      "G": 1,
+      "T": 3
+    },
+    "total_instructions": 75
+  }
+}

@@ -1,0 +1,260 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri May  8 12:28:56 2026
+# Process ID         : 16883
+# Current directory  : /home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1
+# Command line       : vivado -log comb_lock_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source comb_lock_wrapper.tcl
+# Log file           : /home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/comb_lock_wrapper.vds
+# Journal file       : /home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/vivado.jou
+# Running On         : lenovo-Legion-5-17ACH6H
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics
+# CPU Frequency      : 3390.546 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14496 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 16644 MB
+# Available Virtual  : 10935 MB
+#-----------------------------------------------------------
+source comb_lock_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lenovo/Simulation_Linux/HLS'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/lenovo/Simulation_Linux/HLS' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.1/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.srcs/utils_1/imports/synth_1/comb_lock_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.srcs/utils_1/imports/synth_1/comb_lock_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top comb_lock_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16951
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2098.234 ; gain = 440.828 ; free physical = 749 ; free virtual = 9217
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'comb_lock_wrapper' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/hdl/comb_lock_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'comb_lock' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/synth/comb_lock.v:13]
+INFO: [Synth 8-6157] synthesizing module 'comb_lock_combination_lock_0_0' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_combination_lock_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'comb_lock_combination_lock_0_0' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_combination_lock_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'comb_lock_debouncer_0_0' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_debouncer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'comb_lock_debouncer_0_0' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_debouncer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'comb_lock_debouncer_1_0' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_debouncer_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'comb_lock_debouncer_1_0' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_debouncer_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'comb_lock_pulse_generator_0_0' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_pulse_generator_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'comb_lock_pulse_generator_0_0' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_pulse_generator_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'comb_lock_pulse_generator_1_1' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_pulse_generator_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'comb_lock_pulse_generator_1_1' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/.Xil/Vivado-16883-lenovo-Legion-5-17ACH6H/realtime/comb_lock_pulse_generator_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'comb_lock' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/synth/comb_lock.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'comb_lock_wrapper' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/hdl/comb_lock_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2171.172 ; gain = 513.766 ; free physical = 657 ; free virtual = 9131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2188.984 ; gain = 531.578 ; free physical = 657 ; free virtual = 9131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2188.984 ; gain = 531.578 ; free physical = 657 ; free virtual = 9131
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2188.984 ; gain = 0.000 ; free physical = 657 ; free virtual = 9131
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_combination_lock_0_0/comb_lock_combination_lock_0_0/comb_lock_combination_lock_0_0_in_context.xdc] for cell 'comb_lock_i/combination_lock_0'
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_combination_lock_0_0/comb_lock_combination_lock_0_0/comb_lock_combination_lock_0_0_in_context.xdc] for cell 'comb_lock_i/combination_lock_0'
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_debouncer_0_0/comb_lock_debouncer_0_0/comb_lock_debouncer_0_0_in_context.xdc] for cell 'comb_lock_i/debouncer_0'
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_debouncer_0_0/comb_lock_debouncer_0_0/comb_lock_debouncer_0_0_in_context.xdc] for cell 'comb_lock_i/debouncer_0'
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_debouncer_1_0/comb_lock_debouncer_1_0/comb_lock_debouncer_0_0_in_context.xdc] for cell 'comb_lock_i/debouncer_1'
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_debouncer_1_0/comb_lock_debouncer_1_0/comb_lock_debouncer_0_0_in_context.xdc] for cell 'comb_lock_i/debouncer_1'
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_pulse_generator_0_0/comb_lock_pulse_generator_0_0/comb_lock_pulse_generator_0_0_in_context.xdc] for cell 'comb_lock_i/pulse_generator_0'
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_pulse_generator_0_0/comb_lock_pulse_generator_0_0/comb_lock_pulse_generator_0_0_in_context.xdc] for cell 'comb_lock_i/pulse_generator_0'
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_pulse_generator_1_1/comb_lock_pulse_generator_1_1/comb_lock_pulse_generator_0_0_in_context.xdc] for cell 'comb_lock_i/pulse_generator_1'
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_pulse_generator_1_1/comb_lock_pulse_generator_1_1/comb_lock_pulse_generator_0_0_in_context.xdc] for cell 'comb_lock_i/pulse_generator_1'
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.srcs/constrs_1/new/comb_lock.xdc]
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.srcs/constrs_1/new/comb_lock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.srcs/constrs_1/new/comb_lock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/comb_lock_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/comb_lock_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2234.941 ; gain = 0.000 ; free physical = 646 ; free virtual = 9134
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2234.977 ; gain = 0.000 ; free physical = 645 ; free virtual = 9134
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2234.977 ; gain = 577.570 ; free physical = 662 ; free virtual = 9150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2242.945 ; gain = 585.539 ; free physical = 662 ; free virtual = 9150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2242.945 ; gain = 585.539 ; free physical = 662 ; free virtual = 9150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2242.945 ; gain = 585.539 ; free physical = 662 ; free virtual = 9150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2242.945 ; gain = 585.539 ; free physical = 664 ; free virtual = 9159
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2327.945 ; gain = 670.539 ; free physical = 577 ; free virtual = 9074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2327.945 ; gain = 670.539 ; free physical = 577 ; free virtual = 9074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2336.961 ; gain = 679.555 ; free physical = 569 ; free virtual = 9067
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.773 ; gain = 863.367 ; free physical = 415 ; free virtual = 8913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.773 ; gain = 863.367 ; free physical = 415 ; free virtual = 8913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.773 ; gain = 863.367 ; free physical = 415 ; free virtual = 8913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.773 ; gain = 863.367 ; free physical = 415 ; free virtual = 8913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.773 ; gain = 863.367 ; free physical = 415 ; free virtual = 8913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.773 ; gain = 863.367 ; free physical = 415 ; free virtual = 8913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |comb_lock_combination_lock_0_0 |         1|
+|2     |comb_lock_debouncer_0_0        |         1|
+|3     |comb_lock_debouncer_1_0        |         1|
+|4     |comb_lock_pulse_generator_0_0  |         1|
+|5     |comb_lock_pulse_generator_1_1  |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |comb_lock_combination_lock_0 |     1|
+|2     |comb_lock_debouncer_0        |     1|
+|3     |comb_lock_debouncer_1        |     1|
+|4     |comb_lock_pulse_generator_0  |     1|
+|5     |comb_lock_pulse_generator_1  |     1|
+|6     |IBUF                         |    16|
+|7     |OBUF                         |    13|
++------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.773 ; gain = 863.367 ; free physical = 415 ; free virtual = 8913
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2520.773 ; gain = 817.375 ; free physical = 416 ; free virtual = 8913
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.781 ; gain = 863.367 ; free physical = 416 ; free virtual = 8913
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.781 ; gain = 0.000 ; free physical = 416 ; free virtual = 8915
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.781 ; gain = 0.000 ; free physical = 578 ; free virtual = 9077
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 28bd319e
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2520.809 ; gain = 1007.520 ; free physical = 576 ; free virtual = 9075
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1706.001; main = 1706.001; forked = 276.108
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3206.816; main = 2520.777; forked = 963.867
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2544.785 ; gain = 0.000 ; free physical = 576 ; free virtual = 9075
+INFO: [Common 17-1381] The checkpoint '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/synth_1/comb_lock_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file comb_lock_wrapper_utilization_synth.rpt -pb comb_lock_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  8 12:29:20 2026...

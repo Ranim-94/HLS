@@ -1,0 +1,235 @@
+
+*** Running vivado
+    with args -log comb_lock_combination_lock_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source comb_lock_combination_lock_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Apr  8 08:10:11 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source comb_lock_combination_lock_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lenovo/Simulation_Linux/HLS'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/lenovo/Simulation_Linux/HLS' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/comb_lock_combination_lock_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top comb_lock_combination_lock_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16949
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2096.207 ; gain = 439.711 ; free physical = 214 ; free virtual = 7011
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'comb_lock_combination_lock_0_0' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_combination_lock_0_0/synth/comb_lock_combination_lock_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'combination_lock' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock.v:9]
+INFO: [Synth 8-6157] synthesizing module 'combination_lock_sparsemux_19_9_3_1_1' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_19_9_3_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'combination_lock_sparsemux_19_9_3_1_1' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_19_9_3_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'combination_lock_sparsemux_7_2_1_1_1' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_7_2_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'combination_lock_sparsemux_7_2_1_1_1' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_7_2_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'combination_lock_sparsemux_11_32_8_1_1' [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_11_32_8_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'combination_lock_sparsemux_11_32_8_1_1' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_11_32_8_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'combination_lock' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'comb_lock_combination_lock_0_0' (0#1) [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_combination_lock_0_0/synth/comb_lock_combination_lock_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2170.145 ; gain = 513.648 ; free physical = 173 ; free virtual = 6842
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2187.957 ; gain = 531.461 ; free physical = 173 ; free virtual = 6842
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2187.957 ; gain = 531.461 ; free physical = 173 ; free virtual = 6842
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2187.957 ; gain = 0.000 ; free physical = 172 ; free virtual = 6841
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_combination_lock_0_0/constraints/combination_lock_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ip/comb_lock_combination_lock_0_0/constraints/combination_lock_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/comb_lock_combination_lock_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/comb_lock_combination_lock_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.695 ; gain = 0.000 ; free physical = 140 ; free virtual = 6765
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2280.730 ; gain = 0.000 ; free physical = 178 ; free virtual = 6768
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2280.730 ; gain = 624.234 ; free physical = 338 ; free virtual = 6710
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2288.699 ; gain = 632.203 ; free physical = 338 ; free virtual = 6710
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2288.699 ; gain = 632.203 ; free physical = 338 ; free virtual = 6710
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2288.699 ; gain = 632.203 ; free physical = 279 ; free virtual = 6654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 11    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2288.699 ; gain = 632.203 ; free physical = 224 ; free virtual = 6605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2353.699 ; gain = 697.203 ; free physical = 206 ; free virtual = 6314
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2382.746 ; gain = 726.250 ; free physical = 173 ; free virtual = 6281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2382.746 ; gain = 726.250 ; free physical = 156 ; free virtual = 6264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2539.559 ; gain = 883.062 ; free physical = 199 ; free virtual = 5947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2539.559 ; gain = 883.062 ; free physical = 199 ; free virtual = 5947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2539.559 ; gain = 883.062 ; free physical = 199 ; free virtual = 5947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2539.559 ; gain = 883.062 ; free physical = 199 ; free virtual = 5947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2539.559 ; gain = 883.062 ; free physical = 199 ; free virtual = 5947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2539.559 ; gain = 883.062 ; free physical = 199 ; free virtual = 5947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |     5|
+|3     |LUT4 |     4|
+|4     |LUT6 |     3|
+|5     |FDRE |     3|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2539.559 ; gain = 883.062 ; free physical = 199 ; free virtual = 5947
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2539.559 ; gain = 790.289 ; free physical = 199 ; free virtual = 5947
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2539.566 ; gain = 883.062 ; free physical = 199 ; free virtual = 5947
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2539.566 ; gain = 0.000 ; free physical = 199 ; free virtual = 5948
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2595.586 ; gain = 0.000 ; free physical = 508 ; free virtual = 6258
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c9916676
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2595.621 ; gain = 1083.336 ; free physical = 508 ; free virtual = 6258
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1575.231; main = 1575.231; forked = 219.560
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3252.566; main = 2595.590; forked = 963.863
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2619.598 ; gain = 0.000 ; free physical = 508 ; free virtual = 6258
+INFO: [Common 17-1381] The checkpoint '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/comb_lock_combination_lock_0_0_synth_1/comb_lock_combination_lock_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP comb_lock_combination_lock_0_0, cache-ID = 6b9c1af5ab5027f3
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2619.598 ; gain = 0.000 ; free physical = 483 ; free virtual = 6233
+INFO: [Common 17-1381] The checkpoint '/home/lenovo/Simulation_Linux/HLS/Comb_Lock_Vivado/Comb_Lock_Vivado.runs/comb_lock_combination_lock_0_0_synth_1/comb_lock_combination_lock_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file comb_lock_combination_lock_0_0_utilization_synth.rpt -pb comb_lock_combination_lock_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  8 08:10:37 2026...

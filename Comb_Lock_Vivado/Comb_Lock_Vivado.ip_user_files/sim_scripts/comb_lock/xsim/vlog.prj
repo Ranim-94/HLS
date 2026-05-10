@@ -1,0 +1,15 @@
+verilog xil_defaultlib -i "../../../../../../../../../opt/Xilinx/2025.1/data/rsb/busdef" \
+"../../../../Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_7_2_1_1_1.v" \
+"../../../../Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_11_32_8_1_1.v" \
+"../../../../Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock_sparsemux_19_9_3_1_1.v" \
+"../../../../Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/42cb/hdl/verilog/combination_lock.v" \
+"../../../bd/comb_lock/ip/comb_lock_combination_lock_0_0/sim/comb_lock_combination_lock_0_0.v" \
+"../../../../Comb_Lock_Vivado.gen/sources_1/bd/comb_lock/ipshared/be60/hdl/verilog/pulse_generator.v" \
+"../../../bd/comb_lock/ip/comb_lock_pulse_generator_0_0/sim/comb_lock_pulse_generator_0_0.v" \
+"../../../bd/comb_lock/ip/comb_lock_pulse_generator_1_1/sim/comb_lock_pulse_generator_1_1.v" \
+"../../../bd/comb_lock/sim/comb_lock.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

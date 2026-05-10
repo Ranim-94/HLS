@@ -1,0 +1,13 @@
+{
+  "name": "Comb_Lock_Vitis",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Comb_Lock_Vitis"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

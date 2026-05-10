@@ -1,0 +1,23 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<4, false>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDq4_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="/opt/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="top_comb_lock.cpp" line="23" pragmaType="inline" parentfunction="get_seven_segment_code" off="0" region="0" recursive="0"/>
+<pragma file="top_comb_lock.cpp" line="68" pragmaType="pipeline" parentfunction="combination_lock" off="0" ii="-1" style=""/>
+<pragma file="top_comb_lock.cpp" line="71" pragmaType="interface" parentfunction="combination_lock" mode="ap_none" port="x" name="" register="0"/>
+<pragma file="top_comb_lock.cpp" line="72" pragmaType="interface" parentfunction="combination_lock" mode="ap_none" port="enter" name="" register="0"/>
+<pragma file="top_comb_lock.cpp" line="73" pragmaType="interface" parentfunction="combination_lock" mode="ap_none" port="lock" name="" register="0"/>
+<pragma file="top_comb_lock.cpp" line="76" pragmaType="interface" parentfunction="combination_lock" mode="ap_none" port="door_open" name="" register="0"/>
+<pragma file="top_comb_lock.cpp" line="77" pragmaType="interface" parentfunction="combination_lock" mode="ap_none" port="seven_segment_data" name="" register="0"/>
+<pragma file="top_comb_lock.cpp" line="78" pragmaType="interface" parentfunction="combination_lock" mode="ap_none" port="seven_segment_enable" name="" register="0"/>
+<pragma file="top_comb_lock.cpp" line="80" pragmaType="interface" parentfunction="combination_lock" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<4, false>(ap_int_base<4, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

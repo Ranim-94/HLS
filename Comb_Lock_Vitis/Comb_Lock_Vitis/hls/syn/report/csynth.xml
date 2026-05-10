@@ -1,0 +1,422 @@
+<profile>
+    <ReportVersion>
+        <Version>2025.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xc7a35t-cpg236-1</Part>
+        <TopModelName>combination_lock</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>yes</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.301</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <PipelineInitiationInterval>1</PipelineInitiationInterval>
+            <PipelineDepth>1</PipelineDepth>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>top_comb_lock.cpp:68</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>4</FF>
+            <LUT>208</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>100</BRAM_18K>
+            <DSP>90</DSP>
+            <FF>41600</FF>
+            <LUT>20800</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>combination_lock</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>combination_lock</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x</name>
+            <Object>x</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>enter</name>
+            <Object>enter</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lock</name>
+            <Object>lock</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>door_open</name>
+            <Object>door_open</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>seven_segment_data</name>
+            <Object>seven_segment_data</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>seven_segment_enable</name>
+            <Object>seven_segment_enable</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>combination_lock</ModuleName>
+            <BindInstances>next_state_4_fu_340_p2 door_open_local_2_fu_396_p2 next_state_1_fu_182_p2 icmp_ln135_fu_192_p2 next_state_4_fu_340_p8 next_state_2_fu_206_p2 next_state_4_fu_340_p6 door_open_local_1_fu_220_p2 next_state_4_fu_340_p4 icmp_ln95_fu_234_p2 icmp_ln95_1_fu_240_p2 and_ln62_fu_246_p2 icmp_ln95_2_fu_252_p2 and_ln62_1_fu_258_p2 icmp_ln95_3_fu_264_p2 and_ln62_2_fu_270_p2 icmp_ln95_4_fu_276_p2 and_ln62_3_fu_282_p2 xor_ln62_fu_288_p2 and_ln62_4_fu_294_p2 and_ln62_5_fu_300_p2 and_ln62_6_fu_306_p2 and_ln62_7_fu_312_p2 sparsemux_19_9_3_1_1_U1 sparsemux_7_2_1_1_1_U2 sparsemux_11_32_8_1_1_U3</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>combination_lock</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>6.301</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>1</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>top_comb_lock.cpp:68</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>4</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>208</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="next_state_4_fu_340_p2" SOURCE="top_comb_lock.cpp:202" STORAGESUBTYPE="" URAM="0" VARIABLE="next_state" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="door_open_local_2_fu_396_p2" SOURCE="top_comb_lock.cpp:202" STORAGESUBTYPE="" URAM="0" VARIABLE="door_open_local" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="next_state_1_fu_182_p2" SOURCE="top_comb_lock.cpp:101" STORAGESUBTYPE="" URAM="0" VARIABLE="next_state_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln135_fu_192_p2" SOURCE="top_comb_lock.cpp:135" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln135" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="next_state_4_fu_340_p8" SOURCE="top_comb_lock.cpp:155" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln155" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="next_state_2_fu_206_p2" SOURCE="top_comb_lock.cpp:155" STORAGESUBTYPE="" URAM="0" VARIABLE="next_state_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="next_state_4_fu_340_p6" SOURCE="top_comb_lock.cpp:88" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln88" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="door_open_local_1_fu_220_p2" SOURCE="top_comb_lock.cpp:173" STORAGESUBTYPE="" URAM="0" VARIABLE="door_open_local_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="next_state_4_fu_340_p4" SOURCE="top_comb_lock.cpp:173" STORAGESUBTYPE="" URAM="0" VARIABLE="next_state_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln95_fu_234_p2" SOURCE="top_comb_lock.cpp:95" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln95" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln95_1_fu_240_p2" SOURCE="top_comb_lock.cpp:95" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln95_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_fu_246_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln95_2_fu_252_p2" SOURCE="top_comb_lock.cpp:95" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln95_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_1_fu_258_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln95_3_fu_264_p2" SOURCE="top_comb_lock.cpp:95" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln95_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_2_fu_270_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln95_4_fu_276_p2" SOURCE="top_comb_lock.cpp:95" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln95_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_3_fu_282_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln62_fu_288_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_4_fu_294_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_5_fu_300_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_6_fu_306_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_7_fu_312_p2" SOURCE="top_comb_lock.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62_7" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_19_9_3_1_1_U1" SOURCE="top_comb_lock.cpp:202" STORAGESUBTYPE="" URAM="0" VARIABLE="next_state_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_2_1_1_1_U2" SOURCE="top_comb_lock.cpp:202" STORAGESUBTYPE="" URAM="0" VARIABLE="door_open_local_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_32_8_1_1_U3" SOURCE="top_comb_lock.cpp:88" STORAGESUBTYPE="" URAM="0" VARIABLE="ref_tmp_0_0_0_s" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="x" index="0" direction="in" srcType="ap_uint&lt;4&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="x" name="x" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="enter" index="1" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="enter" name="enter" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="lock" index="2" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="lock" name="lock" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="door_open" index="3" direction="out" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="door_open" name="door_open" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="seven_segment_data" index="4" direction="out" srcType="ap_uint&lt;8&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="seven_segment_data" name="seven_segment_data" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="seven_segment_enable" index="5" direction="out" srcType="ap_uint&lt;4&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="seven_segment_enable" name="seven_segment_enable" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="x" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="4">
+            <portMaps>
+                <portMap portMapName="x">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="enter" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="enter">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>enter</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="enter"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="lock" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="lock">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>lock</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="lock"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="door_open" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="door_open">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>door_open</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="door_open"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="seven_segment_data" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="seven_segment_data">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>seven_segment_data</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="seven_segment_data"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="seven_segment_enable" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="4">
+            <portMaps>
+                <portMap portMapName="seven_segment_enable">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>seven_segment_enable</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="seven_segment_enable"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="door_open">ap_none, out, 1</column>
+                    <column name="enter">ap_none, in, 1</column>
+                    <column name="lock">ap_none, in, 1</column>
+                    <column name="seven_segment_data">ap_none, out, 8</column>
+                    <column name="seven_segment_enable">ap_none, out, 4</column>
+                    <column name="x">ap_none, in, 4</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="x">in, ap_uint&lt;4&gt;</column>
+                    <column name="enter">in, bool</column>
+                    <column name="lock">in, bool</column>
+                    <column name="door_open">out, bool&amp;</column>
+                    <column name="seven_segment_data">out, ap_uint&lt;8&gt;&amp;</column>
+                    <column name="seven_segment_enable">out, ap_uint&lt;4&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="x">x, port</column>
+                    <column name="enter">enter, port</column>
+                    <column name="lock">lock, port</column>
+                    <column name="door_open">door_open, port</column>
+                    <column name="seven_segment_data">seven_segment_data, port</column>
+                    <column name="seven_segment_enable">seven_segment_enable, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="inline" location="top_comb_lock.cpp:23" status="valid" parentFunction="get_seven_segment_code" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="top_comb_lock.cpp:68" status="valid" parentFunction="combination_lock" variable="" isDirective="0" options=""/>
+        <Pragma type="interface" location="top_comb_lock.cpp:71" status="valid" parentFunction="combination_lock" variable="x" isDirective="0" options="ap_none port=x"/>
+        <Pragma type="interface" location="top_comb_lock.cpp:72" status="valid" parentFunction="combination_lock" variable="enter" isDirective="0" options="ap_none port=enter"/>
+        <Pragma type="interface" location="top_comb_lock.cpp:73" status="valid" parentFunction="combination_lock" variable="lock" isDirective="0" options="ap_none port=lock"/>
+        <Pragma type="interface" location="top_comb_lock.cpp:76" status="valid" parentFunction="combination_lock" variable="door_open" isDirective="0" options="ap_none port=door_open"/>
+        <Pragma type="interface" location="top_comb_lock.cpp:77" status="valid" parentFunction="combination_lock" variable="seven_segment_data" isDirective="0" options="ap_none port=seven_segment_data"/>
+        <Pragma type="interface" location="top_comb_lock.cpp:78" status="valid" parentFunction="combination_lock" variable="seven_segment_enable" isDirective="0" options="ap_none port=seven_segment_enable"/>
+        <Pragma type="interface" location="top_comb_lock.cpp:80" status="valid" parentFunction="combination_lock" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+    </PragmaReport>
+</profile>
+
